@@ -67,17 +67,17 @@ html {
 }
 
 .index-bg {
-	background: url('images/background.jpg') no-repeat center;
+	background: url('images/background_1.jpg') no-repeat center;
 	background-size: cover;
 }
 
 .experience-bg {
-	background: url('images/taj.jpg') no-repeat center;
+	background: url('images/background_2.jpg') no-repeat center;
 	background-size: auto;
 }
 
 .contanct-bg {
-	background: url('images/nepalmountain.jpg') no-repeat center;
+	background: url('images/background_2.jpg') no-repeat center;
 	background-size: auto;
 }
 
