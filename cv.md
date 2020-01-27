@@ -41,7 +41,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <td markdown="1">
 [**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2019 
 - Licence en Mathematiques et informatiques
-- Advisors for courses and thesis: Prof. [Franck Kalala](http://news.nwu.ac.za/experts/etienne-barnard))
+- Advisors for courses and thesis: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en))
 </td> 
 </tr>
 

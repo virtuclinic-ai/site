@@ -17,7 +17,8 @@ lang: zh
 
 
 <!-- ![me](/img/main/salomon.jpg width="300") -->
-<img src="/img/main/salomon.jpg" width="300">
+
+<img align="center" src="/img/main/salomon.jpg" width="300">
 
 
 ### About Me
