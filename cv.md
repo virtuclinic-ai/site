@@ -40,6 +40,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <td></td>
 <td markdown="1">
 [**Udacity**](https://www.udacity.com/course/deep-learning-nanodegree--nd101), 
+
 *03/2019 - 12/2019*
 - **Deeplearnig Nanodegree**
 - *Full scolarship by Facebook AI, and Udacity*
