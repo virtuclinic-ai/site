@@ -5,10 +5,21 @@ tagline : ""
 use_math: true
 lang: zh
 ---
-{% include JB/setup %}
+<!-- {% include JB/setup %}
 
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
+
+{% include JB/setup %} -->
+<div class="page-header">
+  <div class="pull-right">
+    {% include contact_icons %}
+  </div>
+  <h1>
+    {{ site.author.name }}'s Homepage
+    {% if site.tagline %}<br/><small>{{ site.tagline }}</small>{% endif %}
+  </h1>
+</div>
 
 --- 
 
