@@ -35,7 +35,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](/img/main/udacity.jpg)
+![hkulogo](/img/main/udacity.png)
 </td>
 <td></td>
 <td markdown="1">
