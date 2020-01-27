@@ -7,6 +7,7 @@ lang: zh
 ---
 {% include JB/setup %}
 
+{% include contact_icons %}
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
