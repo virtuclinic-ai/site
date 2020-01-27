@@ -15,12 +15,13 @@ lang: zh
   </h1>
 </div>
 
-#fixed-width-flamingo {  width: 200px; }  
 
-![me](/img/main/salomon.jpg, id="fixed-width-flamingo")
+<!-- ![me](/img/main/salomon.jpg width="300") -->
+<img src="/img/main/salomon.jpg" width="300">
+
 
 ### About Me
-My name is Salomon Kabongo KABENAMUALU. I'm currently a Student at the [African Master in Machine Intelligence](https://aimsammi.org/) (AMMI), working toward a Msc in Machine Intelligence as sponsored by Facebook and Google. Before joining AMMI, I obtained my Msc in Mathematics from [The University of the Western Cape](https://www.uwc.ac.za/) in 2019 in affiliation with the African Institute for Mathematical Sciences ([AIMS South Africa](https://aims.ac.za/)), during which I got introduced to the field of Machine Leaning and worked on emperical investigations in standard propreties of words embeddings under the supervision of Prof. [Etienne Barbard](http://news.nwu.ac.za/experts/etienne-barnard). I also hold a B.S. and honors degree of Mathematics and Computer Science from [Université de Lubumbashi](http://www.unilu.ac.cd/) in 2017.
+My name is Salomon Kabongo KABENAMUALU. I'm currently a Student at the [African Master in Machine Intelligence](https://aimsammi.org/) (AMMI), working toward a Msc in Machine Intelligence as sponsored by Facebook and Google. Before joining AMMI, I obtained my Msc in Mathematics from [The University of the Western Cape](https://www.uwc.ac.za/) in 2019 in affiliation with the African Institute for Mathematical Sciences ([AIMS South Africa](https://aims.ac.za/)), during which I got introduced to the field of Machine Leaning and worked on investigating propreties of words embeddings under the supervision of Prof. [Etienne Barbard](http://news.nwu.ac.za/experts/etienne-barnard). I also hold a B.S. and honors degree in Mathematics and Computer Science from [Université de Lubumbashi](http://www.unilu.ac.cd/).
 
 ---
 
@@ -34,4 +35,4 @@ My research interests include but not limited to:
 
 ### Contacts
 - Phone: (+233) 20 075 1986 (Ghana) / (+254) 79 583 5461 (Kenya)
-- Email: salomon (at) aims (dot) ac (dot) za
+- Email: salomon@aims.ac.za
