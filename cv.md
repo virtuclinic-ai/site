@@ -7,7 +7,7 @@ lang: zh
 ---
 {% include JB/setup %}
 
-{% assign posts_collate = site.categories.publications %}
+{% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
 CV in [PDF](/archive/CV_Salomon.pdf) version.
@@ -19,29 +19,68 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <col width="9%">
 <col width="20">
 <col >
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![hkulogo](/img/main/univ_ghana.jpg)
+</td>
+<td></td>
+<td markdown="1">
+[**The University of Ghana**](https://www.ug.edu.gh/), 09/2019 - 09/2020 
+- Msc in Machine Intelligence
+- Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard)
+- *Full scolarship by Facebook and Google, [AMMI](https://aimsammi.org/)*
+</td> 
+</tr>
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![hkulogo](/img/main/udacity.png)
+</td>
+<td></td>
+<td markdown="1">
+[**Udacity**](https://www.udacity.com/course/deep-learning-nanodegree--nd101), 03/2019 - 12/2019 
+- Deeplearnig Nanodegree
+- *Full scolarship by Facebook AI, and Udacity*
+</td> 
+</tr>
+
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 ![hkulogo](/img/main/UWC_logo.png)
 </td>
 <td></td>
 <td markdown="1">
-[**The University of Western Cape**](https://www.uwc.ac.za/), 2018 - 2019 
+[**The University of Western Cape**](https://www.uwc.ac.za/), 08/2018 - 06/2019 
 - Msc in Mathematical Sciences
 - Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard)
+- *Full scolarship by MasterCard Foundation, AIMS South Africa*
 </td> 
 </tr>
 
 <tr height="10"/>
-
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 ![ustclogo](/img/main/unilu.jpeg)
 </td>
 <td></td>
 <td markdown="1">
-[**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2019 
-- Licence en Mathematiques et informatiques
-- Advisors for courses and thesis: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en)
+[**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2017
+- Licence en Mathématiques et informatiques
+- Supervisor: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en)
+</td> 
+</tr>
+
+<tr height="10"/>
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![ustclogo](/img/main/unilu.jpeg)
+</td>
+<td></td>
+<td markdown="1">
+[**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2017
+- Graduat en Mathématiques
+- Supervisor: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en)
 </td> 
 </tr>
 
