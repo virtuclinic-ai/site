@@ -21,6 +21,21 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
+![captcha](/img/main/masakhane.png){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+[**Masakhane Initiative**](https://www.masakhane.io/home)
+
+The project consist of puting African researchers from ACROSS the continent together to join the effort in building translation models for African languages. Masakhane means "We Build Together" in isiZulu and was inspired by the [Deep Learning Indaba](http://www.deeplearningindaba.com/) theme for 2018. 
+As part of the [team](https://www.masakhane.io/community), I'm working on [Tshiluba](https://en.wikipedia.org/wiki/Luba-Kasai_language).
+
+|| <em class="icon-home"/> || [project page](https://www.masakhane.io/home) || <em class="icon-github"/> || [Github](https://github.com/masakhane-io/masakhane) ||
+</td> 
+</tr>
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
 ![captcha](/img/main/dog_breed.png){:class="img-shadow"}
 </td>
 <td></td>
@@ -51,10 +66,10 @@ Implemented an RNN to generate my own Seinfeld TV scripts using RNNs. I used par
 </td>
 <td></td>
 <td markdown="1">
-[**A RNN Based Medel : Generate TV Scripts**](https://github.com/Kabongosalomon/Tv-Script-Generation)
-Implemented an RNN to generate my own Seinfeld TV scripts using RNNs. I used part of the Seinfeld dataset of scripts from 9 seasons. Using RNN, I generated a new, "fake" TV script, based on patterns it recognizes in this training data.
+[**Generate Faces**](https://github.com/Kabongosalomon/Face-Generation-Project)
+Generating images of the face using Deep Convolutional Generative Adversarial Network (DCGAN). The DCGAN is made of a pair of multilayer neural networks that compete against each other until one learns to generate realistic images of faces
 
-|| <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Tv-Script-Generation) ||
+|| <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Face-Generation-Project) ||
 </td> 
 </tr>
 

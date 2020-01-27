@@ -124,7 +124,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <td></td>
 <td markdown="1">
 [**IkamvaYouth**](http://ikamvayouth.org/), 2019.2 - 2019.6 
-- Mathematics tutor
+- Mathematics Tutor
 </td> 
 </tr>
 
