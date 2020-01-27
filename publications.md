@@ -84,8 +84,8 @@ lang: zh
 
 || <em class="icon-file"></em> || thesis || <!--[thesis](/archive/research/thesis.pdf)-->
 
-</td> 
-</tr> -->
+<!-- </td> 
+</tr> --> -->
 
 <!-- <tr height="50">
 <td style="padding-left: 1px;

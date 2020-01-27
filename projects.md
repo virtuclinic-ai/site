@@ -25,39 +25,36 @@ lang: zh
 </td>
 <td></td>
 <td markdown="1">
-[**A CNN Based Dog Breed Classifier**](/archive/projects/captcha-crack)
+[**A CNN Based Dog Breed Classifier**](https://github.com/Kabongosalomon/CNN-Project-Dog-Breed-Classifier)
 In this project, I defined a Convolutional Neural Network that performs better than the average human when given the task of identifying dog breeds in addition, if supplied an image of a human, the code will *also* produce an estimate of the closest-resembling dog breed.
 
-|| <em class="icon-github"/> || [source code](https://github.com/Kabongosalomon/CNN-Project-Dog-Breed-Classifier) ||
-
+|| <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/CNN-Project-Dog-Breed-Classifier) ||
 </td> 
 </tr>
+
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 ![captcha](/img/main/tv_script.png){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
-[**A RNN Based Medel : Generate TV Scripts**](/archive/projects/captcha-crack)
+[**A RNN Based Medel : Generate TV Scripts**](https://github.com/Kabongosalomon/Tv-Script-Generation)
 Implemented an RNN to generate my own Seinfeld TV scripts using RNNs. I used part of the Seinfeld dataset of scripts from 9 seasons. Using RNN, I generated a new, "fake" TV script, based on patterns it recognizes in this training data.
 
-|| <em class="icon-github"/> || [source code](https://github.com/Kabongosalomon/Tv-Script-Generation) ||
+|| <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Tv-Script-Generation) ||
 </td> 
 </tr>
 
-
-</td> 
-</tr>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 ![captcha](/img/main/tv_script.png){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
-[**A RNN Based Medel : Generate TV Scripts**](/archive/projects/captcha-crack)
+[**A RNN Based Medel : Generate TV Scripts**](https://github.com/Kabongosalomon/Tv-Script-Generation)
 Implemented an RNN to generate my own Seinfeld TV scripts using RNNs. I used part of the Seinfeld dataset of scripts from 9 seasons. Using RNN, I generated a new, "fake" TV script, based on patterns it recognizes in this training data.
 
-|| <em class="icon-github"/> || [source code](https://github.com/Kabongosalomon/Tv-Script-Generation) ||
+|| <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Tv-Script-Generation) ||
 </td> 
 </tr>
 
