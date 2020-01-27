@@ -5,9 +5,9 @@ tagline : ""
 use_math: true
 lang: zh
 ---
-{% include JB/setup %}
 
 <div class="page-header">
+{% include JB/setup %}
   <div class="pull-right">
     {% include contact_icons %}
   </div>
