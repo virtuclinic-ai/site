@@ -7,7 +7,12 @@ lang: zh
 ---
 {% include JB/setup %}
 
-{% include contact_icons %}
+<div class="page-header">
+  <div class="pull-right">
+    {% include contact_icons %}
+  </div>
+</div>
+
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
@@ -27,7 +32,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[**The University of Ghana**](https://www.ug.edu.gh/),        09/2019 - 09/2020 
+[**The University of Ghana**](https://www.ug.edu.gh/), 09/2019 - 09/2020 
 - **Msc in Machine Intelligence**
 - Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard)
 - *Full scolarship by Facebook and Google, [AMMI](https://aimsammi.org/)*
@@ -40,9 +45,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[**Udacity**](https://www.udacity.com/course/deep-learning-nanodegree--nd101), 
-
-*03/2019 - 12/2019*
+[**Udacity**](https://www.udacity.com/course/deep-learning-nanodegree--nd101), 03/2019 - 12/2019
 - **Deeplearnig Nanodegree**
 - *Full scolarship by Facebook AI, and Udacity*
 </td> 
@@ -54,7 +57,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[**The University of Western Cape**](https://www.uwc.ac.za/),           08/2018 - 06/2019 
+[**The University of Western Cape**](https://www.uwc.ac.za/), 08/2018 - 06/2019 
 - **Msc in Mathematical Sciences**
 - Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard)
 - *Full scolarship by MasterCard Foundation, [AIMS South Africa](https://aims.ac.za/)*
@@ -68,7 +71,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[**Université de Lubumbashi**](http://www.unilu.ac.cd/),            2011 - 2017
+[**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2017
 - **Licence en Mathématiques et informatiques**
 - Supervisor: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en)
 </td> 
@@ -81,7 +84,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[**Université de Lubumbashi**](http://www.unilu.ac.cd/),            2011 - 2017
+[**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2017
 - **Graduat en Mathématiques**
 - Supervisor: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en)
 </td> 
