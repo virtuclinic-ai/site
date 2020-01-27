@@ -26,7 +26,7 @@ img {
 </style>
 
 <!-- ![me](/img/main/salomon.jpg width="300") -->
-<img src="/img/main/salomon.jpg" class="center" style="width:200px">
+<img src="/img/main/salomon.jpg" class="center" style="width:300px">
 
 
 ### About Me
