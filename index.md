@@ -21,12 +21,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  border-radius: 50%;
 }
 </style>
 
 <!-- ![me](/img/main/salomon.jpg width="300") -->
 <img src="/img/main/salomon.jpg" class="center">
-<!-- <img align="center" src="/img/main/salomon.jpg" width="300"> -->
 
 
 ### About Me
