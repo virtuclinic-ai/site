@@ -15,10 +15,18 @@ lang: zh
   </h1>
 </div>
 
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
 
 <!-- ![me](/img/main/salomon.jpg width="300") -->
-
-<img align="center" src="/img/main/salomon.jpg" width="300">
+<img src="/img/main/salomon.jpg" width="300" height="300"class="center">
+<!-- <img align="center" src="/img/main/salomon.jpg" width="300"> -->
 
 
 ### About Me

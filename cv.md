@@ -27,7 +27,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <td markdown="1">
 [**The University of Western Cape**](https://www.uwc.ac.za/), 2018 - 2019 
 - Msc in Mathematical Sciences
-- Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard))
+- Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard)
 </td> 
 </tr>
 
@@ -41,7 +41,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <td markdown="1">
 [**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2019 
 - Licence en Mathematiques et informatiques
-- Advisors for courses and thesis: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en))
+- Advisors for courses and thesis: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en)
 </td> 
 </tr>
 
