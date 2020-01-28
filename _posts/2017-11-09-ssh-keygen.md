@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mutually Exlussibe, Vs Collectivelly Exhaustive"
+title:  "Mutually Exlussibe Vs Collectivelly Exhaustive"
 categories: Maths
 tags: probability
 # categories: coding
