@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SSH Keygen"
+title:  "Mutually Exlussibe, Vs Collectivelly Exhaustive"
 categories: coding
 tags: linux
 ---
@@ -8,11 +8,11 @@ tags: linux
 * TOC
 {:toc}
 
-### Generate the key in your own computer
+### Introduction
 ```bash
-ssh-keygen
+Hello World
 ```
-Then you only need to press <key>Enter</key> so that the key is generated and saved in `~/.ssh/id_rsa`.
+<!-- Then you only need to press <key>Enter</key> so that the key is generated and saved in `~/.ssh/id_rsa`.
 
 ### Put it into the server
 #### Copy the `id_rsa.pub` into your server:
@@ -22,4 +22,4 @@ scp ~/.ssh/id_rsa.pub username@10.127.1.155:~/.ssh/
 #### Add it into the `authorized_keys`
 ```bash
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-```
+``` -->
