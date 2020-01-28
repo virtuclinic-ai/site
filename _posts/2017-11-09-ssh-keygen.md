@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Mutually Exlussibe, Vs Collectivelly Exhaustive"
-categories: coding
-tags: linux
+categories: maths
+tags: probability
 ---
 
 * TOC
