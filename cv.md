@@ -21,6 +21,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 ---
 
 # Education
+---
 <table style="width:100%">
 <col width="9%">
 <col width="20">
@@ -95,6 +96,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 ---
 
 # Skills
+---
 <div class="container">
 <div class="leftpane1" markdown="1">
 #### Programming
@@ -132,6 +134,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 ---
 
 # Conferences and Workshops 
+---
 <table style="width:100%">
 <col width="17%">
 <col width="20">
@@ -165,6 +168,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 ---
 
 # Work Experiences
+---
 <table style="width:100%">
 <col width="17%">
 <col width="20">
