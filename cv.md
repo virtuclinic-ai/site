@@ -158,8 +158,13 @@ The HLF is a networking conference where 200 carefully selected young researcher
 The **Deep Learning Indaba** is an initiative to strengthen African Machine Learning community by increasing African participation and contribution to the advances in artificial intelligence and machine learning, I was privilege to attend the Indaba 2019 that was held in Kenya (Nairobi).
 </td> 
 </tr>
+</table>
 
 # Work Experiences
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
 
 <table style="width:100%">
 <col width="17%">
