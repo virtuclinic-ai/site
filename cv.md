@@ -130,11 +130,11 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 ---
 
 # Conferences and Workshops 
-
 <table style="width:100%">
 <col width="17%">
 <col width="20">
 <col >
+
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 ![hlf](/img/main/hlf.svg)
@@ -160,6 +160,8 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 </tr>
 </table>
 
+---
+
 # Work Experiences
 <table style="width:100%">
 <col width="17%">
@@ -181,21 +183,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 </td> 
 </tr>
 
-<!-- <tr height="10"/>
-
-<tr style="border-bottom:1pt solid #eee">
-<td markdown="1">
-![hkulogo](http://herohuyongtao.github.io/images/hku2.png)
-</td>
-<td></td>
-<td markdown="1">
-[**The University of Hong Kong**](http://www.hku.hk), 2010 - 2015 
-- Research Assistant in Computer Vision and Computer Graphics
-</td> 
-</tr> -->
-
-<tr height="10"/>
-
+<tr height="10"/>j
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 ![cadcg](/img/main/ikamva.png)
