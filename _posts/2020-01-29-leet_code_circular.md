@@ -133,7 +133,7 @@ td {
 </style>
 
 
-<!-- <div id="hyvor-talk-view"></div>
+<div id="hyvor-talk-view"></div>
 <script type="text/javascript">
     var HYVOR_TALK_WEBSITE = 193; // DO NOT CHANGE THIS
     var HYVOR_TALK_CONFIG = {
@@ -141,4 +141,4 @@ td {
         id: "1125"
     }
 </script>
-<script type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script> -->
+<script type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
