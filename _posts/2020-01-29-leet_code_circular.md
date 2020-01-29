@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mutually Exlussibe Vs Collectivelly Exhaustive"
+title:  "Circular Queue, Python Implementation"
 categories: Coding
 tags: [leetcode, data_structure]
 # categories: coding

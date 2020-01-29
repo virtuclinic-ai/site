@@ -18,7 +18,7 @@ lang: zh
 <col >
 
 
-## Coming soon :)
+Coming soon :)
 
 
 <!-- <tr height="50">
