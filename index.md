@@ -35,7 +35,9 @@ My name is Salomon Kabongo KABENAMUALU. I'm currently a Student at the [African 
 
 ### Research Interests
 My research interests include but not limited to:
-- Natural Language Processing / Language translation (for low resources languages)
+- Natural Language Processing 
+    - Language Translation especially for low resources languages
+    - Summarization 
 - Deep learning
 - Speech Recognition
 
