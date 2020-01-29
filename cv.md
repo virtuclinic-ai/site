@@ -183,7 +183,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 </td> 
 </tr>
 
-<tr height="10"/>j
+<tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 ![cadcg](/img/main/ikamva.png)
@@ -196,8 +196,6 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 </tr>
 
 </table>
-
----
 
 <style type="text/css">
 td {
