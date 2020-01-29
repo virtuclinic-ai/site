@@ -137,7 +137,7 @@ td {
 <script type="text/javascript">
     var HYVOR_TALK_WEBSITE = 193; // DO NOT CHANGE THIS
     var HYVOR_TALK_CONFIG = {
-        url: "https://skabongo.github.io/",
+        url: "https://skabongo.github.io/coding/2020/01/29/leet_code_circular.html",
         id: "1125"
     }
 </script>
