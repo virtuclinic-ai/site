@@ -129,6 +129,8 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 ---
 
+---
+
 # Conferences and Workshops 
 <table style="width:100%">
 <col width="17%">
