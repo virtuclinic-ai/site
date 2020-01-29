@@ -137,8 +137,8 @@ td {
 <script type="text/javascript">
     var HYVOR_TALK_WEBSITE = 193; // DO NOT CHANGE THIS
     var HYVOR_TALK_CONFIG = {
-        url: false,
-        id: false
+        url: "https://skabongo.github.io/",
+        id: "1125"
     }
 </script>
 <script type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
