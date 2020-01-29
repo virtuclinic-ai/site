@@ -18,9 +18,7 @@ lang: zh
 <col >
 
 
-```bash
-Coming soon :)
-```
+**Coming soon :)**
 
 
 <!-- <tr height="50">
