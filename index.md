@@ -3,6 +3,7 @@ layout: default
 title: Salomon Kabongo's Homepage
 use_math: true
 lang: zh
+comments: true
 ---
 {% include JB/setup %}
 <div class="page-header">
