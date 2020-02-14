@@ -33,9 +33,9 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[**The University of Ghana**](https://www.ug.edu.gh/), 09/2019 - 09/2020 
+[**African Master In Machine Intelligence (AMMI), The University of Ghana**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
 - **Msc in Machine Intelligence**
-- Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard)
+- Supervisor: 
 - *Full scolarship by Facebook and Google, [AMMI](https://aimsammi.org/)*
 </td> 
 </tr>
@@ -123,6 +123,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 #### Language
 - English
 - French
+- Tshiluba
 - Lingala 
 - Kikongo 
 - Swahili
