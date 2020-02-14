@@ -33,7 +33,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[**African Master In Machine Intelligence (AMMI), The University of Ghana**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
+[**The University of Ghana, (African Master In Machine Intelligence (AMMI, Ghana)**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
 - **Msc in Machine Intelligence**
 - Supervisor: 
 - *Full scolarship by Facebook and Google, [AMMI](https://aimsammi.org/)*
@@ -58,7 +58,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[**The University of Western Cape**](https://www.uwc.ac.za/), 08/2018 - 06/2019 
+[**The University of Western Cape, (AIMS South Africa)**](https://www.uwc.ac.za/), 08/2018 - 06/2019 
 - **Msc in Mathematical Sciences**
 - Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard)
 - *Full scolarship by MasterCard Foundation, [AIMS South Africa](https://aims.ac.za/)*
