@@ -8,11 +8,6 @@ layout: default
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-{% if site.google_analytics and jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
-{% include html_meta %}
-
 <div class="page-header">
   <h1>{{ page.title }}
       {% if page.tagline %}<br/><small>{{page.tagline}}</small>{% endif %}</h1>
