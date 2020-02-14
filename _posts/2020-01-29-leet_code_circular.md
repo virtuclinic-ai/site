@@ -27,8 +27,6 @@ This implementation should support following operations:
 
 Find below my python implementation that beats 94.37% of submission done using python3. 
 
-$$\min_G \max_D V(G, D) = \mathbf{E}_{x\sim p_{data}(x)}[\log D(x)] + \mathbf{E}_{z\sim p_z(z)}[\log(1 - D(G(z)))]$$
-
 ## Code
 ```python
 class MyCircularQueue:
