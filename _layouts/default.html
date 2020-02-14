@@ -3,7 +3,12 @@
 <html {% if page.lang %}lang = "{{ page.lang }}"{% endif %}>
 
   <head>
+
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
     {% include html_meta %}
+    
 	<!--{% include mathjax_support %}-->
     <title>{{ page.title }} - {{ site.title }}</title>
 
