@@ -43,7 +43,7 @@ gems:
   - jemoji
   - jekyll-sitemap
   - jekyll_video_tag
-  
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -74,7 +74,7 @@ menuitems:
     #                 { title: Tags,
     #                   url:   /tags.html }]}
 # support the pagination
-gems: [jekyll-paginate]
+# gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/archive/page:num"
 
