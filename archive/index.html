@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: default
 title: Blogs
 use_math: true
 lang: zh
 ---
-{% include JB/setup %}
+<!-- {% include JB/setup %}
 
 
 <div class="page-header">
@@ -14,7 +14,20 @@ lang: zh
   <h1>
     {% if site.tagline %}<br/><small>{{ site.tagline }}</small>{% endif %}
   </h1>
+</div> -->
+
+{% include JB/setup %}
+<div class="page-header">
+  <div class="pull-right">
+    {% include contact_icons %}
+  </div>
+  <h1>
+    Blog
+    {% if site.tagline %}<br/><small>{{ site.tagline }}</small>{% endif %}
+  </h1>
 </div>
+
+<style>
 
 <!-- Blogs -->
 <div id="recent-posts" class="recent-posts">
