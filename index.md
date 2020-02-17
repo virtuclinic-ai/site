@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Salomon Kabongo's Homepage
+title: Homepage
 use_math: true
 lang: zh
 comments: true
