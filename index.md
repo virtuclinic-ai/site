@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Homepage
+title: Salomon Kabongo's Homepage
 use_math: true
 lang: zh
 comments: true
@@ -11,7 +11,7 @@ comments: true
     {% include contact_icons %}
   </div>
   <h1>
-    {{ site.author.name }}'s Homepage
+    Homepage
     {% if site.tagline %}<br/><small>{{ site.tagline }}</small>{% endif %}
   </h1>
 </div>
