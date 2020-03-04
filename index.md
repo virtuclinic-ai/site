@@ -44,6 +44,11 @@ My research interests include but not limited to:
 
 ---
 
+### Recent Updates
+- Recently participated in the Google has code 2020, the ranking of my team can be viewed [here](/archive/hash_code.png) 
+
+---
+
 ### Contacts
 - Phone: (+233) 20 075 1986 (Ghana) / (+254) 79 583 5461 (Kenya)
 - Email: salomon@aims.ac.za
