@@ -44,8 +44,8 @@ My research interests include but not limited to:
 
 ---
 
-### Recent Updates
-- Recently participated in the Google has code 2020, the ranking of my team can be viewed [here](/archive/hash_code.png) 
+### News
+- Recently participated in the *Google hash code 2020*, how [team](/archive/hash_code.png) was ranked [1747/10724](https://hashcodejudge.withgoogle.com/scoreboard) on the online competition. 
 
 ---
 
