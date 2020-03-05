@@ -26,7 +26,7 @@ img {
 }
 </style>
 
-<img src="/img/main/salomon.jpg" class="center" style="width:300px">
+<img src="/img/main/salomon_2.jpg" class="center" style="width:200px">
 
 
 ### About Me
