@@ -44,15 +44,15 @@ Coming soon :)
 </td> 
 </tr> -->
 
-<!-- <tr height="50">
+<tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
     <strong style="font-size: 25px;">2016</strong></td>
-</tr> -->
+</tr>
 
 
-<!-- <tr style="border-bottom:1pt solid #eee" >
+<tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 ![spiden](/img/main/aaai.jpg){:class="img-shadow"}
 </td>
@@ -66,7 +66,7 @@ Coming soon :)
 || <em class="icon-home"/> || [project page](/archive/research/look-listen-learn/) || <em class="icon-file"/> || [paper](/archive/research/look-listen-learn/paper.pdf) || <em class="icon-github"/> || [source code](https://github.com/jimmy-ren/lstm_speaker_naming_aaai16) ||
 
 </td> 
-</tr> -->
+</tr>
 
 <!-- <tr height="50">
 <td style="padding-left: 1px;
