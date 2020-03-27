@@ -49,15 +49,15 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![spiden](/img/main/masakhane_paper1.png){:class="img-shadow"}
+![spiden](/img/main/masakhane_paper_1.png){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
-<div><a href="/archive/research/look-listen-learn/"><b>Look, MASAKHANE - MACHINE TRANSLATION FOR AFRICA</b></a></div>
+<div><a href=https://arxiv.org/pdf/2003.11529.pdf><b>Look, MASAKHANE - MACHINE TRANSLATION FOR AFRICA</b></a></div>
 <div>JAfrica has over 2000 languages. Despite this, African languages account for a small portion of available resources and publications in Natural Language Processing (NLP). This is due to multiple factors, including: a lack of focus from government and funding, discoverability, a lack of community, sheer language complexity, difficulty in reproducing papers and no benchmarks to compare techniques. To begin to address the identified problems, MASAKHANE, an open-source, continent-wide, distributed, online research effort for machine translation for African languages, was founded. In this paper, we discuss our methodology for building the community and spurring research from the African continent, as well as outline the success of the community in terms of addressing the identified problems affecting African NLP.</div>
 <div><i>Accepted for the AfricaNLP Workshop, ICLR 2020</i></div>
 
-|| <em class="icon-home"/> || [paper](https://arxiv.org/pdf/2003.11529.pdf) || <em class="icon-github"/> || [source code](hhttps://github.com/masakhane-io/masakhane.git) ||
+|| <em class="icon-home"/> || [paper](https://arxiv.org/pdf/2003.11529.pdf) || <em class="icon-github"/> || [source code](https://github.com/masakhane-io/masakhane.git) ||
 
 </td> 
 </tr>
