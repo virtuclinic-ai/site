@@ -52,7 +52,7 @@ My research interests include but not limited to:
 ### News
 - I Recently participate in the *Google hash code 2020*, our [team](/archive/hash_code.png) was ranked [1747/10724](https://hashcodejudge.withgoogle.com/scoreboard) on the online competition. 
 
-- I Recently participate in the *Google hash code 2020*, our [team](/archive/hash_code.png) was ranked [1747/10724](https://hashcodejudge.withgoogle.com/scoreboard) on the online competition.
+- [Member of the Association for Computing Machinery, ACM FCA](https://www.acm.org/fca). I was among the 36 new members *(October 2019)* selected from hundreds of very competitive applications, from academic institutions, research labs, and companies all over the world invited to participate in the ACM Future of Computing Academy (FCA) for a duration of 3 years.
 
 ---
 
