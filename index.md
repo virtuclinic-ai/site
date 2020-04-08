@@ -44,9 +44,14 @@ My research interests include but not limited to:
 
 ---
 
+### Talks and Presentations
+- [Introduction to Natural Language Processing](/archive/Talk_1.pdf), Africain Institute for Mathematical Sciences, Cape Town, South Africa. 
+
+---
+
 ### News
 - I Recently participate in the *Google hash code 2020*, our [team](/archive/hash_code.png) was ranked [1747/10724](https://hashcodejudge.withgoogle.com/scoreboard) on the online competition. 
-
+- [Association for Computing Machinery (FCA)](https://www.acm.org/fca) member, *Among the 36 new members (\textit{October 2019}) selected from hundreds of very competitive applications, from academic institutions, research labs, and companies all over the world invited to participate in the ACM Future of Computing Academy (FCA).*
 ---
 
 ### Contacts
