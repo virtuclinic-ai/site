@@ -46,7 +46,7 @@ My research interests include but not limited to:
 
 ### Talks and Presentations
 - [Introduction to Natural Language Processing](/archive/Talk_1.pdf), Africain Institute for Mathematical Sciences, Cape Town, South Africa. 
-- [The Transformer, From RNN to Attention](/archive/Talk_2.pdf), [Data Science for Social Impact]() Research Group, Lab meeting, Pretoria, South Africa
+- [The Transformer, From RNN to Attention](https://youtu.be/rC_DDhMhVc8), [Data Science for Social Impact](https://dsfsi.github.io/) Research Group, Lab meeting 17 April 2020, Pretoria, South Africa, [Youtube recording](https://youtu.be/rC_DDhMhVc8), [slides](/archive/Talk_2.pdf).
 
 ---
 
