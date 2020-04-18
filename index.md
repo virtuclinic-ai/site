@@ -46,8 +46,8 @@ My research interests include but not limited to:
 
 ### Talks and Presentations
 - [Introduction to Natural Language Processing](/archive/Talk_1.pdf), Africain Institute for Mathematical Sciences, Cape Town, South Africa. 
+- [The Transformer, From RNN to Attention](/archive/Talk_2.pdf), [Data Science for Social Impact]() Research Group, Lab meeting, Pretoria, South Africa
 
-- [The Transformer, From RNN to Attention](/archive/Talk_2.pdf), **Data Science for Social Impact** Research Group, Lab meeting, Pretoria, South Africa
 ---
 
 ### News
