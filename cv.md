@@ -35,7 +35,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <td markdown="1">
 [**The University of Ghana, (African Master In Machine Intelligence (AMMI, Ghana)**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
 - **Msc in Machine Intelligence**
-- Supervisor: 
+- Supervisor: [Dr. Vukosi Marivate](https://cs.up.ac.za/users/view/vmarivate)
 - *Full scolarship by Facebook and Google, [AMMI](https://aimsammi.org/)*
 </td> 
 </tr>
