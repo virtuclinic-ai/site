@@ -114,10 +114,13 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 ---
 
 # Skills
+
 ---
 <div class="container">
 <div class="leftpane1" markdown="1">
+
 #### Programming
+
 - Python
 - Julia
 - C/C++
@@ -125,20 +128,26 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </div>
   
 <div class="leftpane1" markdown="1">
+
 #### Libraries
+
 - PyTorch
 - TensorFlow
 - Nltk
 </div>
   
 <div class="leftpane1" markdown="1">
+
 #### Tools
+
 - Git 
 - LaTeX
 </div>
 
 <div class="leftpane1" markdown="1">
+
 #### Language
+
 - English
 - French
 - Tshiluba
@@ -153,6 +162,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 ---
 
 # Conferences and Workshops 
+
 ---
 <table style="width:100%">
 <col width="17%">
@@ -187,6 +197,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 ---
 
 # Work Experiences
+
 ---
 
 <table style="width:100%">
