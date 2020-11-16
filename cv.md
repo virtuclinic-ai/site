@@ -22,6 +22,24 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 # Education
 ---
+
+<table style="width:100%">
+<col width="9%">
+<col width="20">
+<col >
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![hkulogo](/img/main/luh.png)
+</td>
+<td></td>
+<td markdown="1">
+[**Leibniz Universität Hannover (LUH)**](https://www.uni-hannover.de/en/), 11/2020 - 04/2023 
+- **Ph.D in Computer Science**
+- Supervisor: [Prof. Sören Auer](https://www.tib.eu/de/forschung-entwicklung/data-science-digital-libraries/mitarbeiterinnen-und-mitarbeiter/soeren-auer)
+</td> 
+</tr>
+
 <table style="width:100%">
 <col width="9%">
 <col width="20">
@@ -170,6 +188,47 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 
 # Work Experiences
 ---
+
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
+
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![lenovologo](/img/main/TIB.png)
+</td>
+<td></td>
+<td markdown="1">
+[**Leibniz Information Center for Science & Technology (TIB)**](https://www.tib.eu/en/research-development/data-science-digital-libraries), 2020 - Now 
+- Research Assistant
+</td> 
+</tr>
+
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
+
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![lenovologo](/img/main/L3S.jpg)
+</td>
+<td></td>
+<td markdown="1">
+[**L3S research center, Leibniz AI Future Lab**](https://leibniz-ai-lab.de/), 2020 - Now 
+- Research Scientist
+</td> 
+</tr>
+
 <table style="width:100%">
 <col width="17%">
 <col width="20">

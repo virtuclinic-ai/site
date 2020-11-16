@@ -30,7 +30,8 @@ img {
 
 
 ### About Me
-My name is Salomon Kabongo KABENAMUALU. I'm currently a Student at the [African Master in Machine Intelligence](https://aimsammi.org/) (AMMI), working toward an Msc in Machine Intelligence as sponsored by Facebook and Google. Before joining AMMI, I obtained my Msc in Mathematics from [The University of the Western Cape](https://www.uwc.ac.za/) in 2019 in affiliation with the African Institute for Mathematical Sciences ([AIMS South Africa](https://aims.ac.za/)), during which I got introduced to the field of Machine Leaning and worked on investigating propreties of words embeddings under the supervision of Prof. [Etienne Barbard](http://news.nwu.ac.za/experts/etienne-barnard). I also hold a B.S. and honors degree in Mathematics and Computer Science from [Université de Lubumbashi](http://www.unilu.ac.cd/).
+<!-- My name is Salomon Kabongo KABENAMUALU. I'm currently a Student at the [African Master in Machine Intelligence](https://aimsammi.org/) (AMMI), working toward an Msc in Machine Intelligence as sponsored by Facebook and Google. Before joining AMMI, I obtained my Msc in Mathematics from [The University of the Western Cape](https://www.uwc.ac.za/) in 2019 in affiliation with the African Institute for Mathematical Sciences ([AIMS South Africa](https://aims.ac.za/)), during which I got introduced to the field of Machine Leaning and worked on investigating propreties of words embeddings under the supervision of Prof. [Etienne Barbard](http://news.nwu.ac.za/experts/etienne-barnard). I also hold a B.S. and honors degree in Mathematics and Computer Science from [Université de Lubumbashi](http://www.unilu.ac.cd/). -->
+I am a doctoral candidate in computer science at [Leibniz Universität Hannover (LUH)](https://www.uni-hannover.de/en/) and a research assistant at the [AI Future Lab](https://leibniz-ai-lab.de/) of the L3S research center and the [Data Science and Digital Libraries research group](https://www.tib.eu/de/forschung-entwicklung/data-science-digital-libraries) at TIB. My academic background includes an MSc in Mathematics Science from the [The University of the Western Cape](https://www.uwc.ac.za/) in South Africa and an MSc from the [African Master in Machine Intelligence](https://aimsammi.org/) (AMMI) (University of Ghana) sponsored by Google and Facebook through the [African Institute for Mathematical Sciences](https://nexteinstein.org/).
 
 ---
 
@@ -41,6 +42,7 @@ My research interests include but not limited to:
     - Language Translation especially for low resources languages
 - Deep learning
 - Speech Recognition
+- Knoledge Graph and Information Extraction
 
 ---
 
@@ -51,8 +53,8 @@ My research interests include but not limited to:
 ---
 
 ### News
+- Thrilled to announce that I joined @l3s_luh/@TIBHannover Research lab and started my Ph.D. at [Leibniz Universität Hannover (LUH)](https://www.uni-hannover.de/en/) under the supervision of [Prof. Sören Auer](https://www.tib.eu/de/forschung-entwicklung/data-science-digital-libraries/mitarbeiterinnen-und-mitarbeiter/soeren-auer).
 - I Recently participate in the *Google hash code 2020*, our [team](/archive/hash_code.png) was ranked [1747/10724](https://hashcodejudge.withgoogle.com/scoreboard) on the online competition. 
-
 - [Member of the Association for Computing Machinery, ACM FCA](https://www.acm.org/fca). I was among the 36 new members *(October 2019)* selected from hundreds of very competitive applications, from academic institutions, research labs, and companies all over the world invited to participate in the ACM Future of Computing Academy (FCA) for a duration of 3 years.
 
 ---

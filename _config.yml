@@ -127,10 +127,10 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   
-  analytics :
-    provider : google
-    google :
-        tracking_id : 'UA-44085641-1'
+  # analytics :
+  #   provider : google
+  #   google :
+  #       tracking_id : 'UA-44085641-1'
     # getclicky :
     #   site_id :
     # mixpanel :
@@ -155,7 +155,7 @@ JB :
   # put the 'facebook' at the frist and put the 'googleplus' at the last.
   #
   sharing :
-     provider : [facebook, googleplus]
+     provider : [facebook, googleplus, twitter]
      facebook :
        layout : button_count
        faces : false
@@ -164,11 +164,11 @@ JB :
        annotation : bubble
        size : medium
        width : 20
-     twitter :
-       size :
+     twitter : SalomonKabongo1
+       size : medium
        via :
        count :
-     linkedin :
+     linkedin : salomon-kabongo
        counter : right
 
   # Settings for all other include helpers can be defined by creating
