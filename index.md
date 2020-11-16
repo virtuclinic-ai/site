@@ -47,14 +47,18 @@ My research interests include but not limited to:
 ---
 
 ### Talks and Presentations
-- [Introduction to Natural Language Processing](/archive/Talk_1.pdf), Africain Institute for Mathematical Sciences, Cape Town, South Africa. 
+- [Introduction to Natural Language Processing](/archive/Talk_1.pdf), African Institute for Mathematical Sciences, Cape Town, South Africa. 
 - [The Transformer, From RNN to Attention](https://youtu.be/rC_DDhMhVc8), [Data Science for Social Impact](https://dsfsi.github.io/) Research Group, Lab meeting 17 April 2020, Pretoria, South Africa, [Youtube recording](https://youtu.be/rC_DDhMhVc8), [slides](/archive/Talk_2.pdf).
 
 ---
 
 ### News
-- Thrilled to announce that I joined @l3s_luh/@TIBHannover Research lab and started my Ph.D. at [Leibniz Universität Hannover (LUH)](https://www.uni-hannover.de/en/) under the supervision of [Prof. Sören Auer](https://www.tib.eu/de/forschung-entwicklung/data-science-digital-libraries/mitarbeiterinnen-und-mitarbeiter/soeren-auer).
+- [Nov 2020] Thrilled to announce that I joined @l3s_luh/@TIBHannover Research lab and started my Ph.D. at [Leibniz Universität Hannover (LUH)](https://www.uni-hannover.de/en/) under the supervision of [Prof. Sören Auer](https://www.tib.eu/de/forschung-entwicklung/data-science-digital-libraries/mitarbeiterinnen-und-mitarbeiter/soeren-auer).
 - I Recently participate in the *Google hash code 2020*, our [team](/archive/hash_code.png) was ranked [1747/10724](https://hashcodejudge.withgoogle.com/scoreboard) on the online competition. 
+- [Jun 2020] I was accepted into the [DLRL Summer School 2020](https://dlrlsummerschool.ca/) hosted by [CIFAR](https://www.cifar.ca/) and [Mila](https://mila.quebec/en/)
+
+- I recently participate in the *Google hash code 2020*, our [team](/archive/hash_code.png) was ranked [1747/10724](https://hashcodejudge.withgoogle.com/scoreboard) on the online competition. 
+
 - [Member of the Association for Computing Machinery, ACM FCA](https://www.acm.org/fca). I was among the 36 new members *(October 2019)* selected from hundreds of very competitive applications, from academic institutions, research labs, and companies all over the world invited to participate in the ACM Future of Computing Academy (FCA) for a duration of 3 years.
 
 ---

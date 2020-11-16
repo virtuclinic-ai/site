@@ -27,7 +27,7 @@ lang: zh
 <td markdown="1">
 [**Masakhane Initiative**](https://www.masakhane.io/home)
 
-The project consist of puting African researchers from ACROSS the continent together to join the effort in building translation models for African languages. Masakhane means "We Build Together" in isiZulu and was inspired by the [Deep Learning Indaba](http://www.deeplearningindaba.com/) theme for 2018. 
+The project consist of putting African researchers from ACROSS the continent together to join the effort in building translation models for African languages. Masakhane means "We Build Together" in isiZRNNulu and was inspired by the [Deep Learning Indaba](http://www.deeplearningindaba.com/) theme for 2018. 
 As part of the [team](https://www.masakhane.io/community), I'm working on [Tshiluba](https://en.wikipedia.org/wiki/Luba-Kasai_language).
 
 || <em class="icon-home"/> || [project page](https://www.masakhane.io/home) || <em class="icon-github"/> || [Github](https://github.com/masakhane-io/masakhane) ||
@@ -53,7 +53,7 @@ In this project, I defined a Convolutional Neural Network that performs better t
 </td>
 <td></td>
 <td markdown="1">
-[**A RNN Based Medel : Generate TV Scripts**](https://github.com/Kabongosalomon/Tv-Script-Generation)
+[**A RNN Based Model : Generate TV Scripts**](https://github.com/Kabongosalomon/Tv-Script-Generation)
 Implemented an RNN to generate my own Seinfeld TV scripts using RNNs. I used part of the Seinfeld dataset of scripts from 9 seasons. Using RNN, I generated a new, "fake" TV script, based on patterns it recognizes in this training data.
 
 || <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Tv-Script-Generation) ||
