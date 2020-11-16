@@ -40,11 +40,6 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 </td> 
 </tr>
 
-<table style="width:100%">
-<col width="9%">
-<col width="20">
-<col >
-
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 ![hkulogo](/img/main/univ_ghana.jpg)
@@ -111,13 +106,17 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 </table>
 
-<!-- --- -->
+---
 
 # Skills
-<!-- --- -->
+---
 <div class="container">
 <div class="leftpane1" markdown="1">
 
+---
+
+# Skills
+---
 #### Programming
 
 - Python
@@ -161,7 +160,6 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 ---
 
 # Conferences and Workshops 
-
 ---
 <table style="width:100%">
 <col width="17%">
