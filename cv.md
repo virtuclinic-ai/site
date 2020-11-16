@@ -111,11 +111,10 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 </table>
 
----
+<!-- --- -->
 
 # Skills
-
----
+<!-- --- -->
 <div class="container">
 <div class="leftpane1" markdown="1">
 
