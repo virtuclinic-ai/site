@@ -30,7 +30,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](/img/main/luh.png)
+![hkulogo](images/main/luh.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -42,7 +42,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](/img/main/univ_ghana.jpg)
+![hkulogo](images/main/univ_ghana.jpg)
 </td>
 <td></td>
 <td markdown="1">
@@ -55,7 +55,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](/img/main/udacity.png)
+![hkulogo](images/main/udacity.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -67,7 +67,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](/img/main/UWC_logo.png)
+![hkulogo](images/main/UWC_logo.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -81,7 +81,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![ustclogo](/img/main/unilu.jpeg)
+![ustclogo](images/main/unilu.jpeg)
 </td>
 <td></td>
 <td markdown="1">
@@ -94,7 +94,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![ustclogo](/img/main/unilu.jpeg)
+![ustclogo](images/main/unilu.jpeg)
 </td>
 <td></td>
 <td markdown="1">
@@ -164,7 +164,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hlf](/img/conference/icadl2021.png =100x20)
+![hlf](images/conference/icadl2021.png =100x20)
 </td>
 <td></td>
 <td markdown="1">
@@ -176,7 +176,7 @@ Accepted full paper titled ("Automated Mining of Leaderboards for Empirical AI R
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hlf](/img/conference/neuripsbiai.png =100x20)
+![hlf](images/conference/neuripsbiai.png =100x20)
 </td>
 <td></td>
 <td markdown="1">
@@ -188,7 +188,7 @@ My paper titled "LiSTra Automatic Speech Translation: English to Lingala case st
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hlf](/img/main/hlf.svg =100x20)
+![hlf](images/main/hlf.svg =100x20)
 </td>
 <td></td>
 <td markdown="1">
@@ -200,7 +200,7 @@ The HLF is a networking conference where 200 carefully selected young researcher
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![indaba](/img/main/indaba.png =100x20)
+![indaba](images/main/indaba.png =100x20)
 </td>
 <td></td>
 <td markdown="1">
@@ -228,7 +228,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lenovologo](/img/main/TIB.png)
+![lenovologo](images/main/TIB.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -248,7 +248,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lenovologo](/img/main/L3S.jpg)
+![lenovologo](images/main/L3S.jpg)
 </td>
 <td></td>
 <td markdown="1">
@@ -268,7 +268,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lenovologo](/img/main/snel.png)
+![lenovologo](images/main/snel.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -280,7 +280,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![cadcg](/img/main/ikamva.png)
+![cadcg](images/main/ikamva.png)
 </td>
 <td></td>
 <td markdown="1">

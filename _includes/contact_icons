@@ -19,7 +19,7 @@ Example:
     <a target="_blank"
        title="visit my github repository"
        href="https://github.com/{{site.author.github}}">
-      <img src="/img/github.svg"/>
+      <img src="images/github.svg"/>
     </a>
   </li>
   {% endif %}
@@ -29,7 +29,7 @@ Example:
     <a target="_blank"
        title="follow me at Weibo"
        href="http://weibo.com/u/{{site.author.weibo}}">
-      <img src="/img/weibo.png"/>
+      <img src="images/weibo.png"/>
     </a>
   </li>
   {% endif %}
@@ -39,7 +39,7 @@ Example:
     <a target="_blank"
        title="follow me at Twitter"
        href="https://twitter.com/{{site.author.twitter}}">
-      <img src="/img/twitter.png"/>
+      <img src="images/twitter.png"/>
     </a>
   </li>
   {% endif %}
@@ -49,7 +49,7 @@ Example:
     <a target="_blank"
        title="visit my page at Facebook"
        href="http://www.facebook.com/{{site.author.facebook}}">
-      <img src="/img/facebook.png"/>
+      <img src="images/facebook.png"/>
     </a>
   </li>
   {% endif %}
@@ -59,7 +59,7 @@ Example:
     <a target="_blank"
        title="view my profile at Linkedin"
        href="http://www.linkedin.com/in/{{site.author.linkedin}}">
-      <img src="/img/linkedin.svg"/>
+      <img src="images/linkedin.svg"/>
     </a>
   </li>
   {% endif %}

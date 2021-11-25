@@ -21,7 +21,7 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![captcha](/img/projects/masakhane_web.png =100x20){:class="img-shadow"}
+![captcha](images/projects/masakhane_web.png){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -31,7 +31,7 @@ The project funded by [Mozilla Open Source Support Awards](https://www.mozilla.o
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![captcha](/img/main/masakhane.png){:class="img-shadow"}
+![captcha](images/main/masakhane.png){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -46,7 +46,7 @@ As part of the [team](https://www.masakhane.io/community), I'm working on [Tshil
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![captcha](/img/main/dog_breed.png){:class="img-shadow"}
+![captcha](images/main/dog_breed.png){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -59,7 +59,7 @@ In this project, I defined a Convolutional Neural Network that performs better t
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![captcha](/img/main/tv_script.png){:class="img-shadow"}
+![captcha](images/main/tv_script.png){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -72,7 +72,7 @@ Implemented an RNN to generate my own Seinfeld TV scripts using RNNs. I used par
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![captcha](/img/main/dg_gan.png){:class="img-shadow"}
+![captcha](images/main/dg_gan.png){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -87,7 +87,7 @@ Generating images of the face using Deep Convolutional Generative Adversarial Ne
 <tr height="25"/>
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![arcam](/img/main/arcam.gif){:class="img-shadow"}
+![arcam](images/main/arcam.gif){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">

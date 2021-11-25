@@ -26,7 +26,7 @@ lang: zh
 
 <!-- <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![videovec](/img/main/videovec.jpg){:class="img-shadow"}
+![videovec](images/main/videovec.jpg){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -49,7 +49,7 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![spiden](/img/papers/icadl2021.png =100x20){:class="img-shadow"}
+![spiden](images/papers/icadl2021.png =100x20){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -67,7 +67,7 @@ This study presents a comprehensive approach for generating Leaderboards for kno
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![spiden](/img/papers/listra.png =100x20){:class="img-shadow"}
+![spiden](images/papers/listra.png =100x20){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -91,7 +91,7 @@ In recent years there have been great interests in addressing the low resourcefu
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![spiden](/img/main/masakhane_paper_1.png =100x20){:class="img-shadow"}
+![spiden](images/main/masakhane_paper_1.png =100x20){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -114,7 +114,7 @@ Africa has over 2000 languages. Despite this, African languages account for a sm
 
 <!-- <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![thesis](/img/main/hkulogo2.jpg){:class="img-shadow"}
+![thesis](images/main/hkulogo2.jpg){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -137,7 +137,7 @@ Africa has over 2000 languages. Despite this, African languages account for a sm
 
 <!-- <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![videocoseg](/img/main/videocoseg.jpg){:class="img-shadow"}
+![videocoseg](images/main/videocoseg.jpg){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">

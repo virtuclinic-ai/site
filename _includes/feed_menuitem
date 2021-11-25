@@ -20,7 +20,7 @@ Example:
   <a href="{{ site.JB.atom_path }}"
      rel="subscribe-rss"
      title="subscribe via ATOM feed">
-      <img src="/img/rss.png" alt="rss"/>
+      <img src="images/rss.png" alt="rss"/>
   </a>
 </li>
 {% endif %}

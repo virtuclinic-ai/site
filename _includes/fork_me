@@ -40,6 +40,6 @@ Example:
               border: 0;
               top: {{fork_me_top}};
               right: {{fork_me_right}};"
-       src="/img/forkme_right_gray.png"
+       src="images/forkme_right_gray.png"
        alt="Fork me on GitHub"/>
 </a>
