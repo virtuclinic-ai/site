@@ -38,11 +38,12 @@ I am a doctoral candidate in computer science at [Leibniz Universität Hannover 
 ### Research Interests
 My research interests include but not limited to:
 - Natural Language Processing 
-    - Simultaneous translation 
-    - Language Translation especially for low resources languages
+    - Automatic Speech Translation especially for low resources languages
+    - Automatic Speech Recognition 
+    - Machine Translation 
 - Deep learning
-- Speech Recognition
-- Knoledge Graph and Information Extraction
+- Inserting Knowledge Graph in DL architectures
+- Knowledge Graph and Information Extraction
 
 ---
 
@@ -53,6 +54,8 @@ My research interests include but not limited to:
 ---
 
 ### News
+- [November 2021] My wife and I moved to the US as a permanent residents.
+- [February 2021] I got married :) and happyly enjoying my married life.
 - [Nov 2020] Thrilled to announce that I joined @l3s_luh/@TIBHannover Research lab and started my Ph.D. at [Leibniz Universität Hannover (LUH)](https://www.uni-hannover.de/en/) under the supervision of [Prof. Sören Auer](https://www.tib.eu/de/forschung-entwicklung/data-science-digital-libraries/mitarbeiterinnen-und-mitarbeiter/soeren-auer).
 - I Recently participate in the *Google hash code 2020*, our [team](/archive/hash_code.png) was ranked [1747/10724](https://hashcodejudge.withgoogle.com/scoreboard) on the online competition. 
 - [Jun 2020] I was accepted into the [DLRL Summer School 2020](https://dlrlsummerschool.ca/) hosted by [CIFAR](https://www.cifar.ca/) and [Mila](https://mila.quebec/en/)
@@ -64,5 +67,5 @@ My research interests include but not limited to:
 ---
 
 ### Contacts
-- Phone: (+233) 20 075 1986 (Ghana) / (+254) 79 583 5461 (Kenya)
-- Email: salomon@aims.ac.za
+- Phone: (+49) 17674107358 (Germany).
+- Email: kabongosalomon@gmail.com

@@ -164,7 +164,31 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hlf](/img/main/hlf.svg)
+![hlf](/img/conference/icadl2021.png =100x20)
+</td>
+<td></td>
+<td markdown="1">
+[International Conference on Asia-Pacific Digital Libraries (ICADL 2021)](https://icadl.net/icadl2021/)
+
+Accepted full paper titled ("Automated Mining of Leaderboards for Empirical AI Research")[https://arxiv.org/abs/2109.13089] presented at ICADL in December 2021.
+</td> 
+</tr>
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![hlf](/img/conference/neuripsbiai.png =100x20)
+</td>
+<td></td>
+<td markdown="1">
+[The 5th Black in AI Workshop (co-located with NeurIPS 2021)](https://blackinai.github.io/#/)
+
+My paper titled "LiSTra Automatic Speech Translation: English to Lingala case study" has been selected for Spotlight presentation at the 5th Black in AI Workshop will be held virtually (co-located with NeurIPS 2021) on December 10th.
+</td> 
+</tr>
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![hlf](/img/main/hlf.svg =100x20)
 </td>
 <td></td>
 <td markdown="1">
@@ -176,7 +200,7 @@ The HLF is a networking conference where 200 carefully selected young researcher
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![indaba](/img/main/indaba.png)
+![indaba](/img/main/indaba.png =100x20)
 </td>
 <td></td>
 <td markdown="1">

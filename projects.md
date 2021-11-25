@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Main Projects"
+title: "Selected Projects"
 tagline : ""
 use_math: true
 lang: zh
@@ -18,6 +18,16 @@ lang: zh
 <col width="20%">
 <col width="10">
 <col >
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![captcha](/img/projects/masakhane_web.png =100x20){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+[**Masakhane Web Platform**](http://translate.masakhane.io/)
+
+The project funded by [Mozilla Open Source Support Awards](https://www.mozilla.org/en-US/moss/) to create a web platform simillar to Google translate but for sollenli the African Languages that were made available by the [masakhane community](https://www.masakhane.io/).
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">

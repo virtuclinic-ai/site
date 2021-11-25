@@ -44,12 +44,54 @@ lang: zh
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
+    <strong style="font-size: 25px;">2021</strong></td>
+</tr>
+
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![spiden](/img/papers/icadl2021.png =100x20){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+<div><b>Automated Mining of Leaderboards for Empirical AI Research</b></div>
+<div>
+With the rapid growth of research publications, empowering scientists to keep oversight over the scientific progress is of paramount importance. In this regard, the Leaderboards facet of information organization provides an overview on the state-of-the-art by aggregating empirical results from various studies addressing the same research challenge. Crowdsourcing efforts like PapersWithCode among others are devoted to the construction of Leaderboards predominantly for various subdomains in Artificial Intelligence. Leaderboards provide machine-readable scholarly knowledge that has proven to be directly useful for scientists to keep track of research progress. The construction of Leaderboards could be greatly expedited with automated text mining.
+This study presents a comprehensive approach for generating Leaderboards for knowledge-graph-based scholarly information organization. Specifically, we investigate the problem of automated Leaderboard construction using state-of-the-art transformer models, viz. Bert, SciBert, and XLNet. Our analysis reveals an optimal approach that significantly outperforms existing baselines for the task with evaluation scores above 90% in F1. This, in turn, offers new state-of-the-art results for Leaderboard extraction. As a result, a vast share of empirical AI research can be organized in the next-generation digital libraries as knowledge graphs.
+</div>
+<div><i>Accepted as a full paper at ICADL 2021</i></div>
+
+|| <em class="icon-home"/> || [paper](https://arxiv.org/pdf/2109.13089.pdf) || <em class="icon-github"/> || [source code](https://github.com/Kabongosalomon/task-dataset-metric-nli-extraction) ||
+
+</td> 
+</tr>
+
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![spiden](/img/papers/listra.png =100x20){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+<div><b>LiSTra Automatic Speech Translation: English to Lingala case study</b></div>
+<div>
+In recent years there have been great interests in addressing the low resourcefulness of African languages and providing baseline models for different Natural Language Processing tasks. Several initiatives on the continent use the Bible as a data source to provide proof of concept for some NLP tasks. In this work, we present the Lingala Speech Translation (LiSTra) dataset, release a full pipeline for the construction of such dataset in other languages, and report baselines using both the traditional cascade approach (Automatic Speech Recognition -> Machine Translation) and a revolutionary transformer-based End-2-End architecture with customized interactive attention that allows information sharing between the recognition decoder and the translation decoder.
+</div>
+<div><i>Accepted as a Poster and selected for spotlight talk at The 5th Black in AI Workshop (co-located with NeurIPS 2021)</i></div>
+
+|| <em class="icon-home"/> || [paper]() || <em class="icon-github"/> || [source code](https://github.com/dsfsi/2020-AMMI-salomon) ||
+
+</td> 
+</tr>
+
+<tr height="50">
+<td style="padding-left: 1px;
+    padding-bottom: 3px;
+    vertical-align: bottom;">
     <strong style="font-size: 25px;">2020</strong></td>
 </tr>
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![spiden](/img/main/masakhane_paper_1.png){:class="img-shadow"}
+![spiden](/img/main/masakhane_paper_1.png =100x20){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
