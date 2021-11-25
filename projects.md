@@ -19,7 +19,7 @@ lang: zh
 <col width="10">
 <col >
 
-<tr style="border-bottom:1pt solid #eee">
+<!-- <tr style="border-bottom:1pt solid #eee"> -->
 <td markdown="1">
 <img src="images/projects/masakhane_web.png" width="200" height="200" />
 </td>
