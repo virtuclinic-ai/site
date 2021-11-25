@@ -49,7 +49,8 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![spiden](images/papers/icadl2021.png =100x20){:class="img-shadow"}
+<!-- ![spiden](images/papers/icadl2021.png =100x20){:class="img-shadow"} -->
+<img src="images/papers/icadl2021.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -67,7 +68,7 @@ This study presents a comprehensive approach for generating Leaderboards for kno
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![spiden](images/papers/listra.png =100x20){:class="img-shadow"}
+<img src="images/papers/listra.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -91,7 +92,8 @@ In recent years there have been great interests in addressing the low resourcefu
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![spiden](images/main/masakhane_paper_1.png =100x20){:class="img-shadow"}
+<img src="images/papers/masakhane_paper_1.png" width="200" height="200" />
+
 </td>
 <td></td>
 <td markdown="1">
