@@ -164,7 +164,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hlf](images/conference/icadl2021.png =100x20)
+<img src="images/conference/icadl2021.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -176,7 +176,7 @@ Accepted full paper titled ("Automated Mining of Leaderboards for Empirical AI R
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hlf](images/conference/neuripsbiai.png =100x20)
+<img src="images/conference/neuripsbiai.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -188,7 +188,7 @@ My paper titled "LiSTra Automatic Speech Translation: English to Lingala case st
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hlf](images/main/hlf.svg =100x20)
+<img src="images/conference/hlf.svg" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -200,7 +200,7 @@ The HLF is a networking conference where 200 carefully selected young researcher
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![indaba](images/main/indaba.png =100x20)
+<img src="images/conference/indaba.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -228,7 +228,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lenovologo](images/main/TIB.png)
+<img src="images/main/TIB.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -248,7 +248,8 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lenovologo](images/main/L3S.jpg)
+<!-- ![lenovologo](images/main/L3S.jpg) -->
+<img src="images/main/L3S.jpg" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -268,7 +269,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lenovologo](images/main/snel.png)
+<img src="images/main/snel.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -280,7 +281,8 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![cadcg](images/main/ikamva.png)
+<!-- ![cadcg](images/main/ikamva.png) -->
+<img src="images/main/ikamva.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">

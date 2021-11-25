@@ -73,7 +73,8 @@ Implemented an RNN to generate my own Seinfeld TV scripts using RNNs. I used par
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/tv_script.png" width="200" height="200" />
+<!-- ![captcha](images/main/dg_gan.png){:class="img-shadow"} -->
+<img src="images/projects/dg_gan.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
