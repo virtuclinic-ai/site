@@ -249,7 +249,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![lenovologo](images/main/L3S.jpg) -->
-<img src="images/main/L3S.jpg" width="200" height="200" />
+<img src="images/main/L3S.jpg" width="50" height="50" />
 </td>
 <td></td>
 <td markdown="1">
@@ -282,7 +282,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![cadcg](images/main/ikamva.png) -->
-<img src="images/main/ikamva.png" width="200" height="200" />
+<img src="images/main/ikamva.png" width="50" height="50" />
 </td>
 <td></td>
 <td markdown="1">
