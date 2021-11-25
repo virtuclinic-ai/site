@@ -10,8 +10,6 @@ lang: zh
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
---- 
-
 <link rel="stylesheet" href="/glyphicons/css/glyphicons.css" />
 
 <table style="width:100%">
@@ -19,12 +17,6 @@ lang: zh
 <col width="10">
 <col >
 
-<tr height="50">
-<td style="padding-left: 1px;
-    padding-bottom: 3px;
-    vertical-align: bottom;">
-    <strong style="font-size: 25px;">2021</strong></td>
-</tr>
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
