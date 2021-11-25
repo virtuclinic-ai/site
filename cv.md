@@ -226,9 +226,30 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <col width="17%">
 <col width="20">
 <col >
+
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/main/TIB.png" width="200" height="200" />
+<!-- ![lenovologo](images/main/L3S.jpg) -->
+<img src="images/main/L3S.jpg" width="100" height="100" />
+</td>
+<td></td>
+<td markdown="1">
+[**L3S research center, Leibniz AI Future Lab**](https://leibniz-ai-lab.de/), 2020 - Now 
+- Research Scientist
+</td> 
+</tr>
+
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+<img src="images/main/TIB.png" width="100" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -248,28 +269,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<!-- ![lenovologo](images/main/L3S.jpg) -->
-<img src="images/main/L3S.jpg" width="50" height="50" />
-</td>
-<td></td>
-<td markdown="1">
-[**L3S research center, Leibniz AI Future Lab**](https://leibniz-ai-lab.de/), 2020 - Now 
-- Research Scientist
-</td> 
-</tr>
-
-<table style="width:100%">
-<col width="17%">
-<col width="20">
-<col >
-
-<table style="width:100%">
-<col width="17%">
-<col width="20">
-<col >
-<tr style="border-bottom:1pt solid #eee">
-<td markdown="1">
-<img src="images/main/snel.png" width="200" height="200" />
+<img src="images/main/snel.png" width="100" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -282,7 +282,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![cadcg](images/main/ikamva.png) -->
-<img src="images/main/ikamva.png" width="50" height="50" />
+<img src="images/main/ikamva.png" width="100" height="100" />
 </td>
 <td></td>
 <td markdown="1">
