@@ -21,7 +21,7 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![captcha](images/projects/masakhane_web.png){:class="img-shadow"}
+![captcha](images/projects/masakhane_web.png) 
 </td>
 <td></td>
 <td markdown="1">
@@ -31,7 +31,7 @@ The project funded by [Mozilla Open Source Support Awards](https://www.mozilla.o
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![captcha](images/main/masakhane.png){:class="img-shadow"}
+![captcha](images/main/masakhane.png =100x20){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
@@ -101,7 +101,7 @@ Generating images of the face using Deep Convolutional Generative Adversarial Ne
 </tr> -->
 
 
-</table>
+<!-- </table> -->
 
 <style type="text/css">
 td {
