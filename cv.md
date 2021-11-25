@@ -239,7 +239,8 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <td></td>
 <td markdown="1">
 [**L3S research center, Leibniz AI Future Lab**](https://leibniz-ai-lab.de/), 2020 - Now 
-- Research Scientist
+- Research Scientist :
+Research Assistant working with the Open Research Knowledge Graph https://www.orkg.org/orkg/ team to facilitate the curation of scholarly articles into a dedicated Knowledge Graph by the use of advanced NLP technics. 
 </td> 
 </tr>
 
@@ -255,6 +256,7 @@ The **Deep Learning Indaba** is an initiative to strengthen African Machine Lear
 <td markdown="1">
 [**Leibniz Information Center for Science & Technology (TIB)**](https://www.tib.eu/en/research-development/data-science-digital-libraries), 2020 - Now 
 - Research Assistant
+Research Assistant working with the Open Research Knowledge Graph https://www.orkg.org/orkg/ team to facilitate the curation of scholarly articles into a dedicated Knowledge Graph by the use of advanced NLP technics.
 </td> 
 </tr>
 
