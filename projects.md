@@ -31,7 +31,8 @@ The project funded by [Mozilla Open Source Support Awards](https://www.mozilla.o
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![captcha](images/main/masakhane.png =100x20){:class="img-shadow"}
+<!-- ![captcha](images/main/masakhane.png =100x20){:class="img-shadow"} -->
+<img src="images/main/masakhane.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
