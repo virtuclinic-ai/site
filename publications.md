@@ -78,7 +78,7 @@ In recent years there have been great interests in addressing the low resourcefu
 </div>
 <div><i>Accepted as a Poster and selected for spotlight talk at The 5th Black in AI Workshop (co-located with NeurIPS 2021)</i></div>
 
-|| <em class="icon-home"/> || [paper]() || <em class="icon-github"/> || [source code](https://github.com/dsfsi/2020-AMMI-salomon) ||
+|| <em class="icon-home"/> || [paper](/archive/posterBiai2021.pdf) || <em class="icon-github"/> || [source code](https://github.com/dsfsi/2020-AMMI-salomon) ||
 
 </td> 
 </tr>
