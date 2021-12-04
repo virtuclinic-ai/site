@@ -170,7 +170,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <td markdown="1">
 [International Conference on Asia-Pacific Digital Libraries (ICADL 2021)](https://icadl.net/icadl2021/)
 
-Accepted full paper titled ("Automated Mining of Leaderboards for Empirical AI Research")[https://arxiv.org/abs/2109.13089] presented at ICADL in December 2021.
+Accepted full paper titled ["Automated Mining of Leaderboards for Empirical AI Research "](https://link.springer.com/chapter/10.1007%2F978-3-030-91669-5_35) presented at ICADL in December 2021.
 </td> 
 </tr>
 

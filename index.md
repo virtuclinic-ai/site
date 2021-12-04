@@ -54,6 +54,8 @@ My research interests include but not limited to:
 ---
 
 ### News
+- [Deceber 2021] We won the [ICADL 2021 Best Paper Award
+](/images/award/TPDL2021.png).
 - [November 2021] My wife and I moved to the US as a permanent residents.
 - [February 2021] I got married :) and happyly enjoying my married life.
 - [Nov 2020] Thrilled to announce that I joined @l3s_luh/@TIBHannover Research lab and started my Ph.D. at [Leibniz Universität Hannover (LUH)](https://www.uni-hannover.de/en/) under the supervision of [Prof. Sören Auer](https://www.tib.eu/de/forschung-entwicklung/data-science-digital-libraries/mitarbeiterinnen-und-mitarbeiter/soeren-auer).
