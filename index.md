@@ -67,5 +67,5 @@ My research interests include but not limited to:
 ---
 
 ### Contacts
-- Phone: (+49) 17674107358 (Germany).
+- Book a call appointment with me [here](https://appt.link/meeting-with-salomon-kabongo).
 - Email: kabongosalomon@gmail.com
