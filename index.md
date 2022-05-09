@@ -68,4 +68,4 @@ My research interests include but not limited to:
 
 ### Contacts
 - Book a call appointment with me [here](https://appt.link/meeting-with-salomon-kabongo).
-<!-- - Email: kabongosalomon@gmail.com -->
+- Email: kabongosalomon@gmail.com
