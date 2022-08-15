@@ -80,7 +80,7 @@ My research interests include but not limited to:
 
 [December 2020] I competed my Msc program in Machine Intelligence from the African Masters of Machine Intelligence in Ghana
 
-[July 2019] I am taking part of the “Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda 
+[July 2019] I am taking part of the [“Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda 
 
 [September 2019] I am participating in the 7th Heidelberg Laureate Forum, Heidelberg, Germany
 
