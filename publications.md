@@ -5,7 +5,7 @@ tagline : ""
 use_math: true
 lang: zh
 ---
-<!--
+
 
 {% include JB/setup %}
 
@@ -44,14 +44,14 @@ lang: zh
 </td> 
 </tr> -->
 
-<tr height="50">
+<!-- <tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
     <strong style="font-size: 25px;">2021</strong></td>
-</tr>
+</tr> -->
 
-<tr style="border-bottom:1pt solid #eee" >
+<!--  <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 <!-- ![spiden](images/papers/icadl2021.png =100x20){:class="img-shadow"} -->
 <img src="images/papers/icadl2021.png" width="200" height="200" />
@@ -63,14 +63,14 @@ lang: zh
 With the rapid growth of research publications, empowering scientists to keep oversight over the scientific progress is of paramount importance. In this regard, the Leaderboards facet of information organization provides an overview on the state-of-the-art by aggregating empirical results from various studies addressing the same research challenge. Crowdsourcing efforts like PapersWithCode among others are devoted to the construction of Leaderboards predominantly for various subdomains in Artificial Intelligence. Leaderboards provide machine-readable scholarly knowledge that has proven to be directly useful for scientists to keep track of research progress. The construction of Leaderboards could be greatly expedited with automated text mining.
 This study presents a comprehensive approach for generating Leaderboards for knowledge-graph-based scholarly information organization. Specifically, we investigate the problem of automated Leaderboard construction using state-of-the-art transformer models, viz. Bert, SciBert, and XLNet. Our analysis reveals an optimal approach that significantly outperforms existing baselines for the task with evaluation scores above 90% in F1. This, in turn, offers new state-of-the-art results for Leaderboard extraction. As a result, a vast share of empirical AI research can be organized in the next-generation digital libraries as knowledge graphs.
 </div>
-<div><i>Accepted as a full paper at ICADL 2021</i></div>
+<div><i>Accepted as a full paper at ICADL 2021</i></div> 
 
 || <em class="icon-home"/> || [paper](https://arxiv.org/pdf/2109.13089.pdf) || <em class="icon-github"/> || [source code](https://github.com/Kabongosalomon/task-dataset-metric-nli-extraction) ||
 
 </td> 
-</tr>
+</tr> -->
 
-<tr style="border-bottom:1pt solid #eee" >
+<!-- <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 <img src="images/papers/listra.png" width="200" height="200" />
 </td>
@@ -85,9 +85,9 @@ In recent years there have been great interests in addressing the low resourcefu
 || <em class="icon-home"/> || [paper](/archive/posterBiai2021.pdf) || <em class="icon-github"/> || [source code](https://github.com/dsfsi/2020-AMMI-salomon) ||
 
 </td> 
-</tr>
+</tr> -->
 
-<tr height="50">
+<!-- <tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
@@ -109,7 +109,7 @@ Africa has over 2000 languages. Despite this, African languages account for a sm
 || <em class="icon-home"/> || [paper](https://arxiv.org/pdf/2003.11529.pdf) || <em class="icon-github"/> || [source code](https://github.com/masakhane-io/masakhane.git) ||
 
 </td> 
-</tr>
+</tr> -->
 
 <!-- <tr height="50">
 <td style="padding-left: 1px;
