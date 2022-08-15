@@ -16,7 +16,7 @@ lang: zh
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
-CV in [PDF](/archive/CV_Salomon.pdf) version.
+CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 
 ---
 
@@ -30,13 +30,13 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](images/main/luh.png)
+![hkulogo](images/main/UofC.png)
 </td>
 <td></td>
 <td markdown="1">
-[**Leibniz Universität Hannover (LUH)**](https://www.uni-hannover.de/en/), 11/2020 - 04/2023 
-- **Ph.D in Computer Science**
-- Supervisor: [Prof. Sören Auer](https://www.tib.eu/de/forschung-entwicklung/data-science-digital-libraries/mitarbeiterinnen-und-mitarbeiter/soeren-auer)
+[**University of Calgary, Canada**](https://www.ucalgary.ca/), 01/2022 - 01/2026 
+- **Ph.D in Biostatistics**
+- Supervisor: [Dr. Quan Long](https://cumming.ucalgary.ca/departments/bmb/profiles/dr-quan-long)
 </td> 
 </tr>
 
@@ -48,59 +48,49 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 <td markdown="1">
 [**The University of Ghana, (African Master In Machine Intelligence (AMMI, Ghana)**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
 - **Msc in Machine Intelligence**
-- Supervisor: [Dr. Vukosi Marivate](https://cs.up.ac.za/users/view/vmarivate)
+- Supervisor: [Dr. Moustapha Cisse](https://nexteinstein.org/person/moustapha-cisse/)
+- Thesis: Optimization and Generalization of Shallow Neural Networks with Quadratic Activation Functions
 - *Full scolarship by Facebook and Google, [AMMI](https://aimsammi.org/)*
 </td> 
 </tr>
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](images/main/udacity.png)
+![hkulogo](images/main/AIMSSn-logo.jpeg)
 </td>
 <td></td>
 <td markdown="1">
-[**Udacity**](https://www.udacity.com/course/deep-learning-nanodegree--nd101), 04/2019 - 12/2019
-- **Deeplearnig Nanodegree**
-- *Full scolarship by [Facebook AI, and Udacity](https://www.udacity.com/facebook-AI-scholarship)*
-</td> 
-</tr>
-
-<tr style="border-bottom:1pt solid #eee">
-<td markdown="1">
-![hkulogo](images/main/UWC_logo.png)
-</td>
-<td></td>
-<td markdown="1">
-[**The University of Western Cape, (AIMS South Africa)**](https://www.uwc.ac.za/), 08/2018 - 06/2019 
+[**The African Institute for Mathematical Sciences, (AIMS Senegal)**](https://aims-senegal.org/), 08/2018 - 06/2019 
 - **Msc in Mathematical Sciences**
-- Supervisor: Prof. [Etienne Barnard](http://news.nwu.ac.za/experts/etienne-barnard)
-- *Full scolarship by MasterCard Foundation, [AIMS South Africa](https://aims.ac.za/)*
+- Supervisor: Dr. Andre Saint Eudes MIALEBAMA BOUESSO, PhD, Marien Ngouabi University, Brazzaville , Congo
+- Thesis: Abelian extension and crossed module for Lie algebras
+- *Full scolarship by MasterCard Foundation, [AIMS Senegal](https://aims-senegal.org/)*
 </td> 
 </tr>
 
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![ustclogo](images/main/unilu.jpeg)
+![ustclogo](images/main/UDS-logo.png)
 </td>
 <td></td>
 <td markdown="1">
-[**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2017
-- **Licence en Mathématiques et informatiques**
-- Supervisor: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en)
+[**University of Dschang**](https://www.univ-dschang.org/), 2012 - 2016
+- **Bsc in Mathematics and Computer Science**
 </td> 
 </tr>
 
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![ustclogo](images/main/unilu.jpeg)
+![ustclogo](images/main/UDS-logo.png)
 </td>
 <td></td>
 <td markdown="1">
-[**Université de Lubumbashi**](http://www.unilu.ac.cd/), 2011 - 2017
-- **Graduat en Mathématiques**
-- Supervisor: Prof. [Franck Kalala](https://scholar.google.com/citations?user=fQnrWTgAAAAJ&hl=en)
+[**University of Dschang**](https://www.univ-dschang.org/), 2016 - 2018
+- **Master's degree in Mathematics**
+- Supervisor: Dr. Calvin Tcheka
+- Thesis: (Co)homologie des espaces de configuration
 </td> 
 </tr>
 
@@ -116,9 +106,10 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 #### Programming
 
 - Python
-- Julia
+- R
 - C/C++
 - Java
+- Matlab/Octave
 </div>
   
 <div class="leftpane1" markdown="1">
@@ -127,7 +118,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 - PyTorch
 - TensorFlow
-- Nltk
+- Sklearn
 </div>
   
 <div class="leftpane1" markdown="1">
@@ -142,12 +133,9 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 #### Language
 
-- English
-- French
-- Tshiluba
-- Lingala 
-- Kikongo 
-- Swahili
+- English(Fluent)
+- French(Fluent)
+  
 </div>
 </div>
 
@@ -164,7 +152,7 @@ CV in [PDF](/archive/CV_Salomon.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/conference/icadl2021.png" width="200" height="200" />
+<img src="images/conference/CIM.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
