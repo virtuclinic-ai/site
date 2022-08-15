@@ -20,67 +20,64 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/masakhane_web.png" width="200" height="200" />
+<img src="images/projects/ammi-project.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
-[**Masakhane Web Platform**](http://translate.masakhane.io/)
+[**African Institute for Mathematical Sciences (AIMS) in Ghana**](https://aims.edu.gh/)
+    
+-Title: Optimization and Generalization of Shallow Neural Networks with Quadratic Activation Functions    
 
-The project funded by [Mozilla Open Source Support Awards](https://www.mozilla.org/en-US/moss/) to create a web platform simillar to Google translate but for sollenli the African Languages that were made available by the [masakhane community](https://www.masakhane.io/).
+This project has been done for the completion of my Msc in Machine Intelligence during the [African Master in Machine Intelligence](https://aimsammi.org/), AMMI program in Ghana, sponsored by [Google](https://www.google.com/) and [Facebook](https://en.wikipedia.org/wiki/Facebook).
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<!-- ![captcha](images/main/masakhane.png =100x20){:class="img-shadow"} -->
-<img src="images/projects/masakhane.png" width="200" height="200" />
+<!-- ![captcha](images/main/siam-project.png =100x20){:class="img-shadow"} -->
+<img src="images/projects/siam-project.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
-[**Masakhane Initiative**](https://www.masakhane.io/home)
+[**Gene Golub SIAM Summer School**](https://sites.google.com/aims.ac.za/g2s3-aims-2021/groups?authuser=0)
+    
+-Title: Accelerating Stochastic Gradient Descent using Predictive Variance Reduction
 
-The project consist of putting African researchers from ACROSS the continent together to join the effort in building translation models for African languages. Masakhane means "We Build Together" in isiZRNNulu and was inspired by the [Deep Learning Indaba](http://www.deeplearningindaba.com/) theme for 2018. 
-As part of the [team](https://www.masakhane.io/community), I'm working on [Tshiluba](https://en.wikipedia.org/wiki/Luba-Kasai_language).
+The summer school, founded by SIAM as the result of a generous bequest of former SIAM President Gene Golub, offers schools in applied mathematics, computational science, and industrial mathematics, primarily for graduate students in mathematics and computer science. 
+As part of the [South Africa Group](https://sites.google.com/aims.ac.za/g2s3-aims-2021/groups?authuser=0), I worked on [Accelerating Stochastic Gradient Descent using Predictive Variance Reduction](https://proceedings.neurips.cc/paper/2013/file/ac1dd209cbcc5e5d1c6e28598e8cbbe8-Paper.pdf).
 
-|| <em class="icon-home"/> || [project page](https://www.masakhane.io/home) || <em class="icon-github"/> || [Github](https://github.com/masakhane-io/masakhane) ||
+<!-- || <em class="icon-home"/> || [project page](https://www.masakhane.io/home) || <em class="icon-github"/> || [Github](https://github.com/masakhane-io/masakhane) || -->
 </td> 
 </tr>
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/dog_breed.png" width="200" height="200" />
+<img src="images/projects/aims-project.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
-[**A CNN Based Dog Breed Classifier**](https://github.com/Kabongosalomon/CNN-Project-Dog-Breed-Classifier)
-In this project, I defined a Convolutional Neural Network that performs better than the average human when given the task of identifying dog breeds in addition, if supplied an image of a human, the code will *also* produce an estimate of the closest-resembling dog breed.
+[**African Institute for Mathematical Sciences (AIMS)**](https://aims-senegal.org/)
+    
+-Title: Abelian extension and crossed module for Lie algebras
+    
+This project has been done for the completion of my Msc in Mathematical Sciences at the [**African Institute for Mathematical Sciences (AIMS) in Senegal**](https://aims-senegal.org/)
 
-|| <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/CNN-Project-Dog-Breed-Classifier) ||
-</td> 
-</tr>
-
-<tr style="border-bottom:1pt solid #eee">
-<td markdown="1">
-<img src="images/projects/tv_script.png" width="200" height="200" />
-</td>
-<td></td>
-<td markdown="1">
-[**A RNN Based Model : Generate TV Scripts**](https://github.com/Kabongosalomon/Tv-Script-Generation)
-Implemented an RNN to generate my own Seinfeld TV scripts using RNNs. I used part of the Seinfeld dataset of scripts from 9 seasons. Using RNN, I generated a new, "fake" TV script, based on patterns it recognizes in this training data.
-
-|| <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Tv-Script-Generation) ||
+<!-- || <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Tv-Script-Generation) || -->
 </td> 
 </tr>
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![captcha](images/main/dg_gan.png){:class="img-shadow"} -->
-<img src="images/projects/dg_gan.png" width="200" height="200" />
+<img src="images/projects/uds-project.png" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
-[**Generate Faces**](https://github.com/Kabongosalomon/Face-Generation-Project)
-Generating images of the face using Deep Convolutional Generative Adversarial Network (DCGAN). The DCGAN is made of a pair of multilayer neural networks that compete against each other until one learns to generate realistic images of faces
+[**University of Dschang, Cameroon**](https://www.univ-dschang.org/)
+    
+-Title: (Co)homologie des espaces de configuration
 
-|| <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Face-Generation-Project) ||
+This project has been done for the completion of my Master's degree in Mathematics at the [**University of Dschang, Cameroon**](https://www.univ-dschang.org/)
+
+<!-- || <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Face-Generation-Project) || -->
 </td> 
 </tr>
 
