@@ -50,13 +50,13 @@ kramdown:
 
 menuitems:
     - { title:    Home,
-        url:      /index.md }
+        url:      /index.html }
     - { title:    Projects,
-        url:      /projects.md }
+        url:      /projects.html }
     - { title:    Publications,
-        url:      /publications.md }
+        url:      /publications.html }
     - { title:    Curriculum Vitae,
-        url:      /cv.md}
+        url:      /cv.html}
     - { title:    Blogs,
         url:      /archive/index.html}
     # - { title:    Notes,
