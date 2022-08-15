@@ -5,12 +5,12 @@ tagline : ""
 use_math: true
 lang: zh
 ---
+<!--
+
 {% include JB/setup %}
 
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
-
-<!--
 
 <link rel="stylesheet" href="/glyphicons/css/glyphicons.css">
 
