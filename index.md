@@ -64,29 +64,29 @@ My research interests include but not limited to:
 ---
 
 ### Talks and Presentations
--[Accelerating Stochastic Gradient Descent using Predictive Variance Reduction](https://proceedings.neurips.cc/paper/2013/file/ac1dd209cbcc5e5d1c6e28598e8cbbe8-Paper.pdf), Gene Golub SIAM Summer School, Cape Town, South Africa, 2021
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Ref](https://sites.google.com/aims.ac.za/g2s3-aims-2021/groups?authuser=0).
+<ul style=“list-style-type:circle"> [Accelerating Stochastic Gradient Descent using Predictive Variance Reduction](https://proceedings.neurips.cc/paper/2013/file/ac1dd209cbcc5e5d1c6e28598e8cbbe8-Paper.pdf), Gene Golub SIAM Summer School, Cape Town, South Africa, 2021
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Ref](https://sites.google.com/aims.ac.za/g2s3-aims-2021/groups?authuser=0).</li></ul>
 
--[Abelian extension and crossed module for Lie algebras](https://arxiv.org/abs/1802.04061), African Institute for Mathematical Sciences(AIMS), Dakar, Senegal, 2019 
+<ul style=“list-style-type:circle"> [Abelian extension and crossed module for Lie algebras](https://arxiv.org/abs/1802.04061), African Institute for Mathematical Sciences(AIMS), Dakar, Senegal, 2019</li></ul> 
 
 ---
 
 ### News
-[January 2022] Thrilled to announce that I joined the [University of Calgary](https://www.ucalgary.ca/) in Canada, the @Quan_Long's_lab and I started my PhD in the Department of Mathematics and Statistics and in collaboration with the Faculty of Medecine and the Department of Biochemistry & Molecular Biology
+<ul style=“list-style-type:circle"> [January 2022] Thrilled to announce that I joined the [University of Calgary](https://www.ucalgary.ca/) in Canada, the @Quan_Long's_lab and I started my PhD in the Department of Mathematics and Statistics and in collaboration with the Faculty of Medecine and the Department of Biochemistry & Molecular Biology </li></ul>
 
-[July 2021] I participe at the [11th Gene Golub SIAM Summer School](https://sites.google.com/aims.ac.za/g2s3-aims-2021/people?authuser=0), on “Theory and Practice of Deep Learning”, Cape Twon, South Africa 
+<ul style=“list-style-type:circle"> [July 2021] I participe at the [11th Gene Golub SIAM Summer School](https://sites.google.com/aims.ac.za/g2s3-aims-2021/people?authuser=0), on “Theory and Practice of Deep Learning”, Cape Twon, South Africa </li></ul>
 
-[September 2021] I am participating at the 8th Heidelberg Laureate Forum, in digital due to the Covid-19 pandemic 
+<ul style=“list-style-type:circle"> <ul style=“list-style-type:circle"> [September 2021] I am participating at the 8th Heidelberg Laureate Forum, in digital due to the Covid-19 pandemic </li></ul>
 
-[December 2020] I competed my Msc program in Machine Intelligence from the African Masters of Machine Intelligence in Ghana
+<ul style=“list-style-type:circle"> [December 2020] I competed my Msc program in Machine Intelligence from the African Masters of Machine Intelligence in Ghana </li></ul>
 
-[July 2019] I am taking part of the [“Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda 
+<ul style=“list-style-type:circle"> [July 2019] I am taking part of the [“Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda 
 
-[September 2019] I am participating in the 7th Heidelberg Laureate Forum, Heidelberg, Germany
+<ul style=“list-style-type:circle"> [September 2019] I am participating in the 7th Heidelberg Laureate Forum, Heidelberg, Germany </li></ul>
 
-[July 2018] I completed my Master's degree in Mathematics from the [University of Dschang, Cameroon](https://www.univ-dschang.org/)
+<ul style=“list-style-type:circle"> [July 2018] I completed my Master's degree in Mathematics from the [University of Dschang, Cameroon](https://www.univ-dschang.org/) </li></ul>
 
-[April 2018] I participated at CIMPA (Centre International des Mathématiques Pures et Appliquées) at Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon 
+<ul style=“list-style-type:circle"> [April 2018] I participated at CIMPA (Centre International des Mathématiques Pures et Appliquées) at Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon </li></ul>
 
 ---
 
