@@ -44,7 +44,7 @@ To conclude, having also several working experiences in companies as I worked as
 ### Research Interests
 My research interests include but not limited to:
 
--Biostatistics
+<ul> Biostatistics</ul>
 
 -Statistics
 
