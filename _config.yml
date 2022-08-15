@@ -19,7 +19,7 @@ author :
   email: arielghislain.kemogn@ucalgary.ca
   github : 1234-Ariel-code
   twitter : ArielKamdoum
-  linkedin: Ghislain-Kemogne
+  linkedin: ghislain-kemogne
 description: > # this means to ignore newlines until "baseurl:"
   This is an example
 baseurl: "" # the subpath of your site, e.g. /blog
