@@ -51,9 +51,9 @@ lang: zh
     <strong style="font-size: 25px;">2021</strong></td>
 </tr> -->
 
-<!--  <tr style="border-bottom:1pt solid #eee" >
+<!-- <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-<!-- ![spiden](images/papers/icadl2021.png =100x20){:class="img-shadow"} -->
+![spiden](images/papers/icadl2021.png =100x20){:class="img-shadow"} 
 <img src="images/papers/icadl2021.png" width="200" height="200" />
 </td>
 <td></td>
