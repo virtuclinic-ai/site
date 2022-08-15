@@ -46,19 +46,19 @@ My research interests include but not limited to:
 
 <ul style=“list-style-type:circle"><li>Biostatistics</li></ul>
 
--Statistics
+<ul style=“list-style-type:circle"><li>Statistics</li></ul>
 
--Machine learning 
+<ul style=“list-style-type:circle"><li>Machine learning</li></ul> 
 
--Computer vision 
+<ul style=“list-style-type:circle"><li>Computer vision</li></ul> 
 
--Deep learning
+<ul style=“list-style-type:circle"><li>Deep learning</li></ul>
 
--Optimization
+<ul style=“list-style-type:circle"><li>Optimization</li></ul>
 
--Bioinformatics 
+<ul style=“list-style-type:circle"><li>Bioinformatics</li></ul> 
 
--Mathematical modelling
+<ul style=“list-style-type:circle"><li>Mathematical modelling</li></ul>
 
 
 ---
