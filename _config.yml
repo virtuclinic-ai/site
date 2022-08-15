@@ -56,11 +56,11 @@ menuitems:
     - { title:    Home,
         url:      /index.md }
     - { title:    Projects,
-        url:      /projects.html }
+        url:      /projects.md }
     - { title:    Publications,
-        url:      /publications.html }
+        url:      /publications.md }
     - { title:    Curriculum Vitae,
-        url:      /cv.html}
+        url:      /cv.md}
     - { title:    Blogs,
         url:      /archive/index.html}
     # - { title:    Notes,
