@@ -54,7 +54,7 @@ kramdown:
 
 menuitems:
     - { title:    Home,
-        url:      /index.html }
+        url:      /index.md }
     - { title:    Projects,
         url:      /projects.html }
     - { title:    Publications,
