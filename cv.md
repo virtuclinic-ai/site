@@ -260,7 +260,7 @@ GA(T)s are appointed to provide teaching or instructional service, which might e
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/main/NMA-logo.jpeg" width="800" height="200" />
+<img src="images/main/NMA-logo.jpeg" width="800" height="100" />
 </td>
 <td></td>
 <td markdown="1">
