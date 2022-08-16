@@ -276,7 +276,7 @@ Having substantial expertise in Python and experience with some aspects of neura
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/main/manobi-logo.png" width="100" height="100" />
+<img src="images/main/manobi-logo.png" width="50" height="50" />
 </td>
 <td></td>
 <td markdown="1">
