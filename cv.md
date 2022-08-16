@@ -30,7 +30,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](images/main/UofC.png)
+![hkulogo](/images/main/UofC.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -42,7 +42,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](images/main/univ_ghana.jpg)
+![hkulogo](/images/main/univ_ghana.jpg)
 </td>
 <td></td>
 <td markdown="1">
@@ -56,7 +56,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](images/main/AIMSSn-logo.jpeg)
+![hkulogo](/images/main/AIMSSn-logo.jpeg)
 </td>
 <td></td>
 <td markdown="1">
@@ -71,7 +71,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![ustclogo](images/main/UDS-logo.png)
+![ustclogo](/images/main/UDS-logo.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -83,7 +83,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![ustclogo](images/main/UDS-logo.png)
+![ustclogo](/images/main/UDS-logo.png)
 </td>
 <td></td>
 <td markdown="1">
