@@ -75,6 +75,8 @@ My research interests include but not limited to:
 
 ### News
 
+- [July 2022] Happy to be spending 3 intense weeks at the [Neuromatch Academy (NMA)](https://academy.neuromatch.io/) summer school as a Teaching Assistant in Deep Learning
+
 - [June 2022] I was a participant at [Hausdorff School](https://www.hcm.uni-bonn.de/foundationalmethods2022) on “Foundational Methods in Machine Learning” and “Synergies between Data Science and PDE Analysis”, Bonn, Germany
 
 - [January 2022] Thrilled to announce that I joined the [University of Calgary](https://www.ucalgary.ca/) in Canada, the @Quan_Long's_lab and I started my PhD in Biostatistics in the Department of Mathematics and Statistics and in collaboration with the Faculty of Medecine and the Department of Biochemistry & Molecular Biology
