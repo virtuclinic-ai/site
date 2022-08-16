@@ -20,7 +20,7 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/ammi-project.png" width="200" height="200" />
+<img src="images/projects/ammi-project.png" width="400" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -33,7 +33,7 @@ This project has been done for the completion of my Msc in Machine Intelligence 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![captcha](images/main/siam-project.png =100x20){:class="img-shadow"} -->
-<img src="images/projects/siam-project.png" width="200" height="200" />
+<img src="images/projects/siam-project.png" width="400" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -50,7 +50,7 @@ As part of the [South Africa Group](https://sites.google.com/aims.ac.za/g2s3-aim
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/aims-project.png" width="200" height="200" />
+<img src="images/projects/aims-project.png" width="400" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -67,7 +67,7 @@ This project has been done for the completion of my Msc in Mathematical Sciences
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![captcha](images/main/dg_gan.png){:class="img-shadow"} -->
-<img src="images/projects/uds-project.png" width="200" height="200" />
+<img src="images/projects/uds-project.png" width="400" height="200" />
 </td>
 <td></td>
 <td markdown="1">
