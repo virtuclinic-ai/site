@@ -103,38 +103,22 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 <div class="container">
 <div class="leftpane1" markdown="1">
 
-#### Programming
-
-- Python
-- R
-- C/C++
-- Java
-- Matlab/Octave
+#### Programming - Python - R - C/C++ - Java - Matlab/Octave
 </div>
   
 <div class="leftpane1" markdown="1">
 
-#### Libraries
-
-- PyTorch
-- TensorFlow
-- Sklearn
+#### Libraries - PyTorch - TensorFlow - Sklearn
 </div>
   
 <div class="leftpane1" markdown="1">
 
-#### Tools
-
-- Git 
-- LaTeX
+#### Tools - Git - LaTeX
 </div>
 
 <div class="leftpane1" markdown="1">
 
-#### Language
-
-- English(Fluent)
-- French(Fluent)
+#### Language - English(Fluent) - French(Fluent)
   
 </div>
 </div>
