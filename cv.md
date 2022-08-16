@@ -114,6 +114,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 - Java 
   
 - Matlab/Octave
+  
 </div>
   
 <div class="leftpane1" markdown="1">
@@ -125,6 +126,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 - TensorFlow 
   
 - Sklearn
+  
 </div>
   
 <div class="leftpane1" markdown="1">
@@ -134,6 +136,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 - Git 
 
 - LaTeX
+  
 </div>
 
 <div class="leftpane1" markdown="1">
