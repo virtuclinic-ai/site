@@ -12,7 +12,7 @@ lang: zh
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
-<link rel="stylesheet" href="/glyphicons/css/glyphicons.css">
+<!-- <link rel="stylesheet" href="/glyphicons/css/glyphicons.css">
 
 <table style="width:100%">
 <col width="20%">
@@ -168,4 +168,4 @@ td {
     
    
     
-</style>
+</style> -->
