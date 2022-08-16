@@ -69,6 +69,8 @@ My research interests include but not limited to:
 
 - [Abelian extension and crossed module for Lie algebras](https://arxiv.org/abs/1802.04061), African Institute for Mathematical Sciences(AIMS), Dakar, Senegal, 2019 
 
+- **(Co)homologie des espaces de configuration**, [University of Dschang, Cameroon](https://www.univ-dschang.org/), 2018
+
 ---
 
 ### News
