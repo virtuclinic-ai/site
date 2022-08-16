@@ -160,7 +160,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/conference/CIMPA-logo.jpg" width="400" height="200" />
+<img src="images/conference/CIMPA-logo.jpg" width="400" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -197,7 +197,7 @@ The HLF is a networking conference where 200 carefully selected young researcher
   
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/conference/siam-logo.jpg" width="600" height="100" />
+<img src="images/conference/siam-logo.jpg" width="600" height="50" />
 </td>
 <td></td>
 <td markdown="1">
