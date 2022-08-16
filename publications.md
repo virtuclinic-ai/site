@@ -19,16 +19,16 @@ lang: zh
 <col width="10">
 <col >
 
-<!-- <tr height="50">
+<tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
     <strong style="font-size: 25px;">2017</strong></td>
-</tr> -->
+</tr> 
     
 
 
-<!-- <tr style="border-bottom:1pt solid #eee" >
+<tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 ![videovec](images/main/videovec.jpg){:class="img-shadow"}
 </td>
@@ -42,16 +42,16 @@ lang: zh
 || <em class="icon-home"></em> || [project page](/archive/research/videovec/) || <em class="icon-file"></em> || [paper](/archive/research/videovec/paper.pdf) || <em class="icon-film"></em> || [video demo](https://youtu.be/KmPdjB8f4ww) ||
 
 </td> 
-</tr> -->
+</tr> 
 
-<!-- <tr height="50">
+<tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
     <strong style="font-size: 25px;">2021</strong></td>
-</tr> -->
+</tr> 
 
-<!-- <tr style="border-bottom:1pt solid #eee" >
+<tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 ![spiden](images/papers/icadl2021.png =100x20){:class="img-shadow"} 
 <img src="images/papers/icadl2021.png" width="200" height="200" />
@@ -68,9 +68,9 @@ This study presents a comprehensive approach for generating Leaderboards for kno
 || <em class="icon-home"/> || [paper](https://arxiv.org/pdf/2109.13089.pdf) || <em class="icon-github"/> || [source code](https://github.com/Kabongosalomon/task-dataset-metric-nli-extraction) ||
 
 </td> 
-</tr> -->
+</tr> 
 
-<!-- <tr style="border-bottom:1pt solid #eee" >
+<tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 <img src="images/papers/listra.png" width="200" height="200" />
 </td>
@@ -85,9 +85,9 @@ In recent years there have been great interests in addressing the low resourcefu
 || <em class="icon-home"/> || [paper](/archive/posterBiai2021.pdf) || <em class="icon-github"/> || [source code](https://github.com/dsfsi/2020-AMMI-salomon) ||
 
 </td> 
-</tr> -->
+</tr>
 
-<!-- <tr height="50">
+<tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
@@ -109,16 +109,16 @@ Africa has over 2000 languages. Despite this, African languages account for a sm
 || <em class="icon-home"/> || [paper](https://arxiv.org/pdf/2003.11529.pdf) || <em class="icon-github"/> || [source code](https://github.com/masakhane-io/masakhane.git) ||
 
 </td> 
-</tr> -->
+</tr> 
 
-<!-- <tr height="50">
+<tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
     <strong style="font-size: 25px;">2015</strong></td>
-</tr> -->
+</tr>
 
-<!-- <tr style="border-bottom:1pt solid #eee" >
+<tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 ![thesis](images/main/hkulogo2.jpg){:class="img-shadow"}
 </td>
@@ -132,16 +132,16 @@ Africa has over 2000 languages. Despite this, African languages account for a sm
 || <em class="icon-file"></em> || thesis || <!--[thesis](/archive/research/thesis.pdf)-->
 
 <!-- </td> 
-</tr> -->
+</tr>
 
-<!-- <tr height="50">
+<tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
     <strong style="font-size: 25px;">2014</strong></td>
-</tr> -->
+</tr> 
 
-<!-- <tr style="border-bottom:1pt solid #eee" >
+<tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 ![videocoseg](images/main/videocoseg.jpg){:class="img-shadow"}
 </td>
@@ -155,7 +155,7 @@ Africa has over 2000 languages. Despite this, African languages account for a sm
 || <em class="icon-home"/> || [project page](/archive/research/videocoseg/) || <em class="icon-file"/> || [paper](/archive/research/videocoseg/paper.pdf) || <em class="icon-film"/> || [video demo](https://youtu.be/vbeN6JMkuGk) ||
 
 </td> 
-</tr> -->
+</tr> 
 
 </table>
 
