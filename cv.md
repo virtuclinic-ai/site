@@ -233,7 +233,7 @@ The HLF is a networking conference where 200 carefully selected young researcher
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![lenovologo](images/main/L3S.jpg) -->
-<img src="images/main/UofC.png" width="400" height="400" />
+<img src="images/main/UofC.png" width="400" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -249,7 +249,7 @@ GA(T)s are appointed to provide teaching or instructional service, which might e
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/main/NMA-logo.jpeg" width="400" height="400" />
+<img src="images/main/NMA-logo.jpeg" width="400" height="200" />
 </td>
 <td></td>
 <td markdown="1">
