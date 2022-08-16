@@ -16,7 +16,7 @@
 title: Ariel Ghislain Kemogne Kamdoum's Website
 author :
   name : Ariel Ghislain Kemogne Kamdoum
-  email: salomon@aims.ac.za
+  email: arielghislain.kemogn@ucalgary.ca
   github : 1234-Ariel-code
   twitter : ArielKamdoum
   linkedin: ghislain-kemogne-022754171
@@ -74,7 +74,7 @@ menuitems:
 # support the pagination
 # gems: [jekyll-paginate]
 paginate: 5
-paginate_path: "/archive/page:num"
+paginate_path: "https://1234-ariel-code.github.io/akemogne.github.io/archive/page:num"
 
 JB :
   version : 0.3.0
