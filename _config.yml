@@ -28,7 +28,7 @@ url: "https://1234-ariel-code.github.io/" # the base hostname & protocol for you
 #disqus:
   #shortname: ArielKemogne-website
 
-google_analytics: UA-158544608-1
+google_analytics: UA-178372022-1 #UA-158544608-1
 
 # Build settings
 markdown: kramdown
