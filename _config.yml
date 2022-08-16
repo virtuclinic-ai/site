@@ -23,12 +23,12 @@ author :
 description: > # this means to ignore newlines until "baseurl:"
   This is an example
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://1234-ariel-code.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://1234-ariel-code.github.io/akemogne.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 #disqus:
   #shortname: ArielKemogne-website
 
-google_analytics: UA-178372022-1 #UA-158544608-1
+google_analytics: UA-158544608-1
 
 # Build settings
 markdown: kramdown
