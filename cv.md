@@ -68,17 +68,6 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 </td> 
 </tr>
 
-<tr height="10"/>
-<tr style="border-bottom:1pt solid #eee">
-<td markdown="1">
-![ustclogo](/images/main/UDS-logo.png)
-</td>
-<td></td>
-<td markdown="1">
-[**University of Dschang**](https://www.univ-dschang.org/), 2012 - 2016
-- **Bsc in Mathematics and Computer Science**
-</td> 
-</tr>
 
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
@@ -93,7 +82,20 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 - Thesis: (Co)homologie des espaces de configuration
 </td> 
 </tr>
+  
+<tr height="10"/>
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![ustclogo](/images/main/UDS-logo.png)
+</td>
+<td></td>
+<td markdown="1">
+[**University of Dschang**](https://www.univ-dschang.org/), 2012 - 2016
+- **Bsc in Mathematics and Computer Science**
+</td> 
+</tr>  
 
+  
 </table>
 
 ---
