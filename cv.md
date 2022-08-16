@@ -167,7 +167,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[CIMPA (Centre International des Mathématiques Pures et Appliquées)](https://icadl.net/icadl2021/](https://www.cimpa.info/), Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon (2018)
+[CIMPA](https://www.cimpa.info/),Centre International des Mathématiques Pures et Appliquées at Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon (2018)
   
 -Title: Application of ALgebraic Toplogy in Robotics
   
@@ -193,7 +193,7 @@ The HLF is a networking conference where 200 carefully selected young researcher
 </td>
 <td></td>
 <td markdown="1">
-[“Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda (2019) 
+[Future of science](https://fosc.nexteinstein.org/participants/), conference Kigali, Rwanda (2019) 
 
 </td> 
 </tr>
