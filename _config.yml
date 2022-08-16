@@ -50,15 +50,15 @@ kramdown:
 
 menuitems:
     - { title:    Home,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/index.html }
+        url:      https://1234-ariel-code.github.io/akemogne.github.io/index.md }
     - { title:    Projects,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/projects.html }
+        url:      https://1234-ariel-code.github.io/akemogne.github.io/projects.md }
     - { title:    Publications,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/publications.html }
+        url:      https://1234-ariel-code.github.io/akemogne.github.io/publications.md }
     - { title:    Curriculum Vitae,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/cv.html}
+        url:      https://1234-ariel-code.github.io/akemogne.github.io/cv.md}
     - { title:    Blogs,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/archive/index.html}
+        url:      https://1234-ariel-code.github.io/akemogne.github.io/archive/index.md}
     # - { title:    Notes,
     #     dropdown: true,
     #     subitems: [ { title: Recent Notes,
