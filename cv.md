@@ -189,7 +189,7 @@ The HLF is a networking conference where 200 carefully selected young researcher
   
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/conference/siam-logo.jpg" width="400" height="200" />
+<img src="images/conference/siam-logo.jpg" width="600" height="200" />
 </td>
 <td></td>
 <td markdown="1">
@@ -276,7 +276,7 @@ Having substantial expertise in Python and experience with some aspects of neura
 <col >
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/main/manobi-logo.png" width="50" height="50" />
+<img src="images/main/manobi-logo.png" width="100" height="50" />
 </td>
 <td></td>
 <td markdown="1">
