@@ -57,8 +57,8 @@ menuitems:
         url:      https://1234-ariel-code.github.io/akemogne.github.io/publications.html }
     - { title:    Curriculum Vitae,
         url:      https://1234-ariel-code.github.io/akemogne.github.io/cv.html}
-    - { title:    Blogs,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/archive/index.html}
+    #- { title:    Blogs,
+    #    url:      https://1234-ariel-code.github.io/akemogne.github.io/archive/index.html}
     # - { title:    Notes,
     #     dropdown: true,
     #     subitems: [ { title: Recent Notes,
