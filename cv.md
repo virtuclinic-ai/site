@@ -157,6 +157,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 <td></td>
 <td markdown="1">
 [CIMPA (Centre International des Mathématiques Pures et Appliquées)](https://icadl.net/icadl2021/](https://www.cimpa.info/), Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon (2018)
+  
 -Title: Application of ALgebraic Toplogy in Robotics
   
 The Centre International de Mathématiques Pures et Appliquées (CIMPA), founded in France in 1978, is a nonprofit organisation that promotes research in Mathematics in developing countries. Located in Nice, it is a UNESCO Category 2 centre and  is part of the Laboratoire d'Excellence CARMIN (Centres d'Accueil et de Rencontres Mathématiques Internationales). It benefits from the financial support of Germany, France, Norway, Spain and Switzerland.
@@ -238,7 +239,9 @@ The HLF is a networking conference where 200 carefully selected young researcher
 <td></td>
 <td markdown="1">
 [**University of Calgary**](https://www.ucalgary.ca/), 2022 - Now 
+  
 - Graduate Teaching Assistant, Faculty of Medicine and Dept of Mathematics and Statistics:
+  
 GA(T)s are appointed to provide teaching or instructional service, which might encompass lecturing assistance, laboratory supervision, office hours, grading assignments, tutorial direction, assistance in preparation of demonstration and instructional aids, and other related academic duties. 
 </td> 
 </tr>
@@ -254,7 +257,9 @@ GA(T)s are appointed to provide teaching or instructional service, which might e
 <td></td>
 <td markdown="1">
 [**Neuromatch Academy (NMA)**](https://academy.neuromatch.io/), 2022 - Now 
+  
 - Production Team Member & Teaching Assistant in Deep Learning - Neuroscience
+  
 Neuromatch Academy is a massive, interactive, online summer school experience spanning from hands-on modeling experience to meta-science interpretation skills across just about everything that could be reasonably included in the labels "computational neuroscience" and “deep learning”.
 Having substantial expertise in Python and experience with some aspects of neural data analysis and deep learning, I was working closely with a given pod for three weeks to help students solve problems and guide group projects.  
 </td> 
@@ -276,6 +281,7 @@ Having substantial expertise in Python and experience with some aspects of neura
 <td></td>
 <td markdown="1">
 [**ICRISAT/MANOBI AFRICA**](http://www.manobi.com/), 2021 - 2022 
+  
 - Data Scientist 
 </td> 
 </tr>
@@ -289,6 +295,7 @@ Having substantial expertise in Python and experience with some aspects of neura
 <td></td>
 <td markdown="1">
 [University of Dschang, Cameroon](https://www.univ-dschang.org/), 2016 - 2018 
+  
 - Teaching Assistant in Mathematics
 </td> 
 </tr>
