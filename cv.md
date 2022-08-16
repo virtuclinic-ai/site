@@ -152,7 +152,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/conference/CIMPA-logo.png" width="200" height="200" />
+<img src="images/conference/CIMPA-logo.jpg" width="200" height="200" />
 </td>
 <td></td>
 <td markdown="1">
