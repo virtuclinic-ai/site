@@ -82,7 +82,7 @@ My research interests include but not limited to:
 
 - [July 2019] I am taking part of the [“Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda 
 
-- [September 2019] I am participating in the 7th Heidelberg Laureate Forum, Heidelberg, Germany
+- [September 2019] I am participating in the 7th Heidelberg Laureate Forum, Heidelberg, Germany (in-remote)
 
 - [July 2018] I completed my Master's degree in Mathematics from the [University of Dschang, Cameroon](https://www.univ-dschang.org/)
 
