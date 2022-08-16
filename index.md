@@ -74,21 +74,21 @@ My research interests include but not limited to:
 ---
 
 ### News
-- [January 2022] Thrilled to announce that I joined the [University of Calgary](https://www.ucalgary.ca/) in Canada, the @Quan_Long's_lab and I started my PhD in the Department of Mathematics and Statistics and in collaboration with the Faculty of Medecine and the Department of Biochemistry & Molecular Biology
+- [January 2022] Thrilled to announce that I joined the [University of Calgary](https://www.ucalgary.ca/) in Canada, the @Quan_Long's_lab and I started my PhD in Biostatistics in the Department of Mathematics and Statistics and in collaboration with the Faculty of Medecine and the Department of Biochemistry & Molecular Biology
 
-- [July 2021] I participe at the [11th Gene Golub SIAM Summer School](https://sites.google.com/aims.ac.za/g2s3-aims-2021/people?authuser=0), on “Theory and Practice of Deep Learning”, Cape Twon, South Africa
+- [July 2021] I participated in the [11th Gene Golub SIAM Summer School](https://sites.google.com/aims.ac.za/g2s3-aims-2021/people?authuser=0), on “Theory and Practice of Deep Learning”, Cape Twon, South Africa
 
-- [September 2021] I am participating at the 8th Heidelberg Laureate Forum, in digital due to the Covid-19 pandemic 
+- [September 2021] I took part of the 8th Heidelberg Laureate Forum, in digital due to the Covid-19 pandemic 
 
-- [December 2020] I competed my Msc program in Machine Intelligence from the African Masters of Machine Intelligence in Ghana
+- [December 2020] I completed my Msc program in Machine Intelligence from the African Masters of Machine Intelligence in Ghana
 
-- [July 2019] I am taking part of the [“Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda 
+- [July 2019] I participated in the [“Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda 
 
-- [September 2019] I am participating in the 7th Heidelberg Laureate Forum, Heidelberg, Germany (in-remote)
+- [September 2019] I took part of the 7th Heidelberg Laureate Forum, Heidelberg, Germany (in-remote)
 
 - [July 2018] I completed my Master's degree in Mathematics from the [University of Dschang, Cameroon](https://www.univ-dschang.org/)
 
-- [April 2018] I participated at CIMPA (Centre International des Mathématiques Pures et Appliquées) at Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon
+- [April 2018] I participated in CIMPA (Centre International des Mathématiques Pures et Appliquées) at Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon
 
 ---
 
