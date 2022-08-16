@@ -169,7 +169,7 @@ CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 </td>
 <td></td>
 <td markdown="1">
-[CIMPA](https://www.cimpa.info/),Centre International des Mathématiques Pures et Appliquées at Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon (2018)
+[CIMPA](https://www.cimpa.info/), Centre International des Mathématiques Pures et Appliquées at Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon (2018)
   
 -Title: Application of ALgebraic Toplogy in Robotics
   
