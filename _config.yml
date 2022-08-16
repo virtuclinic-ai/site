@@ -50,27 +50,27 @@ kramdown:
 
 menuitems:
     - { title:    Home,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/index.md }
+        url:      /index.html }
     - { title:    Projects,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/projects.md }
+        url:      /projects.html }
     - { title:    Publications,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/publications.md }
+        url:      /publications.html }
     - { title:    Curriculum Vitae,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/cv.md}
+        url:      /cv.html}
     - { title:    Blogs,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/archive/index.md}
+        url:      /index.html}
     # - { title:    Notes,
     #     dropdown: true,
     #     subitems: [ { title: Recent Notes,
-    #                   url: https://1234-ariel-code.github.io/akemogne.github.io/archive/index.html   },
+    #                   url: /index.html   },
     #                 { title: Coding,
     #                   category: coding,
-    #                   url:   https://1234-ariel-code.github.io/akemogne.github.io/coding.html },
+    #                   url:   /coding.html },
     #                 { title: Research,
     #                   category: research,
-    #                   url:   https://1234-ariel-code.github.io/akemogne.github.io/research.html },
+    #                   url:   /research.html },
     #                 { title: Tags,
-    #                   url:   https://1234-ariel-code.github.io/akemogne.github.io/tags.html }]}
+    #                   url:   /tags.html }]}
 # support the pagination
 # gems: [jekyll-paginate]
 paginate: 5
