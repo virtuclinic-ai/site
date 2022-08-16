@@ -23,7 +23,7 @@ author :
 description: > # this means to ignore newlines until "baseurl:"
   This is an example
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://1234-ariel-code.github.io/akemogne.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "https://1234-ariel-code.github.io/akemogne.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 #disqus:
   #shortname: ArielKemogne-website
@@ -50,15 +50,15 @@ kramdown:
 
 menuitems:
     - { title:    Home,
-        url:      /index.html }
+        url:      https://1234-ariel-code.github.io/akemogne.github.io//index.html }
     - { title:    Projects,
-        url:      /projects.html }
+        url:      https://1234-ariel-code.github.io/akemogne.github.io//projects.html }
     - { title:    Publications,
-        url:      /publications.html }
+        url:      https://1234-ariel-code.github.io/akemogne.github.io//publications.html }
     - { title:    Curriculum Vitae,
-        url:      /cv.html}
+        url:      https://1234-ariel-code.github.io/akemogne.github.io//cv.html}
     - { title:    Blogs,
-        url:      /archive/index.html}
+        url:      https://1234-ariel-code.github.io/akemogne.github.io//archive/index.html}
     # - { title:    Notes,
     #     dropdown: true,
     #     subitems: [ { title: Recent Notes,
