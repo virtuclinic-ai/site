@@ -19,12 +19,12 @@ lang: zh
 <col width="10">
 <col >
 
-<tr height="50">
+<!-- <tr height="50">
 <td style="padding-left: 1px;
     padding-bottom: 3px;
     vertical-align: bottom;">
     <strong style="font-size: 25px;">2017</strong></td>
-</tr> 
+</tr> -->
     
 
 
@@ -92,7 +92,7 @@ In recent years there have been great interests in addressing the low resourcefu
     padding-bottom: 3px;
     vertical-align: bottom;">
     <strong style="font-size: 25px;">2020</strong></td>
-</tr>
+</tr> 
 
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
@@ -166,6 +166,6 @@ td {
     text-align: left;
 }
     
-    -->
+   
     
 </style>
