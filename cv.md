@@ -16,7 +16,7 @@ lang: zh
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
-CV in [PDF](/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
+CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Ariel-Ghislain-Kemogne-Kamdoum.pdf) version.
 
 ---
 
