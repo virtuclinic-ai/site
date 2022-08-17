@@ -21,12 +21,12 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  border-radius: 80%;
+  width: 150%;
+  border-radius: 150%;
 }
 </style>
 
-<img src="images/main/Ariel8.jpg" class="center" style="width:200px">
+<img src="images/main/KEMOGNE-KAMDOUM-ARIEL-GHISLAIN.jpg" class="center" style="width:200px">
 
 
 ### About Me
