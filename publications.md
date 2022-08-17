@@ -12,6 +12,8 @@ lang: zh
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
+Uploading...
+
 <!-- <link rel="stylesheet" href="/glyphicons/css/glyphicons.css">
 
 <table style="width:100%">
