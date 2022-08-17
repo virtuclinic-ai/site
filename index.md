@@ -22,11 +22,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border-radius: 50%;
+  border-radius: 70%;
 }
 </style>
 
-<img src="images/main/KEMOGNE-KAMDOUM-ARIEL-GHISLAIN.jpg" class="center" style="width:200px">
+<img src="images/main/Kemogne.jpg" class="center" style="width:200px">
 
 
 ### About Me
