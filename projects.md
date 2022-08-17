@@ -20,7 +20,7 @@ lang: zh
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/ammi-project.png" width="500" height="200" />
+<img src="images/projects/ammi-project.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -33,7 +33,7 @@ This project has been done for the completion of my Msc in Machine Intelligence 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![captcha](images/main/siam-project.png =100x20){:class="img-shadow"} -->
-<img src="images/projects/siam-project.png" width="500" height="200" />
+<img src="images/projects/siam-project.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -50,7 +50,7 @@ As part of the [South Africa Group](https://sites.google.com/aims.ac.za/g2s3-aim
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/aims-project.png" width="500" height="200" />
+<img src="images/projects/aims-project.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -58,7 +58,7 @@ As part of the [South Africa Group](https://sites.google.com/aims.ac.za/g2s3-aim
     
 -Title: Abelian extension and crossed module for Lie algebras
     
-This project has been done for the completion of my Msc in Mathematical Sciences at the [**African Institute for Mathematical Sciences (AIMS) in Senegal**](https://aims-senegal.org/)
+This project has been done for the completion of my Msc in Mathematical Sciences at the [African Institute for Mathematical Sciences (AIMS) in Senegal](https://aims-senegal.org/)
 
 <!-- || <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Tv-Script-Generation) || -->
 </td> 
@@ -67,7 +67,7 @@ This project has been done for the completion of my Msc in Mathematical Sciences
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![captcha](images/main/dg_gan.png){:class="img-shadow"} -->
-<img src="images/projects/uds-project.png" width="500" height="200" />
+<img src="images/projects/uds-project.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -75,7 +75,7 @@ This project has been done for the completion of my Msc in Mathematical Sciences
     
 -Title: (Co)homologie des espaces de configuration
 
-This project has been done for the completion of my Master's degree in Mathematics at the [**University of Dschang, Cameroon**](https://www.univ-dschang.org/)
+This project has been done for the completion of my Master's degree in Mathematics at the [University of Dschang, Cameroon](https://www.univ-dschang.org/)
 
 <!-- || <em class="icon-home"/> || [Github](https://github.com/Kabongosalomon/Face-Generation-Project) || -->
 </td> 
