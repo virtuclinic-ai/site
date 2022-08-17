@@ -46,7 +46,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
 </td>
 <td></td>
 <td markdown="1">
-[**The University of Ghana, (African Master In Machine Intelligence (AMMI, Ghana)**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
+[**The University of Ghana, (African Masters of Machine Intelligence (AMMI, Ghana)**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
 - **Msc in Machine Intelligence**
 - Supervisor: [Dr. Moustapha Cisse](https://nexteinstein.org/person/moustapha-cisse/)
 - Thesis: Optimization and Generalization of Shallow Neural Networks with Quadratic Activation Functions
