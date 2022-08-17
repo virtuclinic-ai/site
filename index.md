@@ -21,8 +21,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  border-radius: 70%;
+  width: 10%;
+  border-radius: 10%;
 }
 </style>
 
