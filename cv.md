@@ -30,7 +30,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](/images/main/UofC.png)
+![hkulogo](https://1234-ariel-code.github.io/akemogne.github.io/images/main/UofC.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -42,7 +42,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](/images/main/univ_ghana.jpg)
+![hkulogo](https://1234-ariel-code.github.io/akemogne.github.io/images/main/univ_ghana.jpg)
 </td>
 <td></td>
 <td markdown="1">
@@ -56,7 +56,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![hkulogo](/images/main/AIMSSn-logo.jpeg)
+![hkulogo](https://1234-ariel-code.github.io/akemogne.github.io/images/main/AIMSSn-logo.jpeg)
 </td>
 <td></td>
 <td markdown="1">
@@ -72,7 +72,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![ustclogo](/images/main/UDS-logo.png)
+![ustclogo](https://1234-ariel-code.github.io/akemogne.github.io/images/main/UDS-logo.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -86,7 +86,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![ustclogo](/images/main/UDS-logo.png)
+![ustclogo](https://1234-ariel-code.github.io/akemogne.github.io/images/main/UDS-logo.png)
 </td>
 <td></td>
 <td markdown="1">
