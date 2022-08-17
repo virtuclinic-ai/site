@@ -99,3 +99,5 @@ My research interests include but not limited to:
 
 ### Contacts
 - Email: arielghislain.kemogn@ucalgary.ca
+
+- Phone: +1 587-581-0281
