@@ -46,7 +46,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
 </td>
 <td></td>
 <td markdown="1">
-[**The University of Ghana, (African Masters of Machine Intelligence (AMMI, Ghana)**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
+[**University of Ghana, (African Masters of Machine Intelligence (AMMI, Ghana)**](https://www.ug.edu.gh/), 10/2019 - 10/2020 
 - **Msc in Machine Intelligence**
 - Supervisor: [Dr. Moustapha Cisse](https://nexteinstein.org/person/moustapha-cisse/)
 - Thesis: Optimization and Generalization of Shallow Neural Networks with Quadratic Activation Functions
@@ -60,7 +60,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
 </td>
 <td></td>
 <td markdown="1">
-[**The African Institute for Mathematical Sciences, (AIMS Senegal)**](https://aims-senegal.org/), 08/2018 - 06/2019 
+[**African Institute for Mathematical Sciences, (AIMS Senegal)**](https://aims-senegal.org/), 08/2018 - 06/2019 
 - **Msc in Mathematical Sciences**
 - Supervisor: Dr. Andre Saint Eudes MIALEBAMA BOUESSO, PhD, Marien Ngouabi University, Brazzaville , Congo
 - Thesis: Abelian extension and crossed module for Lie algebras
