@@ -109,9 +109,7 @@ CV in [PDF](https://1234-ariel-code.github.io/akemogne.github.io/archive/CV_Arie
   
 - Python 
   
-- R 
-  
-- C/C++ 
+- R  
   
 - Java 
   
