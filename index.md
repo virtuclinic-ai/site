@@ -77,15 +77,15 @@ My research interests include but not limited to:
 
 - [September 2021] I took part of the 8th Heidelberg Laureate Forum, in digital due to the Covid-19 pandemic 
 
-- [December 2020] I completed my Msc program in Machine Intelligence from the [African Masters of Machine Intelligence](https://aimsammi.org/), AMMI program
+- [December 2020] I completed my Msc program in Machine Intelligence from the [African Masters of Machine Intelligence](https://aimsammi.org/), AMMI program in Ghana
 
 - [September 2019] I took part of the 7th Heidelberg Laureate Forum, Heidelberg, Germany (in-remote)
 
 - [July 2019] I participated in the [“Future of science” conference](https://fosc.nexteinstein.org/participants/), Kigali, Rwanda 
 
-- [June 2019] I completed my Msc program in Mathematical Sciences from the [African Institute for Mathematical Sciences (AIMS) in Senegal](https://aims-senegal.org/)
+- [June 2019] I completed my Msc program in Mathematical Sciences from the [African Institute for Mathematical Sciences (AIMS)](https://aims-senegal.org/) in Senegal
 
-- [July 2018] I completed my Master's degree in Mathematics from the [University of Dschang, Cameroon](https://www.univ-dschang.org/)
+- [July 2018] I completed my Master's degree in Mathematics from the [University of Dschang](https://www.univ-dschang.org/) in Cameroon
 
 - [April 2018] I participated in CIMPA (Centre International des Mathématiques Pures et Appliquées) at Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon
 
