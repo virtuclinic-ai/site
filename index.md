@@ -46,15 +46,7 @@ My research interests include but not limited to:
 
 - Biostatistics
 
-- Statistics
-
-- Machine learning
-
-- Computer vision
-
-- Deep learning
-
-- Optimization
+- Machine learning (Representation learning, Deep learning, Optimization)
 
 - Bioinformatics
 
