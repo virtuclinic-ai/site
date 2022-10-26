@@ -26,7 +26,7 @@ img {
 }
 </style>
 
-<img src="images/main/p.png" class="center" style="width:200px">
+<img src="images/main/KEMOGNE-KAMDOUM-ARIEL-GHISLAIN.jpg" class="center" style="width:200px">
 
 
 ### About Me
