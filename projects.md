@@ -17,7 +17,59 @@ lang: zh
 <col width="10">
 <col >
 
+    
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+<img src="images/projects/uoc.png" width="500" height="100" />
+</td>
+<td></td>
+<td markdown="1">
+[**University of Calgary**](https://www.ucalgary.ca/)
+    
+-Title: Heritability by representations learning  
 
+I develop a new approach of getting heritability estimates using deep learning techniques.
+    
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+<img src="images/projects/uoc.png" width="500" height="100" />
+</td>
+<td></td>
+<td markdown="1">
+[**University of Calgary**](https://www.ucalgary.ca/)
+    
+-Title: Analysis of multi-scale Data  
+
+This project I worked on making understanding of multi-scale data on a real survival data application.
+    
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+<img src="images/projects/uoc.png" width="500" height="100" />
+</td>
+<td></td>
+<td markdown="1">
+[**University of Calgary**](https://www.ucalgary.ca/)
+    
+-Title: Survival Analysis of Heart Failure Patients 
+
+In this project I performed survival analysis on heart failure patients data.
+    
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+<img src="images/projects/uoc.png" width="500" height="100" />
+</td>
+<td></td>
+<td markdown="1">
+[**University of Calgary**](https://www.ucalgary.ca/)
+    
+-Title: Predicting phenotype by genotypes: a comparison of multiple models
+
+The primary objective of this research project is to predict the observable traits or
+characteristics of an organism, referred to as the phenotype, based on its genetic
+makeup, or genotype. To achieve this, we employ various machine learning tech-
+niques, such as ridge regression and lasso, that are commonly used in predictive
+modeling.
+    
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <img src="images/projects/ammi-project.png" width="500" height="100" />
@@ -30,6 +82,9 @@ lang: zh
 
 This project has been done for the completion of my Msc in Machine Intelligence during the [African Master in Machine Intelligence](https://aimsammi.org/), AMMI program in Ghana, sponsored by [Google](https://www.google.com/) and [Facebook](https://en.wikipedia.org/wiki/Facebook).
 
+    
+    
+    
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
 <!-- ![captcha](images/main/siam-project.png =100x20){:class="img-shadow"} -->
