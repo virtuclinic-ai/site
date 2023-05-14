@@ -22,7 +22,7 @@ author :
   linkedin: ghislain-kemogne-022754171
 description: > # this means to ignore newlines until "baseurl:"
   This is an example
-baseurl: "1234-ariel-code.github.io/akemogne.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://akemogne.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 disqus:
