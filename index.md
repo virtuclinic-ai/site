@@ -26,7 +26,7 @@ img {
 }
 </style>
 
-<img src="images/main/Kemogne.jpg" class="center" style="width:200px">
+<img src="images/main/Kemogne-Kamdoum-Ariel-Ghislain.jpg" class="center" style="width:200px">
 
 
 ### About Me
