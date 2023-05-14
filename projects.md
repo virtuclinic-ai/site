@@ -20,7 +20,7 @@ lang: zh
     
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/UoC.png" width="500" height="100" />
+<img src="images/projects/UofC.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -32,7 +32,7 @@ I develop a new approach of getting heritability estimates using deep learning t
     
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/uoc.png" width="500" height="100" />
+<img src="images/projects/UofC.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -44,7 +44,7 @@ This project I worked on making understanding of multi-scale data on a real surv
     
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/uoc.png" width="500" height="100" />
+<img src="images/projects/UofC.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
@@ -56,7 +56,7 @@ In this project I performed survival analysis on heart failure patients data.
     
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/uoc.png" width="500" height="100" />
+<img src="images/projects/UofC.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
