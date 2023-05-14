@@ -20,7 +20,7 @@ lang: zh
     
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-<img src="images/projects/uoc.png" width="500" height="100" />
+<img src="images/projects/UoC.png" width="500" height="100" />
 </td>
 <td></td>
 <td markdown="1">
