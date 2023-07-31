@@ -64,7 +64,12 @@ My research interests include but not limited to:
 ---
 
 ### News
-
+- [September 2023] Looking forward to the amazing short papers of Deep Learning Indaba conference 2023, that will held in Ghana
+  
+- [August 2023] Happy to be part of the organizers of the Data Science Workshop for Alberta High School Students: Two-day’s workshop that will be hosted in the Math/Stats department at the University of Calgary, Canada. Students in Calgary will attend in-person, and other students in Alberta.
+  
+- [July 2023] Exciting three weeks from July 10, 2023 to July 28, 2023 with [Neuromatch Academy (NMA)](https://academy.neuromatch.io/) as a regular Teaching Assistant in Deep Learning course
+   
 - [June 2023] I will be giving a talk at the BMB advance conference in Calgary, Canada in "Representation learning and transfer learning: applications to genetics and -omics
 
 - [May - June 2023] I will be participating at the BioNet conference 2023, University of Alberta, Edmonton, Canada
