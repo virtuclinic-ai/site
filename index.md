@@ -39,6 +39,15 @@ My professional experience includes data science roles at [ICRISAT/MANOBI](https
 
 ---
 
+### Awards 
+Graduate Awards Competition (GAC) University of Calgary, Canada, 2023:
+
+1- 2023 Alberta Innovates Graduates Scholarship 
+2- Indigenous and Black Momentum Scholarship in Science 
+
+
+---
+
 ### Research Interests
 My research interests include but not limited to:
 
