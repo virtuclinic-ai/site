@@ -74,7 +74,7 @@ My research interests include but not limited to:
 ---
 
 ### News
-- [September 2023] Looking forward to the amazing short papers of Deep Learning Indaba conference 2023, that will held in Ghana
+- [September 2023] Happy to be part of the reviewers of short papers of Deep Learning Indaba conference 2023, Ghana
   
 - [August 2023] Happy to be part of the organizers of the Data Science Workshop for Alberta High School Students: Two-day’s workshop that will be hosted in the Math/Stats department at the University of Calgary, Canada. Students in Calgary will attend in-person, and other students in Alberta.
   
