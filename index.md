@@ -62,6 +62,7 @@ My research interests include but not limited to:
 ---
 
 ### Talks and Presentations
+- Speaker at the Deep learning reading club, University of Calgary, Canada, 2023-2024
 - [Accelerating Stochastic Gradient Descent using Predictive Variance Reduction](https://proceedings.neurips.cc/paper/2013/file/ac1dd209cbcc5e5d1c6e28598e8cbbe8-Paper.pdf), Gene Golub SIAM Summer School, Cape Town, South Africa, 2021
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Reference](https://sites.google.com/aims.ac.za/g2s3-aims-2021/groups?authuser=0).
 - [Abelian extension and crossed module for Lie algebras](https://arxiv.org/abs/1802.04061), African Institute for Mathematical Sciences(AIMS), Dakar, Senegal, 2019 
