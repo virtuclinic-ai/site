@@ -26,7 +26,7 @@ img {
 }
 </style>
 
-<img src="images/main/AI_117.png" class="center" style="width:400px">
+<img src="images/main/AI_117.png" class="center" style="width:300px">
 
 
 ### About Me
