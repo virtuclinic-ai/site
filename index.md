@@ -108,8 +108,6 @@ comments: true
 </header>
 
 <main>
-  <h1>VirtuClinic: Digital Health Advisors</h1>
-
   <h2>Employee Health and Wellness: Our Priority</h2>
   <img src="images/main/photo1.jpg" alt="Wellness" class="center">
   <p>VirtuClinic's Digital Health Advisor provides 24/7 access to trusted, reliable health information for a personalized healthcare experience—reducing costs, improving productivity, and supporting physical and mental health.</p>
@@ -128,8 +126,7 @@ comments: true
   </form>
   <p>Email submissions will be sent to: <a href="mailto:mjubelius@virtuclinic.ca">mjubelius@virtuclinic.ca</a></p>
 
-  <h3>Connect with Us</h3>
-  <div class="social-links">
+  <div align="center" class="social-links">
     <a href="https://www.instagram.com/virtuclinic.ca/" target="_blank">Instagram</a>
     <a href="https://www.facebook.com/virtuclinic" target="_blank">Facebook</a>
     <a href="https://www.youtube.com/@VirtuClinic" target="_blank">YouTube</a>
