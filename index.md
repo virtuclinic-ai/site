@@ -110,8 +110,8 @@ comments: true
 <main>
   <h2>Employee Health and Wellness: Our Priority</h2>
   <div align="center" style="display: flex; justify-content: center; gap: 1rem;">
-  <img src="images/main/photo1.jpeg" alt="Wellness" style="width: 45%; border-radius: 8px;">
-  <img src="images/main/photo2.jpeg" alt="Wellness" style="width: 45%; border-radius: 8px;">
+  <img src="images/main/photo1.jpg" alt="Wellness" style="width: 45%; border-radius: 8px;">
+  <img src="images/main/photo2.jpg" alt="Wellness" style="width: 45%; border-radius: 8px;">
 </div>
   
   <p>VirtuClinic's Digital Health Advisor provides 24/7 access to trusted, reliable health information for a personalized healthcare experience—reducing costs, improving productivity, and supporting physical and mental health.</p>
