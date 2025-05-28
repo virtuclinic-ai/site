@@ -111,7 +111,7 @@ comments: true
   <h1>VirtuClinic: Digital Health Advisors</h1>
 
   <h2>Employee Health and Wellness: Our Priority</h2>
-  <img src="images/main/photo1.jpeg" alt="Wellness" class="center">
+  <img src="images/main/photo1.jpg" alt="Wellness" class="center">
   <p>VirtuClinic's Digital Health Advisor provides 24/7 access to trusted, reliable health information for a personalized healthcare experience—reducing costs, improving productivity, and supporting physical and mental health.</p>
 
   <h2>24/7 Triage Providing Trusted Health Support for Your Business</h2>
