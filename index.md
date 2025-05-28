@@ -106,7 +106,7 @@
 <body>
 
   <header>
-    <img src="virtu-logo.png" alt="VirtuClinic Logo">
+    <img src="images/main/virtu-logo.png" alt="VirtuClinic Logo">
   </header>
 
   <main>
