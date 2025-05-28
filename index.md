@@ -109,7 +109,6 @@ comments: true
 
 <main>
   <h1>VirtuClinic: Digital Health Advisors</h1>
-  <img src="images/main/AI_117.png" alt="AI" class="center">
 
   <h2>Employee Health and Wellness: Our Priority</h2>
   <img src="images/main/photo1.jpeg" alt="Wellness" class="center">
@@ -142,6 +141,7 @@ comments: true
 </footer>
 
 <!-- Soul Machines Widget -->
+
 <script
   src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
   data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXJpYy1oZWFsdGgiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9lMDE2YTExNC1lMGMyLTQzMjQtYmIzYi1jM2I2YTk1MDE4ODcifQ=="
