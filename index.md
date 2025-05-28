@@ -111,6 +111,15 @@ My research interests include but not limited to:
 
 ---
 
+<script
+  src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
+  data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXJpYy1oZWFsdGgiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9lMDE2YTExNC1lMGMyLTQzMjQtYmIzYi1jM2I2YTk1MDE4ODcifQ=="
+  data-sm-position="bottomRight"
+  data-sm-greeting="Welcome"
+  data-sm-layout="fullFrame"
+  data-sm-profile-picture="https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Nolan.png"
+></script>
+
 ### Contacts
 - Email: arielghislain.kemogn@ucalgary.ca
 
