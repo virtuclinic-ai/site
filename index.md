@@ -111,7 +111,6 @@
 
   <main>
     <h1>VirtuClinic: Digital Health Advisors</h1>
-    <img src="images/main/AI_117.png" alt="AI" class="center">
 
     <h2>Employee Health and Wellness: Our Priority</h2>
     <img src="images/main/photo1.jpeg" alt="Wellness" class="center">
