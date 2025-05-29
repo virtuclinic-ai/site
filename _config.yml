@@ -51,7 +51,7 @@ menuitems:
     - { title:    Home,
         url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/index.html }
     - { title:    Digital Health Advisors,
-        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/index.html }  
+        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive.html }  
 
 #menuitems:
     #- { title:    Home,
