@@ -13,20 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ariel Ghislain Kemogne Kamdoum's Website
+title: VirtuClinic's Website
 author :
-  name : Ariel Ghislain Kemogne Kamdoum
-  email: arielghislain.kemogn@ucalgary.ca
-  github : 1234-Ariel-code
-  twitter : ArielKamdoum
-  linkedin: ghislain-kemogne-022754171
+  name : VirtuClinic
+  email: ariel@virtuclinic.ca
+  github : virtuclinic-ai
+  twitter : virtuclinic
+  linkedin: company/virtuclinic
 description: > # this means to ignore newlines until "baseurl:"
   This is an example
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://akemogne.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://virtuadvisor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 disqus:
-  shortname: ArielKemogne-website
+  shortname: VirtuClinic-website
 
 google_analytics: UA-158544608-1
 
@@ -50,31 +50,31 @@ kramdown:
 
 menuitems:
     - { title:    Home,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/index.html }
+        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/index.html }
     - { title:    Projects,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/projects.html }
+        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/projects.html }
     - { title:    Publications,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/publications.html }
+        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/publications.html }
     - { title:    Curriculum Vitae,
-        url:      https://1234-ariel-code.github.io/akemogne.github.io/cv.html}
+        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/cv.html}
     #- { title:    Blogs,
-    #    url:      https://1234-ariel-code.github.io/akemogne.github.io/archive/index.html}
+    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive/index.html}
     # - { title:    Notes,
     #     dropdown: true,
     #     subitems: [ { title: Recent Notes,
-    #                   url: https://1234-ariel-code.github.io/akemogne.github.io/index.html   },
+    #                   url: virtuclinic-ai.github.io/virtuadvisor.github.io/index.html   },
     #                 { title: Coding,
     #                   category: coding,
-    #                   url:   https://1234-ariel-code.github.io/akemogne.github.io/coding.html },
+    #                   url:   virtuclinic-ai.github.io/virtuadvisor.github.io/coding.html },
     #                 { title: Research,
     #                   category: research,
-    #                   url:   https://1234-ariel-code.github.io/akemogne.github.io/research.html },
+    #                   url:   virtuclinic-ai.github.io/virtuadvisor.github.io/research.html },
     #                 { title: Tags,
-    #                   url:   https://1234-ariel-code.github.io/akemogne.github.io/tags.html }]}
+    #                   url:   virtuclinic-ai.github.io/virtuadvisor.github.io/tags.html }]}
 # support the pagination
 # gems: [jekyll-paginate]
 paginate: 5
-paginate_path: "https://1234-ariel-code.github.io/akemogne.github.io/archive/page:num"
+paginate_path: "https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive/page:num"
 
 JB :
   version : 0.3.0
@@ -116,9 +116,9 @@ JB :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: https://1234-ariel-code.github.io/akemogne.github.io/archive.html
-  categories_path : https://1234-ariel-code.github.io/akemogne.github.io/categories.html
-  tags_path : https://1234-ariel-code.github.io/akemogne.github.io/tags.html
+  archive_path: https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive.html
+  categories_path : https://virtuclinic-ai.github.io/virtuadvisor.github.io/categories.html
+  tags_path : https://virtuclinic-ai.github.io/virtuadvisor.github.io/tags.html
   #atom_path : /feed.atom
   #rss_path : /feed.rss
 
