@@ -128,7 +128,6 @@ comments: true
     <textarea rows="4" placeholder="Message" required></textarea>
     <button type="submit">Contact Us</button>
   </form>
-  <p>Email submissions will be sent to: <a href="mailto:mjubelius@virtuclinic.ca">mjubelius@virtuclinic.ca</a></p>
 
   <div align="center" class="social-links">
     <a href="https://www.instagram.com/virtuclinic.ca/" target="_blank">Instagram</a>
