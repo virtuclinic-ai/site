@@ -47,16 +47,22 @@ exclude:
   - Gemfile.lock
 kramdown:
   input: GFM
-
 menuitems:
     - { title:    Home,
         url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/index.html }
-    - { title:    Projects,
-        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/projects.html }
-    - { title:    Publications,
-        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/publications.html }
-    - { title:    Curriculum Vitae,
-        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/cv.html}
+    - { title:    Digital Health Advisors,
+        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/index.html }  
+
+#menuitems:
+    #- { title:    Home,
+    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/index.html }
+    #- { title:    Projects,
+    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/projects.html }
+    #- { title:    Publications,
+    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/publications.html }
+    #- { title:    Curriculum Vitae,
+    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/cv.html}
+    
     #- { title:    Blogs,
     #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive/index.html}
     # - { title:    Notes,
