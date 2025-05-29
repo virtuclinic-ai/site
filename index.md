@@ -11,7 +11,7 @@ comments: true
     {% include contact_icons %}
   </div>
   <h1>
-    Digital Health Advisors 
+    Hi, Welcome!
     {% if site.tagline %}<br/><small>{{ site.tagline }}</small>{% endif %}
   </h1>
 </div>
