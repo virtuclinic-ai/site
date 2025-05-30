@@ -34,6 +34,7 @@ comments: true
   .advisor-buttons {
     display: none;
     margin-top: 1rem;
+    text-align: center;
   }
   .advisor-buttons button {
     background-color: #001f3f;
@@ -48,7 +49,7 @@ comments: true
 </style>
 
 <header>
-  <img src="images/main/virtu-logo.png" alt="VirtuClinic Logo">
+  <img src="https://virtuadvisor.github.io/images/main/virtu-logo.png" alt="VirtuClinic Logo">
 </header>
 
 <main>
@@ -90,13 +91,12 @@ comments: true
   });
 
   function removeAllAdvisors() {
-    // Remove any loaded Soul Machines widgets
     const existingWidgets = document.querySelectorAll("script[data-sm-api-key]");
     existingWidgets.forEach(widget => widget.remove());
   }
 
   function launchAdvisor(advisor) {
-    removeAllAdvisors(); // Clear any existing widgets
+    removeAllAdvisors();
 
     const script = document.createElement("script");
     script.src = "https://static.soulmachines.com/widget-snippet-1.12.0.min.js";
