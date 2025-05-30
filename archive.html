@@ -13,28 +13,17 @@ comments: true
     padding: 1rem;
     text-align: center;
   }
-
-  header img {
-    height: 50px;
-  }
-
+  header img { height: 50px; }
   main {
-    max-width: 900px;
+    max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
-
-  h1, h2, h3 {
-    color: #001f3f;
-  }
-
-  p {
-    line-height: 1.6;
-  }
-
+  h1, h2, h3 { color: #001f3f; }
+  p { line-height: 1.6; }
   .disclaimer-box {
     background-color: #eee;
     padding: 1rem;
@@ -42,23 +31,20 @@ comments: true
     margin-bottom: 1rem;
     border-radius: 4px;
   }
-
-  .advisor-container {
+  .advisor-buttons {
     display: none;
     margin-top: 1rem;
   }
-
-  .advisor-box {
-    border: 1px solid #001f3f;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    padding: 1rem;
+  .advisor-buttons button {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    margin: 0.5rem;
+    cursor: pointer;
   }
-
-  .advisor-title {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
+  .advisor-buttons button:hover { background-color: #003366; }
 </style>
 
 <header>
@@ -80,32 +66,9 @@ comments: true
     </label>
   </div>
 
-  <div id="advisorContainer" class="advisor-container">
-    <div class="advisor-box">
-      <div class="advisor-title">Calvin</div>
-      <script
-        src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
-        data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXJpYy1oZWFsdGgiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9lMDE2YTExNC1lMGMyLTQzMjQtYmIzYi1jM2I2YTk1MDE4ODcifQ=="
-        data-sm-position="bottomRight"
-        data-sm-greeting="Welcome"
-        data-sm-layout="fullFrame"
-        data-sm-profile-picture="https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Calvin.png">
-      </script>
-    </div>
-
-    <div class="advisor-box">
-      <div class="advisor-title">Hanna</div>
-      <script
-        src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
-        data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXhwbG9yZXIiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV8zMDUwOTJhNC0zMTc5LTRiMWYtYTA2NC0yMDc2ZTgwMDNjNzgifQ=="
-        data-sm-position="bottomRight"
-        data-sm-greeting="Hello"
-        data-sm-layout="fullFrame"
-        data-sm-profile-picture="https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Hanna.png">
-      </script>
-    </div>
-
-    <!-- Add more advisors here as needed -->
+  <div class="advisor-buttons" id="advisorButtons">
+    <button onclick="launchAdvisor('calvin')">Calvin</button>
+    <button onclick="launchAdvisor('hanna')">Hanna</button>
   </div>
 </main>
 
@@ -113,12 +76,56 @@ comments: true
   &copy; 2025 VirtuClinic. All rights reserved.
 </footer>
 
+<!-- Calvin -->
+<div id="calvinWidget" style="display: none;">
+  <script
+    src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
+    data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXJpYy1oZWFsdGgiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9lMDE2YTExNC1lMGMyLTQzMjQtYmIzYi1jM2I2YTk1MDE4ODcifQ=="
+    data-sm-position="bottomRight"
+    data-sm-greeting="Welcome"
+    data-sm-layout="fullFrame"
+    data-sm-profile-picture="https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Calvin.png">
+  </script>
+</div>
+
+<!-- Hanna -->
+<div id="hannaWidget" style="display: none;">
+  <script
+    src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
+    data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXhwbG9yZXIiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV8zMDUwOTJhNC0zMTc5LTRiMWYtYTA2NC0yMDc2ZTgwMDNjNzgifQ=="
+    data-sm-position="bottomRight"
+    data-sm-greeting="Hello"
+    data-sm-layout="fullFrame"
+    data-sm-profile-picture="https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Hanna.png">
+  </script>
+</div>
+
 <script>
-  document.getElementById("disclaimerCheck").addEventListener("change", function() {
+  const disclaimerCheck = document.getElementById("disclaimerCheck");
+  const advisorButtons = document.getElementById("advisorButtons");
+
+  disclaimerCheck.addEventListener("change", function() {
     if (this.checked) {
-      document.getElementById("advisorContainer").style.display = "block";
+      advisorButtons.style.display = "block";
     } else {
-      document.getElementById("advisorContainer").style.display = "none";
+      advisorButtons.style.display = "none";
+      removeAllAdvisors();
     }
   });
+
+  function launchAdvisor(advisor) {
+    // Hide all advisors first
+    removeAllAdvisors();
+    // Show only the selected advisor
+    if (advisor === "calvin") {
+      document.getElementById("calvinWidget").style.display = "block";
+    } else if (advisor === "hanna") {
+      document.getElementById("hannaWidget").style.display = "block";
+    }
+  }
+
+  function removeAllAdvisors() {
+    document.getElementById("calvinWidget").style.display = "none";
+    document.getElementById("hannaWidget").style.display = "none";
+  }
 </script>
