@@ -114,7 +114,7 @@ comments: true
   <img src="images/main/photo2.png" alt="Wellness" style="width: 45%; border-radius: 8px;">
 </div>
   
-  <div align='center"><p>VirtuClinic's Digital Health Advisor provides 24/7 access to trusted, reliable health information for a personalized healthcare experience—reducing costs, improving productivity, and supporting physical and mental health.</p></div>
+ <p>VirtuClinic's Digital Health Advisor provides 24/7 access to trusted, reliable health information for a personalized healthcare experience—reducing costs, improving productivity, and supporting physical and mental health.</p>
 
   <h2>24/7 Triage Providing Trusted Health Support for Your Business</h2>
   <iframe width="300" height="200" src="https://www.youtube.com/embed/FgG-5-brZSg" frameborder="0" allowfullscreen class="center"></iframe>
