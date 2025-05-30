@@ -49,7 +49,7 @@ comments: true
 </style>
 
 <header>
-  <img src="images/main/virtu-logo.png" alt="VirtuClinic Logo">
+  <img src="https://virtuadvisor.github.io/images/main/virtu-logo.png" alt="VirtuClinic Logo">
 </header>
 
 <main>
@@ -73,6 +73,29 @@ comments: true
   </div>
 </main>
 
+<!-- Static Soul Machines Widgets (Hidden by default) -->
+<div id="calvinWidget" style="display: none;">
+  <script
+    src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
+    data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXJpYy1oZWFsdGgiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9lMDE2YTExNC1lMGMyLTQzMjQtYmIzYi1jM2I2YTk1MDE4ODcifQ=="
+    data-sm-position="bottomRight"
+    data-sm-greeting="Welcome"
+    data-sm-layout="fullFrame"
+    data-sm-profile-picture="https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Nolan.png">
+  </script>
+</div>
+
+<div id="hannaWidget" style="display: none;">
+  <script
+    src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
+    data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXhwbG9yZXIiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV8zMDUwOTJhNC0zMTc5LTRiMWYtYTA2NC0yMDc2ZTgwMDNjNzgifQ=="
+    data-sm-position="bottomRight"
+    data-sm-greeting="Welcome"
+    data-sm-layout="fullFrame"
+    data-sm-profile-picture="https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Nolan.png">
+  </script>
+</div>
+
 <footer style="text-align: center; margin: 2rem 0;">
   &copy; 2025 VirtuClinic. All rights reserved.
 </footer>
@@ -86,32 +109,22 @@ comments: true
       advisorButtons.style.display = "block";
     } else {
       advisorButtons.style.display = "none";
-      removeAllAdvisors();
+      hideAllAdvisors();
     }
   });
 
-  function removeAllAdvisors() {
-    // Remove any loaded Soul Machines widgets
-    const existingWidgets = document.querySelectorAll("script[data-sm-api-key]");
-    existingWidgets.forEach(widget => widget.remove());
-  }
-
   function launchAdvisor(advisor) {
-    removeAllAdvisors();
-
-    const script = document.createElement("script");
-    script.src = "https://static.soulmachines.com/widget-snippet-1.12.0.min.js";
-    script.setAttribute("data-sm-position", "bottomRight");
-    script.setAttribute("data-sm-greeting", "Welcome");
-    script.setAttribute("data-sm-layout", "fullFrame");
-    script.setAttribute("data-sm-profile-picture", "https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Nolan.png");
+    hideAllAdvisors();
 
     if (advisor === "calvin") {
-      script.setAttribute("data-sm-api-key", "eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXJpYy1oZWFsdGgiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9lMDE2YTExNC1lMGMyLTQzMjQtYmIzYi1jM2I2YTk1MDE4ODcifQ==");
+      document.getElementById("calvinWidget").style.display = "block";
     } else if (advisor === "hanna") {
-      script.setAttribute("data-sm-api-key", "eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXhwbG9yZXIiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV8zMDUwOTJhNC0zMTc5LTRiMWYtYTA2NC0yMDc2ZTgwMDNjNzgifQ==");
+      document.getElementById("hannaWidget").style.display = "block";
     }
+  }
 
-    document.body.appendChild(script);
+  function hideAllAdvisors() {
+    document.getElementById("calvinWidget").style.display = "none";
+    document.getElementById("hannaWidget").style.display = "none";
   }
 </script>
