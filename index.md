@@ -108,6 +108,7 @@ comments: true
 </header>
 <div align="center">
 <p>VirtuClinic's Digital Health Advisor provides 24/7 access to trusted, reliable health information for a personalized healthcare experience—reducing costs, improving productivity, and supporting physical and mental health.</p>
+<p>Our expert clinicians and technology deliver health advice and help navigate the health system at any time, day or night.</p>
 </div>
 
 <main>
@@ -119,7 +120,6 @@ comments: true
 
   <h2>24/7 Triage Providing Trusted Health Support for Your Business</h2>
   <iframe width="300" height="200" src="https://www.youtube.com/embed/FgG-5-brZSg" frameborder="0" allowfullscreen class="center"></iframe>
-  <p>Our expert clinicians and technology deliver health advice and help navigate the health system at any time, day or night.</p>
 
   <h2>Contact Us</h2>
   <form class="contact-form">
