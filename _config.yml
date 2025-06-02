@@ -49,38 +49,38 @@ kramdown:
   input: GFM
 menuitems:
     - { title:    Home,
-        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/index.html }
+        url:      https://virtuclinic-ai.github.io/site/index.html }
     - { title:    Digital Health Advisors,
-        url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive.html }  
+        url:      https://virtuclinic-ai.github.io/site/archive.html }  
 
 #menuitems:
     #- { title:    Home,
-    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/index.html }
+    #    url:      https://virtuclinic-ai.github.io/site/index.html }
     #- { title:    Projects,
-    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/projects.html }
+    #    url:      https://virtuclinic-ai.github.io/site/projects.html }
     #- { title:    Publications,
-    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/publications.html }
+    #    url:      https://virtuclinic-ai.github.io/site/publications.html }
     #- { title:    Curriculum Vitae,
-    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/cv.html}
+    #    url:      https://virtuclinic-ai.github.io/site/cv.html}
     
     #- { title:    Blogs,
-    #    url:      https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive/index.html}
+    #    url:      https://virtuclinic-ai.github.io/site/archive/index.html}
     # - { title:    Notes,
     #     dropdown: true,
     #     subitems: [ { title: Recent Notes,
-    #                   url: virtuclinic-ai.github.io/virtuadvisor.github.io/index.html   },
+    #                   url: virtuclinic-ai.github.io/site//index.html   },
     #                 { title: Coding,
     #                   category: coding,
-    #                   url:   virtuclinic-ai.github.io/virtuadvisor.github.io/coding.html },
+    #                   url:   /virtuclinic-ai.github.io/site//coding.html },
     #                 { title: Research,
     #                   category: research,
-    #                   url:   virtuclinic-ai.github.io/virtuadvisor.github.io/research.html },
+    #                   url:   virtuclinic-ai.github.io/site//research.html },
     #                 { title: Tags,
-    #                   url:   virtuclinic-ai.github.io/virtuadvisor.github.io/tags.html }]}
+    #                   url:  virtuclinic-ai.github.io/site/tags.html }]}
 # support the pagination
 # gems: [jekyll-paginate]
 paginate: 5
-paginate_path: "https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive/page:num"
+paginate_path: "https://virtuclinic-ai.github.io/site/archive/page:num"
 
 JB :
   version : 0.3.0
@@ -122,9 +122,9 @@ JB :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: https://virtuclinic-ai.github.io/virtuadvisor.github.io/archive.html
-  categories_path : https://virtuclinic-ai.github.io/virtuadvisor.github.io/categories.html
-  tags_path : https://virtuclinic-ai.github.io/virtuadvisor.github.io/tags.html
+  archive_path: https://virtuclinic-ai.github.io/site/archive.html
+  categories_path : https://virtuclinic-ai.github.io/site/categories.html
+  tags_path : https://virtuclinic-ai.github.io/site/tags.html
   #atom_path : /feed.atom
   #rss_path : /feed.rss
 
