@@ -46,6 +46,13 @@ comments: true
     cursor: pointer;
   }
   .advisor-buttons button:hover { background-color: #003366; }
+  #advisorIframe {
+    display: none;
+    width: 100%;
+    height: 600px;
+    border: none;
+    margin-top: 1rem;
+  }
 </style>
 
 <header>
@@ -68,9 +75,11 @@ comments: true
   </div>
 
   <div class="advisor-buttons" id="advisorButtons">
-    <button onclick="launchAdvisor('calvin')">Calvin</button>
-    <button onclick="launchAdvisor('hanna')">Hanna</button>
+    <button onclick="launchAdvisor('maths.html')">Calvin</button>
+    <button onclick="launchAdvisor('research.html')">Hanna</button>
   </div>
+
+  <iframe id="advisorIframe"></iframe>
 </main>
 
 <footer style="text-align: center; margin: 2rem 0;">
@@ -80,37 +89,20 @@ comments: true
 <script>
   const disclaimerCheck = document.getElementById("disclaimerCheck");
   const advisorButtons = document.getElementById("advisorButtons");
+  const advisorIframe = document.getElementById("advisorIframe");
 
   disclaimerCheck.addEventListener("change", function() {
     if (this.checked) {
       advisorButtons.style.display = "block";
     } else {
       advisorButtons.style.display = "none";
-      removeAdvisorWidget();
+      advisorIframe.style.display = "none";
+      advisorIframe.src = "";
     }
   });
 
-  function removeAdvisorWidget() {
-    const existingWidget = document.querySelector("script[data-sm-api-key]");
-    if (existingWidget) existingWidget.remove();
-  }
-
-  function launchAdvisor(advisor) {
-    removeAdvisorWidget();
-
-    const script = document.createElement("script");
-    script.src = "https://static.soulmachines.com/widget-snippet-1.12.0.min.js";
-    script.setAttribute("data-sm-position", "bottomRight");
-    script.setAttribute("data-sm-greeting", "Welcome");
-    script.setAttribute("data-sm-layout", "fullFrame");
-    script.setAttribute("data-sm-profile-picture", "https://assets.cdn.soulmachines.cloud/AvatarCoverImages/2023stocks/Nolan.png");
-
-    if (advisor === "calvin") {
-      script.setAttribute("data-sm-api-key", "eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXJpYy1oZWFsdGgiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9lMDE2YTExNC1lMGMyLTQzMjQtYmIzYi1jM2I2YTk1MDE4ODcifQ==");
-    } else if (advisor === "hanna") {
-      script.setAttribute("data-sm-api-key", "eyJzb3VsSWQiOiJkZG5hLXZpcnR1Y2xpbmljLWNvcnBvcmF0aW9uZDg4YS0tZXhwbG9yZXIiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV8zMDUwOTJhNC0zMTc5LTRiMWYtYTA2NC0yMDc2ZTgwMDNjNzgifQ==");
-    }
-
-    document.body.appendChild(script);
+  function launchAdvisor(advisorPage) {
+    advisorIframe.style.display = "block";
+    advisorIframe.src = advisorPage;
   }
 </script>
