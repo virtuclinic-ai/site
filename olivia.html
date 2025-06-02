@@ -12,5 +12,16 @@
     data-sm-layout="fullFrame"
     data-sm-profile-picture="images/main/Olivia.png">
   </script>
+  <script>
+  // Start a 10-minute timer to redirect or close
+  setTimeout(() => {
+    alert("Your session with Olivia has ended. Please return to the main page to start a new session.");
+    // Option 1: Redirect to the main page
+    window.location.href = "https://virtuclinic-ai.github.io/site/archive.html";
+
+    // Option 2: Close the window (if it was opened via window.open)
+    // window.close();
+  }, 600000); // 10 minutes
+</script>
 </body>
 </html>
