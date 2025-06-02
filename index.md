@@ -106,8 +106,9 @@ comments: true
 <header>
   <img src="images/main/virtu-logo.png" alt="VirtuClinic Logo">
 </header>
-
+<div align="center"
 <p>VirtuClinic's Digital Health Advisor provides 24/7 access to trusted, reliable health information for a personalized healthcare experience—reducing costs, improving productivity, and supporting physical and mental health.</p>
+</div>
 
 <main>
   <h2>Employee Health and Wellness: Our Priority</h2>
