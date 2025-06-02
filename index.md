@@ -122,7 +122,23 @@ comments: true
   <div align="center">
   <h2>24/7 Triage Providing Trusted Health Support for Your Business</h2>
   </div>  
-  <iframe width="500" height="800" src="https://www.youtube.com/embed/FgG-5-brZSg" frameborder="0" allowfullscreen class="center"></iframe>
+  <iframe width="1000" height="300" src="https://www.youtube.com/embed/FgG-5-brZSg" frameborder="0" allowfullscreen class="center"></iframe>
+
+   <div style="text-align: center; margin-top: 2rem;">
+  <p>Want instant, trusted health support? Visit our Digital Health Advisors page now:</p>
+  <a href="archive.html" style="
+    display: inline-block;
+    background-color: #001f3f;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;">
+    Visit Digital Health Advisors
+  </a>
+</div>
+
 
   <h2>Contact Us</h2>
   <form class="contact-form">
