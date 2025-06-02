@@ -110,7 +110,7 @@ comments: true
 <main>
   <h2>Employee Health and Wellness: Our Priority</h2>
   <div align="center" style="display: flex; justify-content: center; gap: 1rem;">
-  <img src="images/main/photo1.jpg" alt="Wellness" style="width: 45%; border-radius: 8px;">
+  <img src="images/main/photo1.jpg" alt="Wellness" style="width: 44%; border-radius: 8px;">
   <img src="images/main/photo2.png" alt="Wellness" style="width: 43%; border-radius: 8px;">
 </div>
 
