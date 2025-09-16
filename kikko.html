@@ -256,6 +256,26 @@
       // window.SoulMachines?.on('conversationEnded', () => window.VC_SURVEY.showSurvey("Kikko"));
     } catch (e) {}
   </script>
+  <style>
+  /* Put the survey overlay above anything (including floating PIP). */
+  .vc-modal-backdrop { z-index: 2147483000; } /* higher than most widgets */
+
+  /* When survey is open, hide Soul Machines widget/miniplayer completely. */
+  body.vc-survey-open iframe[src*="soulmachines"],
+  body.vc-survey-open [class*="sm-"],
+  body.vc-survey-open [id*="sm-"],
+  body.vc-survey-open [data-sm-position],
+  body.vc-survey-open [data-sm-layout] {
+    /* pick ONE of the two strategies below */
+    /* Strategy A: fully hide */
+    display: none !important;
+
+    /* Strategy B (alternative): keep visible but non-interactive
+    opacity: 0.01 !important;
+    pointer-events: none !important;
+    */
+  }
+</style>
 
 </body>
 </html>
