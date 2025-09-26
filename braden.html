@@ -266,5 +266,20 @@
       */
     }
   </style>
+  <script>
+  // Notify parent (Solo page) that the session finished/closed
+  function vcNotifyDone(reason='agent_done'){
+    try { opener?.postMessage({ type:'VC_EVENT', name:reason }, '*'); } catch(e){}
+    try { parent?.postMessage({ type:'VC_EVENT', name:reason }, '*'); } catch(e){}
+  }
+
+  // Fire when the tab is being closed or hidden
+  ['beforeunload','pagehide','visibilitychange'].forEach(evt=>{
+    window.addEventListener(evt, ()=>{
+      if (evt==='visibilitychange' && document.visibilityState!=='hidden') return;
+      vcNotifyDone('agent_closed');
+    });
+  });
+</script>
 </body>
 </html>
