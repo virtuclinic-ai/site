@@ -95,6 +95,160 @@
     }
   </style>
 </head>
+
+
+<!-- ===== DHA Coach-mark & Auto-open (Braden) ===== -->
+<style>
+  .dha-coach-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:2147483000}
+  .dha-hidden{display:none!important}
+  .dha-coach-card{width:min(560px,92vw);background:#fff;border-radius:14px;padding:20px;box-shadow:0 20px 80px rgba(0,0,0,.35);font-family:Inter,system-ui,Arial,sans-serif}
+  .dha-coach-card h2{margin:0 0 8px;font-size:20px;color:#0b1d3a}
+  .dha-coach-card p{margin:0 0 14px;color:#374151;line-height:1.45}
+  .dha-row{display:flex;gap:10px;flex-wrap:wrap}
+  .dha-btn{appearance:none;border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}
+  .dha-btn.primary{background:#0b57d0;color:#fff}
+  .dha-btn.ghost{background:#fff;border:1px solid #d1d5db;color:#374151}
+
+  /* Pulse & arrow near bubble */
+  .dha-pulse{position:fixed;right:16px;bottom:16px;width:96px;height:96px;border-radius:999px;pointer-events:none;z-index:2147483001}
+  .dha-pulse::before,.dha-pulse::after{content:"";position:absolute;inset:0;border-radius:999px;border:3px solid rgba(11,87,208,.55);animation:dha-pulse 1.8s ease-out infinite}
+  .dha-pulse::after{animation-delay:.9s}
+  @keyframes dha-pulse{0%{transform:scale(.6);opacity:.9}70%{opacity:.15}100%{transform:scale(1.25);opacity:0}}
+
+  .dha-arrow{position:fixed;right:128px;bottom:92px;z-index:2147483001}
+  .dha-arrow svg{width:72px;height:72px;fill:none;stroke:#0b57d0;stroke-width:3;filter:drop-shadow(0 2px 4px rgba(0,0,0,.2))}
+  @media (max-width:480px){.dha-arrow{right:100px;bottom:88px}.dha-pulse{right:12px;bottom:12px;width:84px;height:84px}}
+  @media (prefers-reduced-motion: reduce){.dha-pulse::before,.dha-pulse::after{animation:none}}
+</style>
+
+<div id="dhaCoach" class="dha-coach-backdrop dha-hidden" role="dialog" aria-modal="true" aria-labelledby="dhaCoachTitle">
+  <div class="dha-coach-card" role="document">
+    <h2 id="dhaCoachTitle">Ready when you are</h2>
+    <p>
+      Click the assistant in the <strong>bottom-right corner</strong> to start. You can talk or type, and I’ll paste names, addresses, and phone numbers into the chat so you can copy them easily.
+    </p>
+    <div class="dha-row">
+      <button id="dhaStartNow" class="dha-btn primary" type="button">Start now</button>
+      <button id="dhaLater" class="dha-btn ghost" type="button">Maybe later</button>
+    </div>
+  </div>
+</div>
+
+<!-- Visual cue near the avatar bubble -->
+<div id="dhaPulse" class="dha-pulse dha-hidden" aria-hidden="true"></div>
+<div id="dhaArrow" class="dha-arrow dha-hidden" aria-hidden="true">
+  <svg viewBox="0 0 64 64" aria-hidden="true">
+    <path d="M6 10 C28 18, 36 30, 42 44 M42 44 L34 42 M42 44 L40 36"/>
+  </svg>
+</div>
+
+<script>
+(function(){
+  // 1) Selector for the launcher bubble (add your class if different)
+  const LAUNCHER_SELECTOR = '[data-dha-launcher], .sm-avatar-launcher, .sm-widget-launcher, .avatar-launcher';
+
+  // 2) Try multiple vendor APIs (if available)
+  const OPEN_API = () => {
+    if (window.SM && typeof window.SM.open === 'function') return window.SM.open();
+    if (window.SoulMachines && typeof window.SoulMachines.open === 'function') return window.SoulMachines.open();
+    return null;
+  };
+
+  // Where to send people if they click "Maybe later"
+  const HOST_DHA_PAGE = 'https://soloist.ai/virtuadvisor/digital-health-advisors'; 
+  // ^ change to your preferred main DHA URL if needed
+
+  const AUTO_OPEN_MS = 0; // set 0 to disable auto-open
+
+  const coach = document.getElementById('dhaCoach');
+  const startBtn = document.getElementById('dhaStartNow');
+  const laterBtn = document.getElementById('dhaLater');
+  const pulse = document.getElementById('dhaPulse');
+  const arrow = document.getElementById('dhaArrow');
+
+  const showHints = () => {
+    coach.classList.remove('dha-hidden');
+    pulse.classList.remove('dha-hidden');
+    arrow.classList.remove('dha-hidden');
+  };
+  const hideHints = () => {
+    coach.classList.add('dha-hidden');
+    pulse.classList.add('dha-hidden');
+    arrow.classList.add('dha-hidden');
+  };
+
+  // 4) Auto-tag the launcher once the widget injects it
+  const tagLauncher = () => {
+    const el = document.querySelector(LAUNCHER_SELECTOR);
+    if (el && !el.hasAttribute('data-dha-launcher')) {
+      el.setAttribute('data-dha-launcher','');
+    }
+  };
+  new MutationObserver(tagLauncher).observe(document.body, { childList:true, subtree:true });
+  window.addEventListener('load', tagLauncher);
+
+  const openAssistant = () => {
+    // Always hide the coach first so the user can see the bubble
+    hideHints();
+
+    // Try JS API first
+    if (OPEN_API() !== null) return;
+
+    // Otherwise simulate a click on the launcher (try twice in case it loads late)
+    const attemptClick = () => {
+      const el = document.querySelector(LAUNCHER_SELECTOR);
+      if (el) el.click();
+    };
+    attemptClick();
+    setTimeout(attemptClick, 10000);
+  };
+
+  // "Start now" → open the assistant (or at least reveal the bubble)
+  startBtn.addEventListener('click', openAssistant);
+
+  // "Maybe later" → close coach AND leave this Braden tab, back to main DHA page
+  laterBtn.addEventListener('click', () => {
+    hideHints();
+    // If this tab was opened by window.open, close it
+    if (window.opener && !window.opener.closed) {
+      window.close();
+    } else if (HOST_DHA_PAGE) {
+      // Fallback: redirect in the same tab
+      window.location.href = HOST_DHA_PAGE;
+    }
+  });
+
+  // Close hints if user manually opens the widget (detect launcher clicks)
+  document.addEventListener('click', (e) => {
+    if (e.target.closest(LAUNCHER_SELECTOR)) hideHints();
+  }, true);
+
+  // Show once per browser for this advisor
+    // Always show coach each time this DHA page opens
+  showHints();
+
+  // (Optional) still fade out the pulse/arrow after 8s
+  setTimeout(() => {
+    pulse.classList.add('dha-hidden');
+    arrow.classList.add('dha-hidden');
+  }, 8000);
+
+  // Respect reduced motion, otherwise auto-open after a short delay
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (AUTO_OPEN_MS > 0 && !prefersReduced) {
+    setTimeout(() => {
+      if (!coach.classList.contains('dha-hidden')) {
+        openAssistant();
+      }
+    }, AUTO_OPEN_MS);
+  }
+
+  // ESC to dismiss the coach (does not open the widget)
+  document.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') hideHints(); });
+})();
+</script>  
+
+  
 <body>
 
   <!-- ===== Soul Machines widget (Olivia) ===== -->
