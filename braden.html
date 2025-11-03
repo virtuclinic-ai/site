@@ -227,18 +227,14 @@
   }, true);
 
   // Show once per browser for this advisor
-  if (!localStorage.getItem(ONE_TIME_KEY)) {
-    showHints();
-    localStorage.setItem(ONE_TIME_KEY, '1');
-  } else {
-    // Subtle pulse for 8s on revisits
-    pulse.classList.remove('dha-hidden');
-    arrow.classList.remove('dha-hidden');
-    setTimeout(() => {
-      pulse.classList.add('dha-hidden');
-      arrow.classList.add('dha-hidden');
-    }, 8000);
-  }
+    // Always show coach each time this DHA page opens
+  showHints();
+
+  // (Optional) still fade out the pulse/arrow after 8s
+  setTimeout(() => {
+    pulse.classList.add('dha-hidden');
+    arrow.classList.add('dha-hidden');
+  }, 8000);
 
   // Respect reduced motion, otherwise auto-open after a short delay
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
