@@ -156,6 +156,11 @@
 
   // 3) Show once per advisor
   const ONE_TIME_KEY = 'dhaCoachSeen_v1_braden';
+
+  // Where to send people if they click "Maybe later"
+  const HOST_DHA_PAGE = 'https://soloist.ai/virtuadvisor/digital-health-advisors'; 
+  // ^ change to your preferred main DHA URL if needed
+
   const AUTO_OPEN_MS = 6000; // set 0 to disable auto-open
 
   const coach = document.getElementById('dhaCoach');
@@ -164,24 +169,62 @@
   const pulse = document.getElementById('dhaPulse');
   const arrow = document.getElementById('dhaArrow');
 
-  const showHints = () => { coach.classList.remove('dha-hidden'); pulse.classList.remove('dha-hidden'); arrow.classList.remove('dha-hidden'); };
-  const hideHints = () => { coach.classList.add('dha-hidden'); pulse.classList.add('dha-hidden'); arrow.classList.add('dha-hidden'); };
+  const showHints = () => {
+    coach.classList.remove('dha-hidden');
+    pulse.classList.remove('dha-hidden');
+    arrow.classList.remove('dha-hidden');
+  };
+  const hideHints = () => {
+    coach.classList.add('dha-hidden');
+    pulse.classList.add('dha-hidden');
+    arrow.classList.add('dha-hidden');
+  };
 
-  // 4) Optional: auto-tag the launcher once the widget injects it
+  // 4) Auto-tag the launcher once the widget injects it
   const tagLauncher = () => {
     const el = document.querySelector(LAUNCHER_SELECTOR);
-    if (el && !el.hasAttribute('data-dha-launcher')) el.setAttribute('data-dha-launcher','');
+    if (el && !el.hasAttribute('data-dha-launcher')) {
+      el.setAttribute('data-dha-launcher','');
+    }
   };
   new MutationObserver(tagLauncher).observe(document.body, { childList:true, subtree:true });
   window.addEventListener('load', tagLauncher);
 
   const openAssistant = () => {
+    // Always hide the coach first so the user can see the bubble
+    hideHints();
+
     // Try JS API first
-    if (OPEN_API() !== null) { hideHints(); return; }
-    // Otherwise simulate a click on the launcher
-    const el = document.querySelector(LAUNCHER_SELECTOR);
-    if (el) { el.click(); hideHints(); }
+    if (OPEN_API() !== null) return;
+
+    // Otherwise simulate a click on the launcher (try twice in case it loads late)
+    const attemptClick = () => {
+      const el = document.querySelector(LAUNCHER_SELECTOR);
+      if (el) el.click();
+    };
+    attemptClick();
+    setTimeout(attemptClick, 800);
   };
+
+  // "Start now" → open the assistant (or at least reveal the bubble)
+  startBtn.addEventListener('click', openAssistant);
+
+  // "Maybe later" → close coach AND leave this Braden tab, back to main DHA page
+  laterBtn.addEventListener('click', () => {
+    hideHints();
+    // If this tab was opened by window.open, close it
+    if (window.opener && !window.opener.closed) {
+      window.close();
+    } else if (HOST_DHA_PAGE) {
+      // Fallback: redirect in the same tab
+      window.location.href = HOST_DHA_PAGE;
+    }
+  });
+
+  // Close hints if user manually opens the widget (detect launcher clicks)
+  document.addEventListener('click', (e) => {
+    if (e.target.closest(LAUNCHER_SELECTOR)) hideHints();
+  }, true);
 
   // Show once per browser for this advisor
   if (!localStorage.getItem(ONE_TIME_KEY)) {
@@ -189,23 +232,21 @@
     localStorage.setItem(ONE_TIME_KEY, '1');
   } else {
     // Subtle pulse for 8s on revisits
-    pulse.classList.remove('dha-hidden'); arrow.classList.remove('dha-hidden');
-    setTimeout(() => { pulse.classList.add('dha-hidden'); arrow.classList.add('dha-hidden'); }, 8000);
+    pulse.classList.remove('dha-hidden');
+    arrow.classList.remove('dha-hidden');
+    setTimeout(() => {
+      pulse.classList.add('dha-hidden');
+      arrow.classList.add('dha-hidden');
+    }, 8000);
   }
-
-  startBtn.addEventListener('click', openAssistant);
-  laterBtn.addEventListener('click', hideHints);
-
-  // Close hints if user manually opens the widget (detect launcher clicks)
-  document.addEventListener('click', (e) => {
-    if (e.target.closest(LAUNCHER_SELECTOR)) hideHints();
-  }, true);
 
   // Respect reduced motion, otherwise auto-open after a short delay
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (AUTO_OPEN_MS > 0 && !prefersReduced) {
     setTimeout(() => {
-      if (!coach.classList.contains('dha-hidden')) openAssistant();
+      if (!coach.classList.contains('dha-hidden')) {
+        openAssistant();
+      }
     }, AUTO_OPEN_MS);
   }
 
@@ -213,6 +254,7 @@
   document.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') hideHints(); });
 })();
 </script>
+  
   
   
 <body>
