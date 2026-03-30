@@ -8,50 +8,147 @@ comments: true
 {% include JB/setup %}
 
 <style>
+  :root {
+    --vc-primary: #001f3f;
+    --vc-accent: #1f7aec;
+    --vc-text: #1f2937;
+    --vc-muted: #6b7280;
+    --vc-border: #d1d5db;
+    --vc-card: #ffffff;
+    --vc-bg: #f8fafc;
+  }
+
   header {
     background-color: #001f3f;
     padding: 1rem;
     text-align: center;
   }
-  header img { height: 50px; }
+
+  header img {
+    height: 50px;
+  }
+
   main {
-    max-width: 800px;
+    max-width: 980px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: var(--vc-card);
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.08);
   }
-  h1, h2, h3 { color: #001f3f; }
-  p { line-height: 1.6; }
+
+  h1, h2, h3 {
+    color: #001f3f;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
   .disclaimer-box {
-    background-color: #eee;
+    background-color: #f3f4f6;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #d1d5db;
     margin-bottom: 1rem;
-    border-radius: 4px;
+    border-radius: 8px;
   }
+
   .advisor-buttons {
     display: none;
-    margin-top: 1rem;
-    text-align: center;
+    margin-top: 1.5rem;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
-  .advisor-buttons button {
+
+  .advisor-card {
     background-color: #001f3f;
     color: #fff;
-    padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 4px;
-    margin: 0.5rem;
+    border-radius: 12px;
+    padding: 12px 10px 14px;
     cursor: pointer;
+    text-align: center;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+    font-weight: 700;
   }
-  .advisor-buttons button:hover { background-color: #003366; }
+
+  .advisor-card:hover {
+    background-color: #003366;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  .advisor-card img {
+    width: 72px;
+    height: 72px;
+    border-radius: 999px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  }
+
+  .advisor-card span {
+    display: block;
+    line-height: 1.3;
+  }
+
   #advisorIframe {
     display: none;
     width: 100%;
-    height: 600px;
+    height: 780px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    background: #fff;
+  }
+
+  .helper-row {
+    display: none;
+    margin-top: 0.75rem;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .helper-row a,
+  .helper-row button {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 0.7rem 1rem;
     border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .helper-row a:hover,
+  .helper-row button:hover {
+    background-color: #003366;
+  }
+
+  .helper-note {
+    font-size: 13px;
+    color: #6b7280;
+  }
+
+  .section-note {
     margin-top: 1rem;
+    font-size: 14px;
+    color: #6b7280;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding: 1.25rem;
+      margin: 1rem;
+    }
+
+    #advisorIframe {
+      height: 720px;
+    }
   }
 </style>
 
@@ -61,7 +158,9 @@ comments: true
 
 <main>
   <h1>Digital Health Advisors</h1>
-  <p>Explore our interactive Digital Health Advisors, providing 24/7 health triage and guidance for employees and customers.</p>
+  <p>
+    Explore our interactive Digital Health Advisors, providing 24/7 health triage and guidance for employees and customers.
+  </p>
 
   <div class="disclaimer-box">
     <h3>Disclaimer</h3>
@@ -75,14 +174,48 @@ comments: true
   </div>
 
   <div class="advisor-buttons" id="advisorButtons">
-    <button onclick="launchAdvisor('maths.html')">Calvin</button>
-    <button onclick="launchAdvisor('research.html')">Hanna</button>
-    <button onclick="launchAdvisor('braden.html')">Braden</button>
-    <button onclick="launchAdvisor('kikko.html')">Kikko</button>
-    <button onclick="launchAdvisor('olivia.html')">Olivia</button>
+    <button class="advisor-card" onclick="launchAdvisor('maths.html', 'Calvin')">
+      <img src="images/main/Calvin.png" alt="Calvin, Digital Health Advisor">
+      <span>Calvin</span>
+    </button>
+
+    <button class="advisor-card" onclick="launchAdvisor('research.html', 'Hanna')">
+      <img src="images/main/Hanna.png" alt="Hanna, Digital Health Advisor">
+      <span>Hanna</span>
+    </button>
+
+    <button class="advisor-card" onclick="launchAdvisor('braden.html', 'Braden')">
+      <img src="images/main/Braden.png" alt="Braden, Digital Health Advisor">
+      <span>Braden</span>
+    </button>
+
+    <button class="advisor-card" onclick="launchAdvisor('kikko.html', 'Kikko')">
+      <img src="images/main/Kikko.png" alt="Kikko, Digital Health Advisor">
+      <span>Kikko</span>
+    </button>
+
+    <button class="advisor-card" onclick="launchAdvisor('olivia.html', 'Olivia Classic')">
+      <img src="images/main/Olivia.png" alt="Olivia Classic, Digital Health Advisor">
+      <span>Olivia (Classic)</span>
+    </button>
+
+    <button class="advisor-card" onclick="launchAdvisor('oliv.html', 'Olivia')">
+      <img src="images/main/oliv.png" alt="Olivia, Digital Health Advisor">
+      <span>Olivia</span>
+    </button>
   </div>
 
-  <iframe id="advisorIframe"></iframe>
+  <div class="helper-row" id="helperRow">
+    <a id="openNewTabLink" href="#" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" onclick="closeAdvisor()">Close advisor</button>
+    <span class="helper-note" id="currentAdvisorLabel"></span>
+  </div>
+
+  <iframe id="advisorIframe" title="VirtuClinic Digital Health Advisor"></iframe>
+
+  <div class="section-note">
+    All Digital Health Advisors offer the same type of support and skills. Choose any advisor you feel most comfortable with.
+  </div>
 </main>
 
 <footer style="text-align: center; margin: 2rem 0;">
@@ -93,19 +226,36 @@ comments: true
   const disclaimerCheck = document.getElementById("disclaimerCheck");
   const advisorButtons = document.getElementById("advisorButtons");
   const advisorIframe = document.getElementById("advisorIframe");
+  const helperRow = document.getElementById("helperRow");
+  const openNewTabLink = document.getElementById("openNewTabLink");
+  const currentAdvisorLabel = document.getElementById("currentAdvisorLabel");
 
   disclaimerCheck.addEventListener("change", function() {
     if (this.checked) {
-      advisorButtons.style.display = "block";
+      advisorButtons.style.display = "grid";
     } else {
       advisorButtons.style.display = "none";
+      helperRow.style.display = "none";
       advisorIframe.style.display = "none";
       advisorIframe.src = "";
+      openNewTabLink.href = "#";
+      currentAdvisorLabel.textContent = "";
     }
   });
 
-  function launchAdvisor(advisorPage) {
+  function launchAdvisor(advisorPage, advisorName) {
     advisorIframe.style.display = "block";
+    helperRow.style.display = "flex";
     advisorIframe.src = advisorPage;
+    openNewTabLink.href = advisorPage;
+    currentAdvisorLabel.textContent = "Currently viewing: " + advisorName;
+  }
+
+  function closeAdvisor() {
+    advisorIframe.style.display = "none";
+    advisorIframe.src = "";
+    helperRow.style.display = "none";
+    openNewTabLink.href = "#";
+    currentAdvisorLabel.textContent = "";
   }
 </script>
