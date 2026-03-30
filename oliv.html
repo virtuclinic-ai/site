@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Olivia - Digital Health Advisor</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <style>
+    :root {
+      --vc-primary: #001f3f;
+      --vc-accent: #1f7aec;
+      --vc-bg: #ffffff;
+      --vc-text: #1f2937;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #f8fafc;
+      color: var(--vc-text);
+      font-family: Inter, system-ui, Arial, sans-serif;
+      min-height: 100%;
+    }
+
+    .vc-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .vc-header {
+      background: linear-gradient(120deg, var(--vc-primary), #003366);
+      color: #fff;
+      padding: 18px 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    }
+
+    .vc-header h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .vc-header p {
+      margin: 8px 0 0;
+      font-size: 14px;
+      opacity: 0.95;
+      max-width: 900px;
+    }
+
+    .vc-main {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+      flex: 1;
+    }
+
+    .vc-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.08);
+      overflow: hidden;
+    }
+
+    .vc-toolbar {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .vc-toolbar-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .vc-toolbar-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--vc-primary);
+    }
+
+    .vc-toolbar-subtitle {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .vc-btn {
+      appearance: none;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .vc-btn-primary {
+      background: var(--vc-accent);
+      color: #fff;
+    }
+
+    .vc-btn-primary:hover {
+      filter: brightness(.96);
+    }
+
+    .vc-btn-ghost {
+      background: #fff;
+      color: #374151;
+      border: 1px solid #d1d5db;
+    }
+
+    .vc-btn-ghost:hover {
+      background: #f9fafb;
+    }
+
+    .vc-embed-wrap {
+      height: calc(100vh - 220px);
+      min-height: 680px;
+      width: 100%;
+      background: #fff;
+      position: relative;
+    }
+
+    .vc-unith-host {
+      height: 100%;
+      width: 100%;
+    }
+
+    unith-widget {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .vc-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    .dha-coach-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2147483000;
+    }
+
+    .dha-hidden {
+      display: none !important;
+    }
+
+    .dha-coach-card {
+      width: min(560px, 92vw);
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 20px 80px rgba(0,0,0,.35);
+      font-family: Inter, system-ui, Arial, sans-serif;
+    }
+
+    .dha-coach-card h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      color: #0b1d3a;
+    }
+
+    .dha-coach-card p {
+      margin: 0 0 14px;
+      color: #374151;
+      line-height: 1.45;
+    }
+
+    .dha-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .dha-btn {
+      appearance: none;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .dha-btn.primary {
+      background: #0b57d0;
+      color: #fff;
+    }
+
+    .dha-btn.ghost {
+      background: #fff;
+      border: 1px solid #d1d5db;
+      color: #374151;
+    }
+
+    .vc-dock {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 16px;
+      z-index: 2147483600;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      box-shadow: 0 24px 80px rgba(0,0,0,.35);
+      width: min(880px, 95vw);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .vc-dock.vc-show {
+      display: flex;
+    }
+
+    .vc-dock-hd {
+      background: linear-gradient(120deg, #001f3f, #003366);
+      color: #fff;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .vc-dock-hd h1 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .vc-dock-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    .vc-dock-btn {
+      appearance: none;
+      border: 0;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .vc-dock-btn.min { background: #fff; color: #111; }
+    .vc-dock-btn.max { background: #e5efff; color: #111; }
+    .vc-dock-btn.close { background: #f3f4f6; color: #111; }
+
+    .vc-dock-bd {
+      height: 70vh;
+      border-top: 1px solid #e5e7eb;
+      background: #fff;
+    }
+
+    .vc-dock iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .vc-pill {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 2147483600;
+      background: #001f3f;
+      color: #fff;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      display: none;
+      gap: 8px;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 12px 30px rgba(0,0,0,.25);
+      border: 0;
+    }
+
+    .vc-pill.vc-show {
+      display: inline-flex;
+    }
+
+    .vc-dock.vc-full {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: none;
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+    }
+
+    .vc-dock.vc-full .vc-dock-bd {
+      height: calc(100vh - 52px);
+    }
+
+    body.vc-no-scroll {
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .vc-embed-wrap {
+        min-height: 560px;
+        height: calc(100vh - 180px);
+      }
+    }
+  </style>
+
+  <script src="https://embedded-stream.unith.ai/index.js" defer></script>
+</head>
+<body>
+  <div class="vc-page">
+    <header class="vc-header">
+      <h1>Olivia – Digital Health Advisor</h1>
+      <p>
+        Olivia is ready to help with health triage, guidance, and next steps.
+        Please enable your microphone and camera if prompted for the best experience.
+      </p>
+    </header>
+
+    <main class="vc-main">
+      <section class="vc-card">
+        <div class="vc-toolbar">
+          <div class="vc-toolbar-left">
+            <div class="vc-toolbar-title">VirtuClinic DHA Session</div>
+            <div class="vc-toolbar-subtitle">Powered by UNITH streaming digital human</div>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a
+              class="vc-btn vc-btn-ghost"
+              href="https://virtuclinic-ai.github.io/site/archive.html"
+              target="_self"
+            >
+              Back to DHAs
+            </a>
+            <button id="vcDoneNow" class="vc-btn vc-btn-primary" type="button">
+              Finish & Feedback
+            </button>
+          </div>
+        </div>
+
+        <div class="vc-embed-wrap">
+          <div class="vc-unith-host">
+            <unith-widget
+              head-id="olivia-26963"
+              org-id="Virtuclinic-1663"
+              api-key="a015eb9181bf4270b9b6bb3bfccad71f"
+              language="en-US"
+              username="guest-user"
+              variant="fullscreen">
+            </unith-widget>
+          </div>
+        </div>
+      </section>
+
+      <div class="vc-note">
+        Olivia is embedded using the UNITH streaming widget. Microphone access may require HTTPS and browser permission.
+      </div>
+    </main>
+  </div>
+
+  <div id="dhaCoach" class="dha-coach-backdrop" role="dialog" aria-modal="true" aria-labelledby="dhaCoachTitle">
+    <div class="dha-coach-card" role="document">
+      <h2 id="dhaCoachTitle">Ready when you are</h2>
+      <p>
+        Olivia is ready to help. Please allow your microphone and camera when prompted.
+        You can start speaking once the assistant finishes loading.
+      </p>
+      <div class="dha-row">
+        <button id="dhaStartNow" class="dha-btn primary" type="button">Start now</button>
+        <button id="dhaLater" class="dha-btn ghost" type="button">Maybe later</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="vcSurveyDock" class="vc-dock" aria-hidden="true">
+    <div class="vc-dock-hd">
+      <h1>We value your feedback</h1>
+      <div class="vc-dock-btns">
+        <button id="vcMinSurvey" class="vc-dock-btn min" type="button">Minimize</button>
+        <button id="vcMaxSurvey" class="vc-dock-btn max" type="button">Maximize</button>
+        <button id="vcCloseSurvey" class="vc-dock-btn close" type="button">Close</button>
+      </div>
+    </div>
+    <div class="vc-dock-bd">
+      <iframe
+        id="vcSurveyDockFrame"
+        title="VirtuClinic DHA Feedback Survey"
+        src="">
+      </iframe>
+    </div>
+  </div>
+
+  <button id="vcSurveyPill" class="vc-pill" type="button">Feedback (1 min)</button>
+
+  <script>
+    const VC_SURVEY_URL =
+      "https://docs.google.com/forms/d/e/1FAIpQLSe6zfiql3ZGmUO5Q1SUIj2X8DJLGxUaO14XAqJOnNNi4cB7qA/viewform?embedded=true";
+    const VC_SESSION_MS = 300000;
+    const VC_RETURN_URL = "https://virtuclinic-ai.github.io/site/archive.html";
+
+    let vcSessionTimer = null;
+    let vcSurveyPrimed = false;
+
+    const coach = document.getElementById("dhaCoach");
+    const startBtn = document.getElementById("dhaStartNow");
+    const laterBtn = document.getElementById("dhaLater");
+
+    const dock = document.getElementById("vcSurveyDock");
+    const dockFrame = document.getElementById("vcSurveyDockFrame");
+    const pill = document.getElementById("vcSurveyPill");
+    const minBtn = document.getElementById("vcMinSurvey");
+    const maxBtn = document.getElementById("vcMaxSurvey");
+    const closeBtn = document.getElementById("vcCloseSurvey");
+    const doneNow = document.getElementById("vcDoneNow");
+
+    function hideCoach() {
+      coach.classList.add("dha-hidden");
+    }
+
+    function showCoach() {
+      coach.classList.remove("dha-hidden");
+    }
+
+    function primeSurvey(minimized = true) {
+      if (!dockFrame.src) {
+        dockFrame.src = VC_SURVEY_URL;
+      }
+
+      if (minimized) {
+        dock.classList.remove("vc-show");
+        pill.classList.add("vc-show");
+      } else {
+        pill.classList.remove("vc-show");
+        dock.classList.add("vc-show");
+      }
+
+      vcSurveyPrimed = true;
+    }
+
+    function expandSurvey() {
+      if (!dockFrame.src) {
+        dockFrame.src = VC_SURVEY_URL;
+      }
+      pill.classList.remove("vc-show");
+      dock.classList.add("vc-show");
+    }
+
+    function minimizeSurvey() {
+      dock.classList.remove("vc-show");
+      pill.classList.add("vc-show");
+    }
+
+    function closeSurvey() {
+      dock.classList.remove("vc-show");
+      pill.classList.remove("vc-show");
+    }
+
+    function maximizeSurvey() {
+      document.body.classList.add("vc-no-scroll");
+      dock.classList.add("vc-full");
+      maxBtn.textContent = "Restore";
+    }
+
+    function restoreSurvey() {
+      dock.classList.remove("vc-full");
+      document.body.classList.remove("vc-no-scroll");
+      maxBtn.textContent = "Maximize";
+    }
+
+    function toggleMax() {
+      if (dock.classList.contains("vc-full")) restoreSurvey();
+      else maximizeSurvey();
+    }
+
+    function startSessionTimer() {
+      if (vcSessionTimer) clearTimeout(vcSessionTimer);
+
+      vcSessionTimer = setTimeout(() => {
+        alert("Your session with Olivia has ended.");
+        if (vcSurveyPrimed) expandSurvey();
+        else primeSurvey(false);
+      }, VC_SESSION_MS);
+    }
+
+    startBtn.addEventListener("click", () => {
+      hideCoach();
+      startSessionTimer();
+    });
+
+    laterBtn.addEventListener("click", () => {
+      window.location.href = VC_RETURN_URL;
+    });
+
+    doneNow.addEventListener("click", () => {
+      if (!vcSurveyPrimed) {
+        primeSurvey(false);
+      } else {
+        expandSurvey();
+      }
+    });
+
+    minBtn.addEventListener("click", () => {
+      restoreSurvey();
+      minimizeSurvey();
+    });
+
+    maxBtn.addEventListener("click", toggleMax);
+
+    closeBtn.addEventListener("click", () => {
+      restoreSurvey();
+      closeSurvey();
+      window.location.href = VC_RETURN_URL;
+    });
+
+    pill.addEventListener("click", () => expandSurvey());
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && dock.classList.contains("vc-full")) {
+        restoreSurvey();
+      }
+    });
+
+    showCoach();
+    primeSurvey(true);
+  </script>
+</body>
+</html>
