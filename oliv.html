@@ -5,306 +5,48 @@
   <title>Olivia - Digital Health Advisor</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- ===== Survey Modal Styles (reusable) ===== -->
   <style>
-    :root {
-      --vc-primary: #001f3f;
-      --vc-accent: #1f7aec;
-      --vc-bg: #ffffff;
-      --vc-text: #1f2937;
-    }
-
     html, body {
       margin: 0;
       padding: 0;
-      background: #f8fafc;
       min-height: 100%;
+      background: #ffffff;
+      overflow-x: hidden;
       font-family: Inter, system-ui, Arial, sans-serif;
-      color: var(--vc-text);
     }
 
-    /* Modal backdrop */
-    .vc-modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.45);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-    .vc-modal-backdrop.vc-open { display: flex; }
-
-    /* Modal panel */
-    .vc-modal {
-      width: min(720px, 94vw);
-      max-height: 92vh;
-      background: var(--vc-bg);
-      color: var(--vc-text);
-      border-radius: 14px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-      overflow: hidden;
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      outline: none;
+    unith-widget {
+      display: contents;
     }
 
-    .vc-modal-header {
-      padding: 18px 22px;
-      background: linear-gradient(120deg, var(--vc-primary), #003366);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    .dha-coach-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:2147483000}
+    .dha-hidden{display:none!important}
+    .dha-coach-card{width:min(560px,92vw);background:#fff;border-radius:14px;padding:20px;box-shadow:0 20px 80px rgba(0,0,0,.35);font-family:Inter,system-ui,Arial,sans-serif}
+    .dha-coach-card h2{margin:0 0 8px;font-size:20px;color:#0b1d3a}
+    .dha-coach-card p{margin:0 0 14px;color:#374151;line-height:1.45}
+    .dha-row{display:flex;gap:10px;flex-wrap:wrap}
+    .dha-btn{appearance:none;border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}
+    .dha-btn.primary{background:#0b57d0;color:#fff}
+    .dha-btn.ghost{background:#fff;border:1px solid #d1d5db;color:#374151}
 
-    .vc-badge {
-      background: rgba(255,255,255,0.15);
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-    }
+    .dha-pulse{position:fixed;right:16px;bottom:16px;width:96px;height:96px;border-radius:999px;pointer-events:none;z-index:2147483001}
+    .dha-pulse::before,.dha-pulse::after{content:"";position:absolute;inset:0;border-radius:999px;border:3px solid rgba(11,87,208,.55);animation:dha-pulse 1.8s ease-out infinite}
+    .dha-pulse::after{animation-delay:.9s}
+    @keyframes dha-pulse{0%{transform:scale(.6);opacity:.9}70%{opacity:.15}100%{transform:scale(1.25);opacity:0}}
 
-    .vc-modal-title {
-      font-size: 18px;
-      font-weight: 600;
-      margin: 0;
-    }
-
-    .vc-modal-subtitle {
-      font-size: 14px;
-      opacity: .9;
-      margin: 2px 0 0;
-    }
-
-    .vc-modal-body {
-      padding: 18px 22px;
-      display: grid;
-      gap: 12px;
-    }
-
-    .vc-callout {
-      background: #f6f9ff;
-      border: 1px solid #e5efff;
-      color: #0f1f3f;
-      padding: 10px 12px;
-      border-radius: 10px;
-      font-size: 14px;
-    }
-
-    .vc-iframe-wrap {
-      width: 100%;
-      height: 420px;
-      border-radius: 10px;
-      overflow: hidden;
-      border: 1px solid #e5e7eb;
-    }
-
-    .vc-iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .vc-alt {
-      display: none;
-      text-align: center;
-      padding: 12px;
-    }
-
-    .vc-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      white-space: nowrap;
-      padding: 10px 14px;
-      border-radius: 10px;
-      border: 1px solid transparent;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .vc-btn-primary {
-      background: var(--vc-accent);
-      color: #fff;
-    }
-
-    .vc-btn-primary:hover {
-      filter: brightness(0.95);
-    }
-
-    .vc-btn-ghost {
-      background: #fff;
-      border-color: #d1d5db;
-      color: #374151;
-    }
-
-    .vc-btn-ghost:hover {
-      background: #f9fafb;
-    }
-
-    .vc-modal-footer {
-      padding: 14px 22px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid #e5e7eb;
-      background: #fafafa;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .vc-disclaimer {
-      font-size: 12px;
-      color: #6b7280;
-    }
-
-    .vc-actions {
-      display: flex;
-      gap: 10px;
-    }
-
-    @media (max-width: 420px) {
-      .vc-modal-header { padding: 14px 16px; }
-      .vc-modal-body { padding: 14px 16px; }
-      .vc-modal-footer { padding: 12px 16px; }
-      .vc-iframe-wrap { height: 360px; }
-    }
-
-    /* ===== DHA Coach-mark & Auto-open (Olivia) ===== */
-    .dha-coach-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,.45);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2147483000;
-    }
-
-    .dha-hidden {
-      display: none !important;
-    }
-
-    .dha-coach-card {
-      width: min(560px,92vw);
-      background: #fff;
-      border-radius: 14px;
-      padding: 20px;
-      box-shadow: 0 20px 80px rgba(0,0,0,.35);
-      font-family: Inter,system-ui,Arial,sans-serif;
-    }
-
-    .dha-coach-card h2 {
-      margin: 0 0 8px;
-      font-size: 20px;
-      color: #0b1d3a;
-    }
-
-    .dha-coach-card p {
-      margin: 0 0 14px;
-      color: #374151;
-      line-height: 1.45;
-    }
-
-    .dha-row {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .dha-btn {
-      appearance: none;
-      border: 0;
-      border-radius: 10px;
-      padding: 10px 14px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    .dha-btn.primary {
-      background: #0b57d0;
-      color: #fff;
-    }
-
-    .dha-btn.ghost {
-      background: #fff;
-      border: 1px solid #d1d5db;
-      color: #374151;
-    }
-
-    .dha-pulse {
-      position: fixed;
-      right: 16px;
-      bottom: 16px;
-      width: 96px;
-      height: 96px;
-      border-radius: 999px;
-      pointer-events: none;
-      z-index: 2147483001;
-    }
-
-    .dha-pulse::before,
-    .dha-pulse::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 999px;
-      border: 3px solid rgba(11,87,208,.55);
-      animation: dha-pulse 1.8s ease-out infinite;
-    }
-
-    .dha-pulse::after {
-      animation-delay: .9s;
-    }
-
-    @keyframes dha-pulse {
-      0% { transform: scale(.6); opacity: .9; }
-      70% { opacity: .15; }
-      100% { transform: scale(1.25); opacity: 0; }
-    }
-
-    .dha-arrow {
-      position: fixed;
-      right: 128px;
-      bottom: 92px;
-      z-index: 2147483001;
-    }
-
-    .dha-arrow svg {
-      width: 72px;
-      height: 72px;
-      fill: none;
-      stroke: #0b57d0;
-      stroke-width: 3;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,.2));
-    }
-
-    @media (max-width: 480px) {
-      .dha-arrow { right: 100px; bottom: 88px; }
-      .dha-pulse { right: 12px; bottom: 12px; width: 84px; height: 84px; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .dha-pulse::before,
-      .dha-pulse::after {
-        animation: none;
-      }
-    }
+    .dha-arrow{position:fixed;right:128px;bottom:92px;z-index:2147483001}
+    .dha-arrow svg{width:72px;height:72px;fill:none;stroke:#0b57d0;stroke-width:3;filter:drop-shadow(0 2px 4px rgba(0,0,0,.2))}
   </style>
 
   <script src="https://embedded-stream.unith.ai/index.js" defer></script>
 </head>
 <body>
 
-  <!-- ===== DHA Coach-mark & Auto-open (Olivia) ===== -->
-  <div id="dhaCoach" class="dha-coach-backdrop dha-hidden" role="dialog" aria-modal="true" aria-labelledby="dhaCoachTitle">
+  <div id="dhaCoach" class="dha-coach-backdrop" role="dialog" aria-modal="true" aria-labelledby="dhaCoachTitle">
     <div class="dha-coach-card" role="document">
       <h2 id="dhaCoachTitle">Ready when you are</h2>
       <p>
-        Click the assistant in the <strong>bottom-right corner</strong> to start. You can talk or type, and I’ll paste names, addresses, and phone numbers into the chat so you can copy them easily. If ready, let's chat. Please make sure to enable your camera and microphone.
+        Click the assistant in the <strong>bottom-right corner</strong> to start. You can talk or type, and I’ll paste names, addresses, and phone numbers into the chat so you can copy them easily. Please make sure to enable your camera and microphone.
       </p>
       <div class="dha-row">
         <button id="dhaStartNow" class="dha-btn primary" type="button">Start now</button>
@@ -313,95 +55,13 @@
     </div>
   </div>
 
-  <!-- Visual cue near the avatar bubble -->
-  <div id="dhaPulse" class="dha-pulse dha-hidden" aria-hidden="true"></div>
-  <div id="dhaArrow" class="dha-arrow dha-hidden" aria-hidden="true">
+  <div id="dhaPulse" class="dha-pulse" aria-hidden="true"></div>
+  <div id="dhaArrow" class="dha-arrow" aria-hidden="true">
     <svg viewBox="0 0 64 64" aria-hidden="true">
       <path d="M6 10 C28 18, 36 30, 42 44 M42 44 L34 42 M42 44 L40 36"/>
     </svg>
   </div>
 
-  <script>
-    (function(){
-      const LAUNCHER_SELECTOR = '[data-dha-launcher], unith-widget, .sm-avatar-launcher, .sm-widget-launcher, .avatar-launcher';
-      const HOST_DHA_PAGE = 'https://virtuclinic-ai.github.io/site/archive.html';
-      const AUTO_OPEN_MS = 0;
-
-      const coach = document.getElementById('dhaCoach');
-      const startBtn = document.getElementById('dhaStartNow');
-      const laterBtn = document.getElementById('dhaLater');
-      const pulse = document.getElementById('dhaPulse');
-      const arrow = document.getElementById('dhaArrow');
-
-      const showHints = () => {
-        coach.classList.remove('dha-hidden');
-        pulse.classList.remove('dha-hidden');
-        arrow.classList.remove('dha-hidden');
-      };
-
-      const hideHints = () => {
-        coach.classList.add('dha-hidden');
-        pulse.classList.add('dha-hidden');
-        arrow.classList.add('dha-hidden');
-      };
-
-      const tagLauncher = () => {
-        const el = document.querySelector('unith-widget');
-        if (el && !el.hasAttribute('data-dha-launcher')) {
-          el.setAttribute('data-dha-launcher', '');
-        }
-      };
-
-      new MutationObserver(tagLauncher).observe(document.body, { childList:true, subtree:true });
-      window.addEventListener('load', tagLauncher);
-
-      const openAssistant = () => {
-        hideHints();
-        const el = document.querySelector(LAUNCHER_SELECTOR);
-        if (el) {
-          el.click();
-          setTimeout(() => {
-            try { el.click(); } catch(e) {}
-          }, 300);
-        }
-      };
-
-      startBtn.addEventListener('click', openAssistant);
-
-      laterBtn.addEventListener('click', () => {
-        hideHints();
-        if (window.opener && !window.opener.closed) {
-          window.close();
-        } else if (HOST_DHA_PAGE) {
-          window.location.href = HOST_DHA_PAGE;
-        }
-      });
-
-      document.addEventListener('click', (e) => {
-        if (e.target.closest(LAUNCHER_SELECTOR)) hideHints();
-      }, true);
-
-      showHints();
-
-      setTimeout(() => {
-        pulse.classList.add('dha-hidden');
-        arrow.classList.add('dha-hidden');
-      }, 100000);
-
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (AUTO_OPEN_MS > 0 && !prefersReduced) {
-        setTimeout(() => {
-          if (!coach.classList.contains('dha-hidden')) {
-            openAssistant();
-          }
-        }, AUTO_OPEN_MS);
-      }
-
-      document.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') hideHints(); });
-    })();
-  </script>
-
-  <!-- ===== Olivia widget ===== -->
   <unith-widget
     head_id="olivia-26963"
     org_id="Virtuclinic-1663"
@@ -412,144 +72,33 @@
     placement="bottom right">
   </unith-widget>
 
-  <!-- ===== Session timer + survey popup ===== -->
-  <div class="vc-modal-backdrop" id="vcSurveyBackdrop" aria-hidden="true">
-    <div class="vc-modal" role="dialog" aria-modal="true" aria-labelledby="vcSurveyTitle" tabindex="-1">
-      <div class="vc-modal-header">
-        <span class="vc-badge">Session Ended</span>
-        <div>
-          <h2 id="vcSurveyTitle" class="vc-modal-title">We value your feedback</h2>
-          <p class="vc-modal-subtitle">Tell us how the Digital Health Advisor session with <strong id="vcAgentName">Olivia</strong> went.</p>
-        </div>
-      </div>
-      <div class="vc-modal-body">
-        <div class="vc-callout">
-          Your 5-minute session has finished. This 2-minute anonymous survey helps us improve guidance, clarity of next steps, and overall experience.
-        </div>
-
-        <div class="vc-iframe-wrap" id="vcIframeWrap" hidden>
-          <iframe id="vcSurveyFrame" class="vc-iframe" loading="lazy" title="VirtuClinic DHA Feedback Survey"></iframe>
-        </div>
-
-        <div class="vc-alt" id="vcAltLink" hidden>
-          <p>It looks like we can’t show the survey here. Please open it in a new tab:</p>
-          <p><a id="vcSurveyHref" class="vc-btn vc-btn-primary" target="_blank" rel="noopener">Open Survey</a></p>
-        </div>
-      </div>
-
-      <div class="vc-modal-footer">
-        <div class="vc-disclaimer">Anonymous & confidential · Your feedback directly shapes improvements</div>
-        <div class="vc-actions">
-          <button class="vc-btn vc-btn-ghost" id="vcSkipBtn" type="button">Skip</button>
-          <a class="vc-btn vc-btn-primary" id="vcOpenInNewTab" target="_blank" rel="noopener" style="display:none;">Open in New Tab</a>
-          <button class="vc-btn vc-btn-primary" id="vcDoneBtn" type="button">Done</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <script>
-    const SURVEY_URL_GOOGLE = "https://docs.google.com/forms/d/e/1FAIpQLSe6zfiql3ZGmUO5Q1SUIj2X8DJLGxUaO14XAqJOnNNi4cB7qA/viewform?embedded=true";
-    const POST_SURVEY_REDIRECT = "https://virtuclinic-ai.github.io/site/archive.html";
+    (function(){
+      const coach = document.getElementById('dhaCoach');
+      const startBtn = document.getElementById('dhaStartNow');
+      const laterBtn = document.getElementById('dhaLater');
+      const pulse = document.getElementById('dhaPulse');
+      const arrow = document.getElementById('dhaArrow');
+      const HOST_DHA_PAGE = 'https://virtuclinic-ai.github.io/site/archive.html';
 
-    const $backdrop = document.getElementById('vcSurveyBackdrop');
-    const $modal = $backdrop.querySelector('.vc-modal');
-    const $agentName = document.getElementById('vcAgentName');
-    const $iframeWrap = document.getElementById('vcIframeWrap');
-    const $surveyFrame = document.getElementById('vcSurveyFrame');
-    const $altLink = document.getElementById('vcAltLink');
-    const $surveyHref = document.getElementById('vcSurveyHref');
-    const $openInNewTab = document.getElementById('vcOpenInNewTab');
-    const $skipBtn = document.getElementById('vcSkipBtn');
-    const $doneBtn = document.getElementById('vcDoneBtn');
-
-    let lastFocusedEl = null;
-
-    function openModal() {
-      lastFocusedEl = document.activeElement;
-      document.body.classList.add('vc-survey-open');
-      $backdrop.classList.add('vc-open');
-      $backdrop.setAttribute('aria-hidden', 'false');
-      $modal.focus();
-    }
-
-    function closeModal() {
-      $backdrop.classList.remove('vc-open');
-      $backdrop.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('vc-survey-open');
-      if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') lastFocusedEl.focus();
-    }
-
-    $backdrop.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        e.preventDefault();
-        closeModal();
-        window.location.href = POST_SURVEY_REDIRECT;
+      function hideHints() {
+        coach.classList.add('dha-hidden');
+        pulse.classList.add('dha-hidden');
+        arrow.classList.add('dha-hidden');
       }
-    });
 
-    $skipBtn.addEventListener('click', () => {
-      closeModal();
-      window.location.href = POST_SURVEY_REDIRECT;
-    });
-
-    $doneBtn.addEventListener('click', () => {
-      closeModal();
-      window.location.href = POST_SURVEY_REDIRECT;
-    });
-
-    function showSurvey(agentDisplayName = "Your Advisor") {
-      const url = SURVEY_URL_GOOGLE;
-      $agentName.textContent = agentDisplayName;
-      $surveyHref.href = url;
-      $openInNewTab.href = url;
-
-      $surveyFrame.src = url;
-      $iframeWrap.hidden = false;
-      $altLink.hidden = true;
-      $openInNewTab.style.display = 'none';
-
-      openModal();
-    }
-
-    window.VC_SURVEY = { showSurvey };
-
-    const SESSION_MS = 300000;
-    setTimeout(() => {
-      alert("Your session with Olivia has ended.");
-      window.VC_SURVEY.showSurvey("Olivia");
-    }, SESSION_MS);
-
-    window.VC_SURVEY.microPrompt = function () {
-      prompt("Thanks for using VirtuClinic’s Digital Health Advisor! On a scale of 0–10, how helpful was this session? (Optional)");
-      window.VC_SURVEY.showSurvey("Olivia");
-    };
-  </script>
-
-  <style>
-    .vc-modal-backdrop { z-index: 2147483000; }
-
-    body.vc-survey-open iframe[src*="soulmachines"],
-    body.vc-survey-open [class*="sm-"],
-    body.vc-survey-open [id*="sm-"],
-    body.vc-survey-open [data-sm-position],
-    body.vc-survey-open [data-sm-layout] {
-      display: none !important;
-    }
-  </style>
-
-  <script>
-    function vcNotifyDone(reason='agent_done'){
-      try { opener?.postMessage({ type:'VC_EVENT', name:reason }, '*'); } catch(e){}
-      try { parent?.postMessage({ type:'VC_EVENT', name:reason }, '*'); } catch(e){}
-    }
-
-    ['beforeunload','pagehide','visibilitychange'].forEach(evt=>{
-      window.addEventListener(evt, ()=>{
-        if (evt==='visibilitychange' && document.visibilityState!=='hidden') return;
-        vcNotifyDone('agent_closed');
+      startBtn.addEventListener('click', () => {
+        hideHints();
+        const widget = document.querySelector('unith-widget');
+        if (widget) widget.click();
       });
-    });
+
+      laterBtn.addEventListener('click', () => {
+        hideHints();
+        window.location.href = HOST_DHA_PAGE;
+      });
+    })();
   </script>
+
 </body>
 </html>
