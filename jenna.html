@@ -16,17 +16,34 @@
     html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
       background: #ffffff;
-      min-height: 100%;
       font-family: Inter, system-ui, Arial, sans-serif;
       color: var(--vc-text);
-      overflow-x: hidden;
     }
 
-    unith-widget {
-      display: contents;
+    body {
+      position: relative;
     }
 
+    .unith-stage {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: #f3f4f6;
+    }
+
+    .unith-stage unith-widget {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ===== Survey Modal Styles ===== */
     .vc-modal-backdrop {
       position: fixed;
       inset: 0;
@@ -34,15 +51,15 @@
       display: none;
       align-items: center;
       justify-content: center;
-      z-index: 9999;
+      z-index: 2147483000;
     }
     .vc-modal-backdrop.vc-open { display: flex; }
 
     .vc-modal {
       width: min(720px, 94vw);
       max-height: 92vh;
-      background: var(--vc-bg);
-      color: var(--vc-text);
+      background: #fff;
+      color: #1f2937;
       border-radius: 14px;
       box-shadow: 0 20px 60px rgba(0,0,0,0.35);
       overflow: hidden;
@@ -53,7 +70,7 @@
 
     .vc-modal-header {
       padding: 18px 22px;
-      background: linear-gradient(120deg, var(--vc-primary), #003366);
+      background: linear-gradient(120deg, #001f3f, #003366);
       color: #fff;
       display: flex;
       align-items: center;
@@ -129,22 +146,14 @@
     }
 
     .vc-btn-primary {
-      background: var(--vc-accent);
+      background: #1f7aec;
       color: #fff;
-    }
-
-    .vc-btn-primary:hover {
-      filter: brightness(0.95);
     }
 
     .vc-btn-ghost {
       background: #fff;
       border-color: #d1d5db;
       color: #374151;
-    }
-
-    .vc-btn-ghost:hover {
-      background: #f9fafb;
     }
 
     .vc-modal-footer {
@@ -168,13 +177,7 @@
       gap: 10px;
     }
 
-    @media (max-width: 420px) {
-      .vc-modal-header { padding: 14px 16px; }
-      .vc-modal-body { padding: 14px 16px; }
-      .vc-modal-footer { padding: 12px 16px; }
-      .vc-iframe-wrap { height: 360px; }
-    }
-
+    /* ===== Coach overlay ===== */
     .dha-coach-backdrop {
       position: fixed;
       inset: 0;
@@ -182,7 +185,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 2147483000;
+      z-index: 2147482999;
     }
 
     .dha-hidden {
@@ -236,63 +239,11 @@
       color: #374151;
     }
 
-    .dha-pulse {
-      position: fixed;
-      right: 16px;
-      bottom: 16px;
-      width: 96px;
-      height: 96px;
-      border-radius: 999px;
-      pointer-events: none;
-      z-index: 2147483001;
-    }
-
-    .dha-pulse::before,
-    .dha-pulse::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 999px;
-      border: 3px solid rgba(11,87,208,.55);
-      animation: dha-pulse 1.8s ease-out infinite;
-    }
-
-    .dha-pulse::after {
-      animation-delay: .9s;
-    }
-
-    @keyframes dha-pulse {
-      0% { transform: scale(.6); opacity: .9; }
-      70% { opacity: .15; }
-      100% { transform: scale(1.25); opacity: 0; }
-    }
-
-    .dha-arrow {
-      position: fixed;
-      right: 128px;
-      bottom: 92px;
-      z-index: 2147483001;
-    }
-
-    .dha-arrow svg {
-      width: 72px;
-      height: 72px;
-      fill: none;
-      stroke: #0b57d0;
-      stroke-width: 3;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,.2));
-    }
-
-    @media (max-width: 480px) {
-      .dha-arrow { right: 100px; bottom: 88px; }
-      .dha-pulse { right: 12px; bottom: 12px; width: 84px; height: 84px; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .dha-pulse::before,
-      .dha-pulse::after {
-        animation: none;
-      }
+    @media (max-width: 420px) {
+      .vc-modal-header { padding: 14px 16px; }
+      .vc-modal-body { padding: 14px 16px; }
+      .vc-modal-footer { padding: 12px 16px; }
+      .vc-iframe-wrap { height: 360px; }
     }
   </style>
 
@@ -304,7 +255,7 @@
     <div class="dha-coach-card" role="document">
       <h2 id="dhaCoachTitle">Ready when you are</h2>
       <p>
-        Click the assistant in the <strong>bottom-right corner</strong> to start. You can talk or type, and I’ll paste names, addresses, and phone numbers into the chat so you can copy them easily. If ready, let's chat. Please make sure to enable your camera and microphone.
+        Click the assistant to start. You can talk or type, and I’ll paste names, addresses, and phone numbers into the chat so you can copy them easily. Please make sure to enable your camera and microphone.
       </p>
       <div class="dha-row">
         <button id="dhaStartNow" class="dha-btn primary" type="button">Start now</button>
@@ -313,22 +264,16 @@
     </div>
   </div>
 
-  <div id="dhaPulse" class="dha-pulse" aria-hidden="true"></div>
-  <div id="dhaArrow" class="dha-arrow" aria-hidden="true">
-    <svg viewBox="0 0 64 64" aria-hidden="true">
-      <path d="M6 10 C28 18, 36 30, 42 44 M42 44 L34 42 M42 44 L40 36"/>
-    </svg>
+  <div class="unith-stage">
+    <unith-widget
+      head_id="jenna-26982"
+      org_id="Virtuclinic-1663"
+      api_key="a015eb9181bf4270b9b6bb3bfccad71f"
+      language="en-US"
+      username="guest-user"
+      variant="fullscreen">
+    </unith-widget>
   </div>
-
-  <unith-widget
-    head_id="jenna-26982"
-    org_id="Virtuclinic-1663"
-    api_key="a015eb9181bf4270b9b6bb3bfccad71f"
-    language="en-US"
-    username="guest-user"
-    variant="widget"
-    placement="bottom right">
-  </unith-widget>
 
   <div class="vc-modal-backdrop" id="vcSurveyBackdrop" aria-hidden="true">
     <div class="vc-modal" role="dialog" aria-modal="true" aria-labelledby="vcSurveyTitle" tabindex="-1">
@@ -336,7 +281,7 @@
         <span class="vc-badge">Session Ended</span>
         <div>
           <h2 id="vcSurveyTitle" class="vc-modal-title">We value your feedback</h2>
-          <p class="vc-modal-subtitle">Tell us how the Digital Health Advisor session with <strong id="vcAgentName">Jenna</strong> went.</p>
+          <p class="vc-modal-subtitle">Tell us how the Digital Health Advisor session with <strong id="vcAgentName">Brad</strong> went.</p>
         </div>
       </div>
       <div class="vc-modal-body">
@@ -384,7 +329,6 @@
 
     function openModal() {
       lastFocusedEl = document.activeElement;
-      document.body.classList.add('vc-survey-open');
       $backdrop.classList.add('vc-open');
       $backdrop.setAttribute('aria-hidden', 'false');
       $modal.focus();
@@ -393,7 +337,6 @@
     function closeModal() {
       $backdrop.classList.remove('vc-open');
       $backdrop.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('vc-survey-open');
       if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') lastFocusedEl.focus();
     }
 
@@ -431,36 +374,25 @@
 
     window.VC_SURVEY = { showSurvey };
 
-    const SESSION_MS = 300000;
     setTimeout(() => {
-      alert("Your session with Jenna has ended.");
-      window.VC_SURVEY.showSurvey("Jenna");
-    }, SESSION_MS);
+      alert("Your session with Brad has ended.");
+      window.VC_SURVEY.showSurvey("Brad");
+    }, 300000);
   </script>
-
-  <style>
-    .vc-modal-backdrop { z-index: 2147483000; }
-  </style>
 
   <script>
     (function(){
       const coach = document.getElementById('dhaCoach');
       const startBtn = document.getElementById('dhaStartNow');
       const laterBtn = document.getElementById('dhaLater');
-      const pulse = document.getElementById('dhaPulse');
-      const arrow = document.getElementById('dhaArrow');
       const HOST_DHA_PAGE = 'https://virtuclinic-ai.github.io/site/archive.html';
 
       function hideHints() {
         coach.classList.add('dha-hidden');
-        pulse.classList.add('dha-hidden');
-        arrow.classList.add('dha-hidden');
       }
 
       startBtn.addEventListener('click', () => {
         hideHints();
-        const widget = document.querySelector('unith-widget');
-        if (widget) widget.click();
       });
 
       laterBtn.addEventListener('click', () => {
@@ -486,4 +418,4 @@
     });
   </script>
 </body>
-</html>;;; see above the jenna. please don't be careless. i need the three correct ones complete files, and make sure the names/ids/talk to x are right.  go through carefully. don't miss details."
+</html>
