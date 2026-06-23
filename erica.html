@@ -11,6 +11,8 @@
       --vc-accent: #1f7aec;
       --vc-bg: #ffffff;
       --vc-text: #1f2937;
+      --vc-muted: #6b7280;
+      --vc-border: #e5e7eb;
     }
 
     html, body {
@@ -20,13 +22,11 @@
       height: 100%;
       overflow: hidden;
       background: #ffffff;
-      font-family: Inter, system-ui, Arial, sans-serif;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       color: var(--vc-text);
     }
 
-    body {
-      position: relative;
-    }
+    body { position: relative; }
 
     .unith-stage {
       position: fixed;
@@ -43,7 +43,28 @@
       height: 100%;
     }
 
-    /* ===== Survey Modal Styles ===== */
+    .vc-session-badge {
+      position: fixed;
+      top: 14px;
+      left: 14px;
+      z-index: 2147482500;
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(229,231,235,.9);
+      box-shadow: 0 12px 34px rgba(0,31,63,.12);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #0b1d3a;
+      display: none;
+      max-width: min(520px, 92vw);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .vc-session-badge.vc-show { display: block; }
+
     .vc-modal-backdrop {
       position: fixed;
       inset: 0;
@@ -52,7 +73,9 @@
       align-items: center;
       justify-content: center;
       z-index: 2147483000;
+      padding: 16px;
     }
+
     .vc-modal-backdrop.vc-open { display: flex; }
 
     .vc-modal {
@@ -82,11 +105,12 @@
       padding: 6px 10px;
       border-radius: 999px;
       font-size: 12px;
+      white-space: nowrap;
     }
 
     .vc-modal-title {
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 700;
       margin: 0;
     }
 
@@ -94,12 +118,14 @@
       font-size: 14px;
       opacity: .9;
       margin: 2px 0 0;
+      line-height: 1.4;
     }
 
     .vc-modal-body {
       padding: 18px 22px;
       display: grid;
       gap: 12px;
+      overflow: auto;
     }
 
     .vc-callout {
@@ -109,6 +135,7 @@
       padding: 10px 12px;
       border-radius: 10px;
       font-size: 14px;
+      line-height: 1.45;
     }
 
     .vc-iframe-wrap {
@@ -142,7 +169,9 @@
       border: 1px solid transparent;
       cursor: pointer;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
+      font-family: inherit;
+      font-size: 14px;
     }
 
     .vc-btn-primary {
@@ -170,14 +199,15 @@
     .vc-disclaimer {
       font-size: 12px;
       color: #6b7280;
+      line-height: 1.45;
     }
 
     .vc-actions {
       display: flex;
       gap: 10px;
+      flex-wrap: wrap;
     }
 
-    /* ===== Coach overlay ===== */
     .dha-coach-backdrop {
       position: fixed;
       inset: 0;
@@ -186,31 +216,42 @@
       align-items: center;
       justify-content: center;
       z-index: 2147482999;
+      padding: 16px;
     }
 
-    .dha-hidden {
-      display: none !important;
-    }
+    .dha-hidden { display: none !important; }
 
     .dha-coach-card {
-      width: min(560px,92vw);
+      width: min(600px,92vw);
       background: #fff;
-      border-radius: 14px;
-      padding: 20px;
+      border-radius: 16px;
+      padding: 22px;
       box-shadow: 0 20px 80px rgba(0,0,0,.35);
       font-family: Inter,system-ui,Arial,sans-serif;
     }
 
     .dha-coach-card h2 {
       margin: 0 0 8px;
-      font-size: 20px;
+      font-size: 22px;
       color: #0b1d3a;
+      letter-spacing: -.02em;
     }
 
     .dha-coach-card p {
       margin: 0 0 14px;
       color: #374151;
+      line-height: 1.5;
+    }
+
+    .dha-note {
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #f6f9ff;
+      border: 1px solid #e5efff;
+      color: #334155;
+      font-size: 13px;
       line-height: 1.45;
+      margin-bottom: 14px;
     }
 
     .dha-row {
@@ -224,8 +265,9 @@
       border: 0;
       border-radius: 10px;
       padding: 10px 14px;
-      font-weight: 700;
+      font-weight: 800;
       cursor: pointer;
+      font-family: inherit;
     }
 
     .dha-btn.primary {
@@ -244,6 +286,8 @@
       .vc-modal-body { padding: 14px 16px; }
       .vc-modal-footer { padding: 12px 16px; }
       .vc-iframe-wrap { height: 360px; }
+      .vc-actions { width: 100%; }
+      .vc-actions .vc-btn { flex: 1; }
     }
   </style>
 
@@ -251,12 +295,18 @@
 </head>
 <body>
 
+  <div id="vcSessionBadge" class="vc-session-badge" aria-live="polite"></div>
+
   <div id="dhaCoach" class="dha-coach-backdrop" role="dialog" aria-modal="true" aria-labelledby="dhaCoachTitle">
     <div class="dha-coach-card" role="document">
       <h2 id="dhaCoachTitle">Ready when you are</h2>
       <p>
-        Click the assistant to start. You can talk or type, and I’ll paste names, addresses, and phone numbers into the chat so you can copy them easily. Please make sure to enable your camera and microphone.
+        You are about to start a session with Erica. You can talk or type. Please make sure your camera and microphone are enabled if you want to use voice.
       </p>
+      <div class="dha-note">
+        Digital Health Advisors are not a substitute for emergency care or professional medical advice, diagnosis, or treatment.
+        If this is an emergency, call 911 or local emergency services.
+      </div>
       <div class="dha-row">
         <button id="dhaStartNow" class="dha-btn primary" type="button">Start now</button>
         <button id="dhaLater" class="dha-btn ghost" type="button">Maybe later</button>
@@ -266,11 +316,14 @@
 
   <div class="unith-stage">
     <unith-widget
+      id="vcUnithWidget"
       head_id="erica-26979"
       org_id="Virtuclinic-1663"
       api_key="a015eb9181bf4270b9b6bb3bfccad71f"
       language="en-US"
       username="guest-user"
+      tag="virtuclinic-dha-erica"
+      voice_interruptions="true"
       variant="fullscreen">
     </unith-widget>
   </div>
@@ -281,12 +334,12 @@
         <span class="vc-badge">Session Ended</span>
         <div>
           <h2 id="vcSurveyTitle" class="vc-modal-title">We value your feedback</h2>
-          <p class="vc-modal-subtitle">Tell us how the Digital Health Advisor session with <strong id="vcAgentName">Brad</strong> went.</p>
+          <p class="vc-modal-subtitle">Tell us how the Digital Health Advisor session with <strong id="vcAgentName">Erica</strong> went.</p>
         </div>
       </div>
       <div class="vc-modal-body">
         <div class="vc-callout">
-          Your 5-minute session has finished. This 2-minute anonymous survey helps us improve guidance, clarity of next steps, and overall experience.
+          Your session with Erica has finished. This short anonymous survey helps us improve guidance, clarity of next steps, and overall experience.
         </div>
 
         <div class="vc-iframe-wrap" id="vcIframeWrap" hidden>
@@ -294,7 +347,7 @@
         </div>
 
         <div class="vc-alt" id="vcAltLink" hidden>
-          <p>It looks like we can’t show the survey here. Please open it in a new tab:</p>
+          <p>It looks like we cannot show the survey here. Please open it in a new tab:</p>
           <p><a id="vcSurveyHref" class="vc-btn vc-btn-primary" target="_blank" rel="noopener">Open Survey</a></p>
         </div>
       </div>
@@ -311,54 +364,149 @@
   </div>
 
   <script>
+    const VC_AGENT_NAME = "Erica";
+    const VC_AGENT_SLUG = "erica";
+    const HOST_DHA_PAGE = "https://virtuclinic-ai.github.io/site/archive.html";
     const SURVEY_URL_GOOGLE = "https://docs.google.com/forms/d/e/1FAIpQLSe6zfiql3ZGmUO5Q1SUIj2X8DJLGxUaO14XAqJOnNNi4cB7qA/viewform?embedded=true";
-    const POST_SURVEY_REDIRECT = "https://virtuclinic-ai.github.io/site/archive.html";
+    const SESSION_MS = 300000;
 
-    const $backdrop = document.getElementById('vcSurveyBackdrop');
-    const $modal = $backdrop.querySelector('.vc-modal');
-    const $agentName = document.getElementById('vcAgentName');
-    const $iframeWrap = document.getElementById('vcIframeWrap');
-    const $surveyFrame = document.getElementById('vcSurveyFrame');
-    const $altLink = document.getElementById('vcAltLink');
-    const $surveyHref = document.getElementById('vcSurveyHref');
-    const $openInNewTab = document.getElementById('vcOpenInNewTab');
-    const $skipBtn = document.getElementById('vcSkipBtn');
-    const $doneBtn = document.getElementById('vcDoneBtn');
+    function vcParam(name, fallback = "") {
+      try {
+        const value = new URLSearchParams(window.location.search).get(name);
+        return value ? decodeURIComponent(value) : fallback;
+      } catch(e) {
+        return fallback;
+      }
+    }
+
+    function vcSlug(value, fallback = "unknown") {
+      const raw = String(value || fallback);
+      const out = raw
+        .toLowerCase()
+        .replace(/[^a-z0-9_-]+/g, "-")
+        .replace(/-+/g, "-")
+        .replace(/^-|-$/g, "")
+        .slice(0, 120);
+      return out || fallback;
+    }
+
+    function vcSafeUsername(value) {
+      const raw = String(value || "guest-user");
+      return raw
+        .toLowerCase()
+        .replace(/[^a-z0-9_-]+/g, "_")
+        .replace(/_+/g, "_")
+        .replace(/^_|_$/g, "")
+        .slice(0, 120) || "guest-user";
+    }
+
+    function vcBuildContext() {
+      const company = vcParam("company", "VirtuClinic");
+      const tier = vcParam("tier", "unknown-tier");
+      const sessionId = vcParam("sessionId", "");
+      const usernameFromUrl = vcParam("username", "");
+
+      const username = vcSafeUsername(
+        usernameFromUrl ||
+        (sessionId ? "vc_session_" + sessionId : "") ||
+        "guest-user"
+      );
+
+      const tagFromUrl = vcParam("tag", "");
+      const tag = tagFromUrl
+        ? vcSlug(tagFromUrl, "virtuclinic-dha-" + VC_AGENT_SLUG)
+        : vcSlug(["virtuclinic-dha", company, tier, VC_AGENT_SLUG].join("-"), "virtuclinic-dha-" + VC_AGENT_SLUG);
+
+      return { company, tier, sessionId, username, tag };
+    }
+
+    function vcApplyUnithAttributes() {
+      const widget = document.getElementById("vcUnithWidget");
+      const badge = document.getElementById("vcSessionBadge");
+      if (!widget) return;
+
+      const ctx = vcBuildContext();
+
+      widget.setAttribute("username", ctx.username);
+      widget.setAttribute("tag", ctx.tag);
+      widget.setAttribute("voice_interruptions", "true");
+
+      if (badge) {
+        badge.textContent = VC_AGENT_NAME + " · " + ctx.tier + " · " + ctx.tag;
+        badge.classList.add("vc-show");
+      }
+
+      try {
+        window.VC_UNITH_CONTEXT = {
+          agent: VC_AGENT_NAME,
+          username: ctx.username,
+          tag: ctx.tag,
+          tier: ctx.tier,
+          company: ctx.company,
+          sessionId: ctx.sessionId
+        };
+      } catch(e) {}
+    }
+
+    vcApplyUnithAttributes();
+
+    window.addEventListener("load", function(){
+      setTimeout(vcApplyUnithAttributes, 250);
+      setTimeout(vcApplyUnithAttributes, 1000);
+    });
+  </script>
+
+  <script>
+    const $backdrop = document.getElementById("vcSurveyBackdrop");
+    const $modal = $backdrop.querySelector(".vc-modal");
+    const $agentName = document.getElementById("vcAgentName");
+    const $iframeWrap = document.getElementById("vcIframeWrap");
+    const $surveyFrame = document.getElementById("vcSurveyFrame");
+    const $altLink = document.getElementById("vcAltLink");
+    const $surveyHref = document.getElementById("vcSurveyHref");
+    const $openInNewTab = document.getElementById("vcOpenInNewTab");
+    const $skipBtn = document.getElementById("vcSkipBtn");
+    const $doneBtn = document.getElementById("vcDoneBtn");
 
     let lastFocusedEl = null;
 
     function openModal() {
       lastFocusedEl = document.activeElement;
-      $backdrop.classList.add('vc-open');
-      $backdrop.setAttribute('aria-hidden', 'false');
+      $backdrop.classList.add("vc-open");
+      $backdrop.setAttribute("aria-hidden", "false");
       $modal.focus();
     }
 
     function closeModal() {
-      $backdrop.classList.remove('vc-open');
-      $backdrop.setAttribute('aria-hidden', 'true');
-      if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') lastFocusedEl.focus();
+      $backdrop.classList.remove("vc-open");
+      $backdrop.setAttribute("aria-hidden", "true");
+      if (lastFocusedEl && typeof lastFocusedEl.focus === "function") lastFocusedEl.focus();
     }
 
-    $backdrop.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
+    function redirectToHostDhaPage() {
+      const target = vcParam("returnUrl", HOST_DHA_PAGE);
+      window.location.href = target || HOST_DHA_PAGE;
+    }
+
+    $backdrop.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
         e.preventDefault();
         closeModal();
-        window.location.href = POST_SURVEY_REDIRECT;
+        redirectToHostDhaPage();
       }
     });
 
-    $skipBtn.addEventListener('click', () => {
+    $skipBtn.addEventListener("click", () => {
       closeModal();
-      window.location.href = POST_SURVEY_REDIRECT;
+      redirectToHostDhaPage();
     });
 
-    $doneBtn.addEventListener('click', () => {
+    $doneBtn.addEventListener("click", () => {
       closeModal();
-      window.location.href = POST_SURVEY_REDIRECT;
+      redirectToHostDhaPage();
     });
 
-    function showSurvey(agentDisplayName = "Your Advisor") {
+    function showSurvey(agentDisplayName = VC_AGENT_NAME) {
       const url = SURVEY_URL_GOOGLE;
       $agentName.textContent = agentDisplayName;
       $surveyHref.href = url;
@@ -367,7 +515,7 @@
       $surveyFrame.src = url;
       $iframeWrap.hidden = false;
       $altLink.hidden = true;
-      $openInNewTab.style.display = 'none';
+      $openInNewTab.style.display = "none";
 
       openModal();
     }
@@ -375,48 +523,56 @@
     window.VC_SURVEY = { showSurvey };
 
     setTimeout(() => {
-      alert("Your session with Brad has ended.");
-      window.VC_SURVEY.showSurvey("Brad");
-    }, 300000);
+      alert("Your session with " + VC_AGENT_NAME + " has ended.");
+      window.VC_SURVEY.showSurvey(VC_AGENT_NAME);
+      vcNotifyDone("agent_timeout");
+    }, SESSION_MS);
   </script>
 
   <script>
     (function(){
-      const coach = document.getElementById('dhaCoach');
-      const startBtn = document.getElementById('dhaStartNow');
-      const laterBtn = document.getElementById('dhaLater');
-      const HOST_DHA_PAGE = 'https://virtuclinic-ai.github.io/site/archive.html';
+      const coach = document.getElementById("dhaCoach");
+      const startBtn = document.getElementById("dhaStartNow");
+      const laterBtn = document.getElementById("dhaLater");
 
       function hideHints() {
-        coach.classList.add('dha-hidden');
+        coach.classList.add("dha-hidden");
       }
 
-      startBtn.addEventListener('click', () => {
+      startBtn.addEventListener("click", () => {
         hideHints();
+        vcNotifyDone("agent_started");
       });
 
-      laterBtn.addEventListener('click', () => {
+      laterBtn.addEventListener("click", () => {
         hideHints();
+        vcNotifyDone("agent_cancelled");
         if (window.opener && !window.opener.closed) {
           window.close();
         } else {
-          window.location.href = HOST_DHA_PAGE;
+          redirectToHostDhaPage();
         }
       });
     })();
 
-    function vcNotifyDone(reason='agent_done'){
-      try { opener?.postMessage({ type:'VC_EVENT', name:reason }, '*'); } catch(e){}
-      try { parent?.postMessage({ type:'VC_EVENT', name:reason }, '*'); } catch(e){}
+    function vcNotifyDone(reason = "agent_done") {
+      const payload = {
+        type: "VC_EVENT",
+        name: reason,
+        agent: VC_AGENT_NAME,
+        context: window.VC_UNITH_CONTEXT || {}
+      };
+
+      try { opener?.postMessage(payload, "*"); } catch(e) {}
+      try { parent?.postMessage(payload, "*"); } catch(e) {}
     }
 
-    ['beforeunload','pagehide','visibilitychange'].forEach(evt=>{
-      window.addEventListener(evt, ()=>{
-        if (evt==='visibilitychange' && document.visibilityState!=='hidden') return;
-        vcNotifyDone('agent_closed');
+    ["beforeunload","pagehide","visibilitychange"].forEach(evt => {
+      window.addEventListener(evt, () => {
+        if (evt === "visibilitychange" && document.visibilityState !== "hidden") return;
+        vcNotifyDone("agent_closed");
       });
     });
   </script>
 </body>
 </html>
-
