@@ -281,6 +281,34 @@
       color: #374151;
     }
 
+
+    .vc-end-session-fixed {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 2147483001;
+      appearance: none;
+      border: 1px solid rgba(0,0,0,.16);
+      background: #ffcc33;
+      color: #111;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-family: Inter,system-ui,Arial,sans-serif;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 10px 28px rgba(0,0,0,.14);
+    }
+
+    .vc-end-session-fixed:hover {
+      filter: brightness(.98);
+      transform: translateY(-1px);
+    }
+
+    .vc-end-session-fixed:focus {
+      outline: 3px solid rgba(255,204,51,.45);
+      outline-offset: 2px;
+    }
+
     @media (max-width: 420px) {
       .vc-modal-header { padding: 14px 16px; }
       .vc-modal-body { padding: 14px 16px; }
@@ -296,6 +324,7 @@
 <body>
 
   <div id="vcSessionBadge" class="vc-session-badge" aria-live="polite"></div>
+  <button id="vcEndSessionBtn" class="vc-end-session-fixed" type="button">End session</button>
 
   <div id="dhaCoach" class="dha-coach-backdrop" role="dialog" aria-modal="true" aria-labelledby="dhaCoachTitle">
     <div class="dha-coach-card" role="document">
@@ -339,7 +368,7 @@
       </div>
       <div class="vc-modal-body">
         <div class="vc-callout">
-          Your session with Brad has finished. This short anonymous survey helps us improve guidance, clarity of next steps, and overall experience.
+          When you are ready to end your session with Brad, this short anonymous survey helps us improve guidance, clarity of next steps, and overall experience.
         </div>
 
         <div class="vc-iframe-wrap" id="vcIframeWrap" hidden>
@@ -355,9 +384,9 @@
       <div class="vc-modal-footer">
         <div class="vc-disclaimer">Anonymous & confidential · Your feedback directly shapes improvements</div>
         <div class="vc-actions">
-          <button class="vc-btn vc-btn-ghost" id="vcSkipBtn" type="button">Skip</button>
+          <button class="vc-btn vc-btn-ghost" id="vcSkipBtn" type="button">Skip and end</button>
           <a class="vc-btn vc-btn-primary" id="vcOpenInNewTab" target="_blank" rel="noopener" style="display:none;">Open in New Tab</a>
-          <button class="vc-btn vc-btn-primary" id="vcDoneBtn" type="button">Done</button>
+          <button class="vc-btn vc-btn-primary" id="vcDoneBtn" type="button">Done and end</button>
         </div>
       </div>
     </div>
@@ -368,7 +397,7 @@
     const VC_AGENT_SLUG = "brad";
     const HOST_DHA_PAGE = "https://virtuclinic-ai.github.io/site/archive.html";
     const SURVEY_URL_GOOGLE = "https://docs.google.com/forms/d/e/1FAIpQLSe6zfiql3ZGmUO5Q1SUIj2X8DJLGxUaO14XAqJOnNNi4cB7qA/viewform?embedded=true";
-    const SESSION_MS = 300000;
+    /* No automatic session timeout: users end the session manually. */
 
     function vcParam(name, fallback = "") {
       try {
@@ -421,7 +450,7 @@
     }
 
     function vcApplyUnithAttributes() {
-      const  = document.getElementById("vcUnith");
+      const widget = document.getElementById("vcUnithWidget");
       const badge = document.getElementById("vcSessionBadge");
       if (!widget) return;
 
@@ -469,6 +498,7 @@
     const $doneBtn = document.getElementById("vcDoneBtn");
 
     let lastFocusedEl = null;
+    let vcSurveyOpenFromEndSession = false;
 
     function openModal() {
       lastFocusedEl = document.activeElement;
@@ -483,27 +513,68 @@
       if (lastFocusedEl && typeof lastFocusedEl.focus === "function") lastFocusedEl.focus();
     }
 
+    function showClosedFallback() {
+      /*
+        Some browsers only allow scripts to close tabs/windows that were opened
+        by another script. If the close is blocked, do not redirect to the old
+        archive/default page. Leave the user on a blank, ended-session screen.
+      */
+      try {
+        document.documentElement.innerHTML =
+          '<head><title>Session ended</title><meta name="viewport" content="width=device-width,initial-scale=1"></head>' +
+          '<body style="margin:0;min-height:100vh;display:grid;place-items:center;font-family:Inter,Arial,sans-serif;background:#fff;color:#111;">' +
+          '<div style="text-align:center;padding:24px;">' +
+          '<h1 style="font-size:22px;margin:0 0 8px;">Session ended</h1>' +
+          '<p style="margin:0;color:#555;">You may close this tab.</p>' +
+          '</div></body>';
+      } catch(e) {}
+    }
+
+    function closeAdvisorTab(reason = "agent_session_closed") {
+      vcNotifyDone(reason);
+      setTimeout(function(){
+        try { window.open("", "_self"); } catch(e) {}
+        try { window.close(); } catch(e) {}
+
+        /*
+          If window.close() is blocked, DO NOT redirect to archive.html or any
+          default advisor list. Replace the current page with an ended-session
+          blank fallback instead.
+        */
+        setTimeout(function(){
+          try {
+            if (!document.hidden) showClosedFallback();
+          } catch(e) {
+            showClosedFallback();
+          }
+        }, 250);
+      }, 120);
+    }
+
     function redirectToHostDhaPage() {
-      const target = vcParam("returnUrl", HOST_DHA_PAGE);
-      window.location.href = target || HOST_DHA_PAGE;
+      closeAdvisorTab("agent_session_closed_no_redirect");
+    }
+
+    function finishSession(reason = "agent_ended_by_user") {
+      closeAdvisorTab(reason);
     }
 
     $backdrop.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         e.preventDefault();
+        vcSurveyOpenFromEndSession = false;
         closeModal();
-        redirectToHostDhaPage();
       }
     });
 
     $skipBtn.addEventListener("click", () => {
       closeModal();
-      redirectToHostDhaPage();
+      finishSession("agent_survey_skipped_and_ended");
     });
 
     $doneBtn.addEventListener("click", () => {
       closeModal();
-      redirectToHostDhaPage();
+      finishSession("agent_survey_completed_and_ended");
     });
 
     function showSurvey(agentDisplayName = VC_AGENT_NAME) {
@@ -522,12 +593,15 @@
 
     window.VC_SURVEY = { showSurvey };
 
-    setTimeout(() => {
-      alert("Your session with " + VC_AGENT_NAME + " has ended.");
-      window.VC_SURVEY.showSurvey(VC_AGENT_NAME);
-      vcNotifyDone("agent_timeout");
-    }, SESSION_MS);
-  </script>
+    const $endSessionBtn = document.getElementById("vcEndSessionBtn");
+    if ($endSessionBtn) {
+      $endSessionBtn.addEventListener("click", () => {
+        vcSurveyOpenFromEndSession = true;
+        vcNotifyDone("agent_end_button_clicked");
+        showSurvey(VC_AGENT_NAME);
+      });
+    }
+</script>
 
   <script>
     (function(){
@@ -547,11 +621,7 @@
       laterBtn.addEventListener("click", () => {
         hideHints();
         vcNotifyDone("agent_cancelled");
-        if (window.opener && !window.opener.closed) {
-          window.close();
-        } else {
-          redirectToHostDhaPage();
-        }
+        closeAdvisorTab("agent_cancelled_before_start");
       });
     })();
 
