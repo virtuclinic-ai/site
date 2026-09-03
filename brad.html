@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Brad - Digital Health Advisor</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 
   <style>
     :root {
@@ -526,7 +526,203 @@
           '<div style="text-align:center;padding:24px;">' +
           '<h1 style="font-size:22px;margin:0 0 8px;">Session ended</h1>' +
           '<p style="margin:0;color:#555;">You may close this tab.</p>' +
-          '</div></body>';
+          '</div>
+<!-- VirtuClinic / VirtuAdvisor UNITH mobile canvas fix v3
+     Keeps UNITH from rendering the Digital Human inside a narrow portrait viewport.
+     This preserves the existing advisor code and only stabilizes the visual canvas
+     on phones or narrow embedded frames. -->
+<style id="vc-unith-mobile-canvas-fix-v3">
+  :root{
+    --vc-unith-design-width:900px;
+    --vc-unith-design-height:640px;
+  }
+
+  html, body{
+    min-width:0 !important;
+    overscroll-behavior:none;
+  }
+
+  .unith-stage{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    overflow:hidden !important;
+    background:#ffffff !important;
+  }
+
+  .unith-stage unith-widget{
+    box-sizing:border-box !important;
+  }
+
+  @media (max-width:760px), (pointer:coarse) and (max-width:920px){
+    html, body{
+      width:100% !important;
+      height:100% !important;
+      min-height:100svh !important;
+      overflow:hidden !important;
+      background:#ffffff !important;
+    }
+
+    .unith-stage{
+      position:fixed !important;
+      inset:0 !important;
+      width:100vw !important;
+      height:100vh !important;
+      height:100svh !important;
+      height:100dvh !important;
+      display:flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+      overflow:hidden !important;
+      background:#ffffff !important;
+    }
+
+    .unith-stage unith-widget{
+      width:var(--vc-unith-design-width) !important;
+      height:var(--vc-unith-design-height) !important;
+      min-width:var(--vc-unith-design-width) !important;
+      min-height:var(--vc-unith-design-height) !important;
+      max-width:none !important;
+      max-height:none !important;
+      flex:0 0 auto !important;
+      transform-origin:center center !important;
+      will-change:transform !important;
+    }
+
+    .vc-session-badge{
+      display:none !important;
+    }
+
+    .vc-end-session-fixed{
+      top:max(8px, env(safe-area-inset-top)) !important;
+      right:max(8px, env(safe-area-inset-right)) !important;
+      z-index:2147483600 !important;
+      padding:8px 11px !important;
+      font-size:12px !important;
+      line-height:1 !important;
+      box-shadow:0 8px 22px rgba(0,0,0,.18) !important;
+    }
+
+    .dha-coach-backdrop{
+      z-index:2147483590 !important;
+      padding:14px !important;
+      align-items:center !important;
+    }
+
+    .dha-coach-card{
+      width:min(560px,94vw) !important;
+      max-height:92svh !important;
+      overflow:auto !important;
+    }
+  }
+
+  @media (orientation:landscape) and (max-height:520px){
+    .vc-end-session-fixed{
+      top:8px !important;
+      right:8px !important;
+    }
+  }
+</style>
+
+<script id="vc-unith-mobile-canvas-fit-v3">
+(function(){
+  const DESIGN_W = 900;
+  const DESIGN_H = 640;
+  let raf = null;
+
+  function isNarrowEmbeddedView(){
+    try {
+      const coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+      const narrow = window.innerWidth <= 760;
+      const embeddedNarrow = window.innerWidth < 900 && window.self !== window.top;
+      return narrow || (coarse && window.innerWidth < 920) || embeddedNarrow;
+    } catch(e) {
+      return window.innerWidth <= 760;
+    }
+  }
+
+  function getViewport(){
+    const vv = window.visualViewport;
+    const w = vv && vv.width ? vv.width : window.innerWidth;
+    const h = vv && vv.height ? vv.height : window.innerHeight;
+    return { width: Math.max(1, w), height: Math.max(1, h) };
+  }
+
+  function clearMobileFit(widget, stage){
+    if(stage){
+      stage.style.removeProperty("width");
+      stage.style.removeProperty("height");
+      stage.style.removeProperty("min-height");
+    }
+    if(widget){
+      widget.style.width = "100%";
+      widget.style.height = "100%";
+      widget.style.minWidth = "0";
+      widget.style.minHeight = "0";
+      widget.style.maxWidth = "100%";
+      widget.style.maxHeight = "100%";
+      widget.style.transform = "none";
+      widget.style.margin = "0";
+    }
+    document.documentElement.classList.remove("vc-unith-mobile-fitted");
+  }
+
+  function fit(){
+    const stage = document.querySelector(".unith-stage");
+    const widget = document.getElementById("vcUnithWidget");
+    if(!stage || !widget) return;
+
+    if(!isNarrowEmbeddedView()){
+      clearMobileFit(widget, stage);
+      return;
+    }
+
+    const vp = getViewport();
+    const scale = Math.min(vp.width / DESIGN_W, vp.height / DESIGN_H, 1);
+
+    stage.style.width = vp.width + "px";
+    stage.style.height = vp.height + "px";
+    stage.style.minHeight = vp.height + "px";
+
+    widget.style.width = DESIGN_W + "px";
+    widget.style.height = DESIGN_H + "px";
+    widget.style.minWidth = DESIGN_W + "px";
+    widget.style.minHeight = DESIGN_H + "px";
+    widget.style.maxWidth = "none";
+    widget.style.maxHeight = "none";
+    widget.style.transformOrigin = "center center";
+    widget.style.transform = "scale(" + scale.toFixed(4) + ")";
+    widget.style.margin = "0";
+
+    document.documentElement.classList.add("vc-unith-mobile-fitted");
+  }
+
+  function scheduleFit(){
+    if(raf) cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(function(){
+      raf = null;
+      fit();
+      setTimeout(fit, 120);
+      setTimeout(fit, 450);
+      setTimeout(fit, 1200);
+    });
+  }
+
+  window.addEventListener("resize", scheduleFit, {passive:true});
+  window.addEventListener("orientationchange", scheduleFit, {passive:true});
+  if(window.visualViewport){
+    window.visualViewport.addEventListener("resize", scheduleFit, {passive:true});
+    window.visualViewport.addEventListener("scroll", scheduleFit, {passive:true});
+  }
+  document.addEventListener("DOMContentLoaded", scheduleFit);
+  window.addEventListener("load", scheduleFit);
+  setTimeout(scheduleFit, 100);
+  setTimeout(scheduleFit, 600);
+  setTimeout(scheduleFit, 1500);
+})();
+</script>
+
+</body>';
       } catch(e) {}
     }
 
